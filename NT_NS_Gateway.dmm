@@ -1,0 +1,15 @@
+"a" = (/turf/simulated/wall/r_wall,/area/survivalpod)
+"f" = (/obj/effect/map_effect/portal/master/side_b{dir = 1; portal_id = "nt_portalship"},/obj/effect/map_effect/interval/effect_emitter/sparks,/turf/simulated/shuttle/floor/purple,/area/survivalpod)
+"J" = (/obj/structure/sign/science,/turf/simulated/wall/r_wall,/area/survivalpod)
+"P" = (/obj/machinery/light,/turf/simulated/shuttle/floor/purple,/area/survivalpod)
+"S" = (/turf/simulated/shuttle/floor/purple,/area/survivalpod)
+"W" = (/obj/machinery/shieldwallgen{anchored = 1; desc = "A strange form of tech, able to create seemless gateways betweens two points in space."; name = "gateway resonator"; req_access = list(47)},/turf/simulated/wall/phoron,/area/survivalpod)
+"Z" = (/obj/structure/sign/signnew/radiation,/turf/simulated/wall/r_wall,/area/survivalpod)
+
+(1,1,1) = {"
+JSSSJ
+ZPSPZ
+aWfWa
+aaSaa
+aaaaa
+"}
