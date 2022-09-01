@@ -78,7 +78,7 @@
 
 
 */
-
+/*
 /turf/simulated/floor/outdoors/desert_planet/deep_sand
 	name = "sand"
 	desc = "Salty and gritty."
@@ -134,3 +134,103 @@
 	icon_state = "deep_water"
 	edge_blending_priority = 9
 	turf_layers = list(/turf/simulated/floor/outdoors/desert_planet/sand)
+*/
+
+/turf/simulated/floor/outdoors/desert_planet/deep_sand
+	name = "sand"
+	desc = "Salty and gritty."
+	icon = 'icons/turf/desert_planet.dmi'
+	icon_state = "deep_sand"
+	// edge_blending_priority = 2 #Don't know how to make it work.
+	movement_cost = 3
+	turf_layers = list(/turf/simulated/floor/outdoors/desert_planet/sand)
+
+/turf/simulated/floor/outdoors/desert_planet/grass
+	name = "grass"
+	desc = "Lively green grass, soft to walk on."
+	icon = 'icons/turf/desert_planet.dmi'
+	icon_state = "grass"
+	// edge_blending_priority = 6 #Don't know how to make it work.
+	turf_layers = list(/turf/simulated/floor/outdoors/desert_planet/sand)
+
+/turf/simulated/floor/outdoors/desert_planet/deep_grass
+	name = "dense grass"
+	desc = "Dense patch of grass, seems like a soft spot to lay on."
+	icon = 'icons/turf/desert_planet.dmi'
+	icon_state = "deep_grass"
+	// edge_blending_priority = 7 #Don't know how to make it work.
+	turf_layers = list(/turf/simulated/floor/outdoors/desert_planet/sand)
+
+/turf/simulated/floor/outdoors/desert_planet/gravel
+	name = "gravel"
+	desc = "Mix of dirt and sand, it crumbles in your hand."
+	icon = 'icons/turf/desert_planet.dmi'
+	icon_state = "gravel"
+	// edge_blending_priority = 5 #Don't know how to make it work.
+	turf_layers = list(/turf/simulated/floor/outdoors/desert_planet/sand)
+
+/turf/simulated/floor/outdoors/desert_planet/mud
+	name = "mud"
+	desc = "Squishy damp dirt, smells muddy."
+	icon = 'icons/turf/desert_planet.dmi'
+	icon_state = "mud"
+	// edge_blending_priority = 4 #Don't know how to make it work.
+	turf_layers = list(/turf/simulated/floor/outdoors/desert_planet/sand)
+
+/turf/simulated/floor/outdoors/desert_planet/water
+	name = "water"
+	desc = "Clear cool water, looks potable."
+	icon = 'icons/turf/desert_planet.dmi'
+	icon_state = "water"
+	var/water_state = "water_shallow"
+	var/under_state = "sand"
+	can_be_plated = FALSE
+	outdoors = OUTDOORS_YES
+	flags = TURF_ACID_IMMUNE
+	layer = WATER_FLOOR_LAYER
+	can_dirty = FALSE	// It's water
+	var/depth = 1 // Higher numbers indicates deeper water.
+	var/reagent_type = "water"
+	// edge_blending_priority = 2 #Don't know how to make it work.
+	turf_layers = list(/turf/simulated/floor/outdoors/desert_planet/sand)
+
+/turf/simulated/floor/outdoors/desert_planet/deep_water
+	name = "deep water"
+	desc = "deep enough you can't see the bottom of it."
+	icon = 'icons/turf/desert_planet.dmi'
+	icon_state = "deep_water"
+	var/water_state = "water_shallow"
+	var/under_state = "sand"
+	can_be_plated = FALSE
+	outdoors = OUTDOORS_YES
+	flags = TURF_ACID_IMMUNE
+	layer = WATER_FLOOR_LAYER
+	can_dirty = FALSE	// It's water
+	var/depth = 2 // Higher numbers indicates deeper water.
+	var/reagent_type = "water"
+	// edge_blending_priority = 4 #Don't know how to make it work.
+	turf_layers = list(/turf/simulated/floor/outdoors/desert_planet/sand)
+
+/* I want this for the water tiles
+/turf/simulated/floor/water
+	name = "shallow water"
+	desc = "A body of water.  It seems shallow enough to walk through, if needed."
+	icon = 'icons/turf/outdoors.dmi'
+	icon_state = "seashallow" // So it shows up in the map editor as water.
+	var/water_state = "water_shallow"
+	var/under_state = "rock"
+	edge_blending_priority = -1
+	movement_cost = 4
+	can_be_plated = FALSE
+	outdoors = OUTDOORS_YES
+	flags = TURF_ACID_IMMUNE
+
+	layer = WATER_FLOOR_LAYER
+
+	can_dirty = FALSE	// It's water
+
+	var/depth = 1 // Higher numbers indicates deeper water.
+
+	var/reagent_type = "water"
+	// var/datum/looping_sound/water/soundloop CHOMPEdit: Removing soundloop for now.
+*/

@@ -1,4 +1,3 @@
-
 /obj/structure/prop/desert_planet/rock
 	name = "desert rock"
 	desc = "Sandy and smooth from erosion."
