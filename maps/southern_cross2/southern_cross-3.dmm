@@ -13930,7 +13930,7 @@
 /turf/space,
 /area/space)
 "foz" = (
-/turf/simulated/open,
+/turf/unsimulated/mask,
 /area/SouthernCrossV2/Maints/Room_88)
 "foO" = (
 /obj/structure/cable/green{
@@ -15489,7 +15489,6 @@
 /area/SouthernCrossV2/Domicile/Dormitory_09)
 "fPj" = (
 /obj/machinery/door/firedoor/glass/hidden/steel,
-/obj/item/tape/engineering,
 /obj/machinery/door/airlock/angled_bay/elevator/glass,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/SouthernCrossV2/Commons/Central_3_Deck_Hall)
@@ -15515,7 +15514,6 @@
 /obj/machinery/door/firedoor/glass/hidden/steel{
 	dir = 2
 	},
-/obj/item/tape/engineering,
 /obj/machinery/door/airlock/angled_bay/elevator/glass,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/SouthernCrossV2/Commons/Central_3_Deck_Hall)
@@ -15580,7 +15578,6 @@
 /obj/machinery/door/firedoor/glass/hidden/steel{
 	dir = 8
 	},
-/obj/item/tape/engineering,
 /obj/machinery/door/airlock/angled_bay/elevator/glass,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/SouthernCrossV2/Commons/Central_3_Deck_Hall)
@@ -15673,7 +15670,6 @@
 /area/SouthernCrossV2/Commons/Central_3_Deck_Hall)
 "fTe" = (
 /obj/machinery/door/firedoor/glass/hidden/steel,
-/obj/item/tape/engineering,
 /obj/machinery/door/airlock/angled_bay/elevator/glass{
 	dir = 4
 	},
@@ -21054,7 +21050,6 @@
 /obj/machinery/door/firedoor/glass/hidden/steel{
 	dir = 2
 	},
-/obj/item/tape/engineering,
 /obj/machinery/door/airlock/angled_bay/elevator/glass{
 	dir = 4
 	},
@@ -22249,7 +22244,6 @@
 /obj/machinery/door/firedoor/glass/hidden/steel{
 	dir = 2
 	},
-/obj/item/tape/engineering,
 /obj/machinery/door/airlock/angled_bay/elevator/glass{
 	dir = 4
 	},
@@ -25631,7 +25625,6 @@
 /obj/machinery/door/firedoor/glass/hidden/steel{
 	dir = 2
 	},
-/obj/item/tape/engineering,
 /obj/machinery/door/airlock/angled_bay/elevator/glass{
 	dir = 4
 	},
@@ -30212,7 +30205,6 @@
 /obj/machinery/door/firedoor/glass/hidden/steel{
 	dir = 1
 	},
-/obj/item/tape/engineering,
 /obj/machinery/door/airlock/angled_bay/elevator/glass,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/SouthernCrossV2/Commons/Aft_3_Deck_Stairwell)
@@ -31132,7 +31124,6 @@
 /obj/machinery/door/firedoor/glass/hidden/steel{
 	dir = 1
 	},
-/obj/item/tape/engineering,
 /obj/machinery/door/airlock/angled_bay/elevator/glass{
 	dir = 4
 	},
@@ -35415,7 +35406,6 @@
 /obj/machinery/door/firedoor/glass/hidden/steel{
 	dir = 8
 	},
-/obj/item/tape/engineering,
 /obj/machinery/door/airlock/angled_bay/elevator/glass,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/SouthernCrossV2/Commons/Aft_3_Deck_Stairwell)
@@ -37412,7 +37402,6 @@
 /obj/machinery/door/firedoor/glass/hidden/steel{
 	dir = 1
 	},
-/obj/item/tape/engineering,
 /obj/machinery/door/airlock/angled_bay/elevator/glass{
 	dir = 4
 	},
@@ -46881,7 +46870,6 @@
 /obj/machinery/door/firedoor/glass/hidden/steel{
 	dir = 1
 	},
-/obj/item/tape/engineering,
 /obj/machinery/door/airlock/angled_bay/elevator/glass{
 	dir = 4
 	},
@@ -47732,7 +47720,6 @@
 /obj/machinery/door/firedoor/glass/hidden/steel{
 	dir = 8
 	},
-/obj/item/tape/engineering,
 /obj/machinery/door/airlock/angled_bay/elevator/glass{
 	dir = 4
 	},
@@ -48623,7 +48610,6 @@
 /area/SouthernCrossV2/Maints/Deck3_Medical_ForStarChamber3)
 "sGr" = (
 /obj/machinery/door/firedoor/glass/hidden/steel,
-/obj/item/tape/engineering,
 /obj/machinery/door/airlock/angled_bay/elevator/glass,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/SouthernCrossV2/Commons/Aft_3_Deck_Stairwell)
@@ -49838,7 +49824,6 @@
 /obj/machinery/door/firedoor/glass/hidden/steel{
 	dir = 8
 	},
-/obj/item/tape/engineering,
 /obj/machinery/door/airlock/angled_bay/elevator/glass{
 	dir = 4
 	},
