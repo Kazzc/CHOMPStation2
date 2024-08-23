@@ -782,7 +782,6 @@
 "adV" = (
 /obj/machinery/door/firedoor/glass/hidden/steel,
 /obj/machinery/door/airlock/angled_bay/elevator/glass,
-/obj/item/tape/engineering,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/SouthernCrossV2/Commons/Central_1_Deck_Hall)
 "adW" = (
@@ -2959,7 +2958,6 @@
 /obj/machinery/door/airlock/angled_bay/elevator/glass{
 	dir = 4
 	},
-/obj/item/tape/engineering,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/SouthernCrossV2/Commons/For_1_Deck_Stairwell)
 "aqU" = (
@@ -3061,7 +3059,6 @@
 /obj/machinery/door/airlock/angled_bay/elevator/glass{
 	dir = 4
 	},
-/obj/item/tape/engineering,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/SouthernCrossV2/Commons/Port_1Deck_Atrium)
 "arR" = (
@@ -16055,7 +16052,6 @@
 /area/survivalpod/superpose/MechFabShip)
 "dZV" = (
 /obj/machinery/door/firedoor/glass/hidden/steel,
-/obj/item/tape/engineering,
 /obj/machinery/door/airlock/angled_bay/elevator/glass,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/SouthernCrossV2/Commons/Aft_1_Deck_Stairwell)
@@ -23612,7 +23608,6 @@
 /obj/machinery/door/airlock/angled_bay/elevator/glass{
 	dir = 4
 	},
-/obj/item/tape/engineering,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/SouthernCrossV2/Commons/For_1_Deck_Stairwell)
 "hjr" = (
@@ -27637,7 +27632,6 @@
 /obj/machinery/door/airlock/angled_bay/elevator/glass{
 	dir = 4
 	},
-/obj/item/tape/engineering,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/SouthernCrossV2/Commons/Port_1Deck_Atrium)
 "jch" = (
@@ -27723,7 +27717,6 @@
 /obj/machinery/door/firedoor/glass/hidden/steel{
 	dir = 8
 	},
-/obj/item/tape/engineering,
 /obj/machinery/door/airlock/angled_bay/elevator/glass,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/SouthernCrossV2/Commons/Aft_1_Deck_Stairwell)
@@ -32889,7 +32882,6 @@
 /obj/machinery/door/airlock/angled_bay/elevator/glass{
 	dir = 4
 	},
-/obj/item/tape/engineering,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/SouthernCrossV2/Commons/Star_1Deck_Atrium)
 "lxF" = (
@@ -37575,7 +37567,6 @@
 /obj/machinery/door/airlock/angled_bay/elevator/glass{
 	dir = 4
 	},
-/obj/item/tape/engineering,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/SouthernCrossV2/Commons/Star_1Deck_Atrium)
 "nsv" = (
@@ -37744,6 +37735,10 @@
 /obj/effect/floor_decal/rust,
 /turf/simulated/floor/plating/turfpack/station,
 /area/SouthernCrossV2/Maints/Deck1_Cargo_Chamber1)
+"nxq" = (
+/obj/turbolift_map_holder/southern_cross/port,
+/turf/simulated/floor/plating/eris/under,
+/area/SouthernCrossV2/Maints/Room_88)
 "nxr" = (
 /obj/structure/cable{
 	d1 = 2;
@@ -39377,6 +39372,10 @@
 /obj/random/forgotten_tram,
 /turf/simulated/floor/plating/turfpack/station,
 /area/SouthernCrossV2/Maints/ab_GeneralStore)
+"odp" = (
+/obj/turbolift_map_holder/southern_cross/starboard,
+/turf/simulated/floor/plating/eris/under,
+/area/SouthernCrossV2/Maints/Room_88)
 "odq" = (
 /obj/structure/bed/chair/oldsofa/left{
 	dir = 1
@@ -45025,6 +45024,10 @@
 "qqv" = (
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Science/Research_Ship_Bay)
+"qqZ" = (
+/obj/turbolift_map_holder/southern_cross/center,
+/turf/simulated/floor/plating/eris/under,
+/area/SouthernCrossV2/Maints/Room_88)
 "qra" = (
 /obj/machinery/mineral/stacking_unit_console,
 /turf/simulated/wall/r_wall,
@@ -48848,7 +48851,6 @@
 /obj/machinery/door/airlock/angled_bay/elevator/glass{
 	dir = 4
 	},
-/obj/item/tape/engineering,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/SouthernCrossV2/Commons/For_1_Deck_Stairwell)
 "rRW" = (
@@ -51413,6 +51415,10 @@
 	},
 /turf/simulated/floor/tiled,
 /area/SouthernCrossV2/Maints/Market_Stall_2)
+"sZN" = (
+/obj/turbolift_map_holder/southern_cross/cargo,
+/turf/unsimulated/mask,
+/area/SouthernCrossV2/Maints/Deck1_Cargo_Corridor1)
 "sZQ" = (
 /turf/simulated/wall/r_wall,
 /area/SouthernCrossV2/Cargo/Mining_Ship_Bay)
@@ -51421,7 +51427,6 @@
 	dir = 2
 	},
 /obj/machinery/door/airlock/angled_bay/elevator/glass,
-/obj/item/tape/engineering,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/SouthernCrossV2/Commons/Central_1_Deck_Hall)
 "tak" = (
@@ -51467,7 +51472,6 @@
 	dir = 8
 	},
 /obj/machinery/door/airlock/angled_bay/elevator/glass,
-/obj/item/tape/engineering,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/SouthernCrossV2/Commons/Central_1_Deck_Hall)
 "taP" = (
@@ -53548,6 +53552,10 @@
 	},
 /turf/simulated/floor/tiled,
 /area/SouthernCrossV2/Commons/For_Transit_Foyer)
+"tWK" = (
+/obj/turbolift_map_holder/southern_cross/aft,
+/turf/simulated/floor/plating/eris/under,
+/area/SouthernCrossV2/Maints/Room_88)
 "tWM" = (
 /obj/machinery/door/firedoor/border_only,
 /obj/effect/floor_decal/industrial/arrows{
@@ -54857,7 +54865,6 @@
 /obj/machinery/door/airlock/angled_bay/elevator/glass{
 	dir = 4
 	},
-/obj/item/tape/engineering,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/SouthernCrossV2/Commons/Star_1Deck_Atrium)
 "uBZ" = (
@@ -56532,7 +56539,6 @@
 /obj/machinery/door/airlock/angled_bay/elevator/glass{
 	dir = 4
 	},
-/obj/item/tape/engineering,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/SouthernCrossV2/Commons/Port_1Deck_Atrium)
 "vkh" = (
@@ -61185,7 +61191,6 @@
 /obj/machinery/door/firedoor/glass/hidden/steel{
 	dir = 1
 	},
-/obj/item/tape/engineering,
 /obj/machinery/door/airlock/angled_bay/elevator/glass,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/SouthernCrossV2/Commons/Aft_1_Deck_Stairwell)
@@ -62275,6 +62280,10 @@
 /obj/effect/map_helper/airlock/door/int_door,
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Harbor/Dock3)
+"xMb" = (
+/obj/turbolift_map_holder/southern_cross/forward,
+/turf/simulated/floor/plating/eris/under,
+/area/SouthernCrossV2/Maints/Room_88)
 "xMB" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume,
 /obj/effect/map_helper/airlock/atmos/chamber_pump,
@@ -78017,7 +78026,7 @@ oex
 oex
 oex
 oex
-oex
+nxq
 aaM
 heo
 kUE
@@ -78299,7 +78308,7 @@ dcA
 dcA
 dcA
 dcA
-dcA
+sZN
 fFB
 thk
 fFB
@@ -92666,7 +92675,7 @@ oex
 oex
 oex
 oex
-oex
+xMb
 aHD
 lEA
 aiP
@@ -92723,7 +92732,7 @@ oex
 oex
 oex
 oex
-oex
+qqZ
 jYP
 akV
 dYl
@@ -92780,7 +92789,7 @@ oex
 oex
 oex
 oex
-oex
+tWK
 cIq
 fZP
 rtw
@@ -107429,7 +107438,7 @@ oex
 oex
 oex
 oex
-oex
+odp
 qFn
 ijM
 ijM

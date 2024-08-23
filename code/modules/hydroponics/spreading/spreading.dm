@@ -4,7 +4,7 @@
 /proc/spacevine_infestation(var/potency_min=70, var/potency_max=100, var/maturation_min=5, var/maturation_max=15)
 	spawn() //to stop the secrets panel hanging
 		var/list/turf/simulated/floor/turfs = list() //list of all the empty floor turfs in the hallway areas //CHOMPedit start: keeping old method over upstream's landmark method
-		for(var/areapath in typesof(/area/hallway))
+		for(var/areapath in typesof(/area/SouthernCrossV2/Commons)) // CHOMPEdit - Southern Cross 2 areas
 			var/area/A = locate(areapath)
 			for(var/turf/simulated/floor/F in A.contents)
 				if(!F.check_density())

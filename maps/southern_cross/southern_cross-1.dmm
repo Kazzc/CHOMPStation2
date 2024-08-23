@@ -26910,14 +26910,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/rnd/xenobiology)
-"pVV" = (
-/obj/machinery/telecomms/relay/preset/southerncross/d0,
-/turf/simulated/floor/tiled/dark{
-	nitrogen = 100;
-	oxygen = 0;
-	temperature = 80
-	},
-/area/tcomm/chamber)
 "pWz" = (
 /obj/structure/bed/chair{
 	dir = 4
@@ -68661,7 +68653,7 @@ fgr
 fgr
 hma
 iNo
-pVV
+kkk
 lPK
 iNo
 oTt
