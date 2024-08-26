@@ -319,7 +319,9 @@
 /obj/item/seeds/glowshroom{
 	icon_state = "seed"
 	},
-/turf/simulated/floor/outdoors/grass/sif/forest/turfpack/station,
+/turf/simulated/floor/outdoors/grass/sif/forest/turfpack/station{
+	outdoors = -1
+	},
 /area/SouthernCrossV2/Commons/Star_1Deck_Atrium)
 "abs" = (
 /turf/simulated/wall/r_wall,
@@ -372,6 +374,13 @@
 /obj/structure/girder,
 /turf/simulated/floor/reinforced/airless,
 /area/SouthernCrossV2/Engineering/Telecomms_Control_Room)
+"abY" = (
+/obj/machinery/door/firedoor/glass/hidden/steel{
+	dir = 1
+	},
+/obj/machinery/door/airlock/angled_bay/elevator/glass,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/SouthernCrossV2/Cargo/Deck1_Stairwell)
 "abZ" = (
 /obj/effect/catwalk_plated/dark,
 /obj/machinery/shipsensors{
@@ -664,7 +673,6 @@
 /obj/machinery/atmospheric_field_generator/perma/underdoors{
 	color = "Yellow"
 	},
-/obj/machinery/shield_diffuser,
 /obj/machinery/door/firedoor/border_only,
 /obj/machinery/door/blast/angled{
 	id = "sc-GCtransitgate2";
@@ -735,11 +743,18 @@
 /obj/machinery/atmospheric_field_generator/perma/underdoors{
 	color = "Yellow"
 	},
-/obj/machinery/shield_diffuser,
 /obj/machinery/door/blast/angled{
 	id = "sc-GCsecurityshipbay";
 	name = "Primary Docking Gate"
 	},
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "For Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!";
+	dir = 4
+	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Security/Exploration_Ship_Bay)
 "adO" = (
@@ -1014,6 +1029,13 @@
 /turf/simulated/shuttle/wall,
 /area/survivalpod/superpose/ScienceShip)
 "afw" = (
+/obj/machinery/embedded_controller/radio/airlock/docking_port_multi{
+	frequency = 1380;
+	id_tag = "escape_dock_north_airlock";
+	master_tag = "escape_dock";
+	pixel_y = 27;
+	req_one_access = list(13)
+	},
 /turf/simulated/floor/tiled/dark,
 /area/SouthernCrossV2/Harbor/Dock3)
 "afz" = (
@@ -1815,6 +1837,13 @@
 /obj/structure/window/titanium{
 	dir = 8
 	},
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "For Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!";
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Security/Quantum_Pad_Checkpoint)
 "aje" = (
@@ -1860,21 +1889,7 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Harbor/Dock4)
 "ajD" = (
-/obj/item/weapon/paper_bin{
-	pixel_x = 5
-	},
-/obj/structure/table/standard,
-/obj/item/weapon/clipboard{
-	pixel_y = 2;
-	pixel_x = -10
-	},
-/obj/item/weapon/folder/yellow{
-	pixel_x = -6;
-	pixel_y = -2
-	},
-/obj/item/weapon/pen/multi{
-	pixel_x = 5
-	},
+/obj/machinery/teleport/station,
 /turf/simulated/floor/tiled/dark,
 /area/SouthernCrossV2/Engineering/Telecomms_Control_Room)
 "ajE" = (
@@ -1949,11 +1964,9 @@
 /turf/space,
 /area/space)
 "ake" = (
-/obj/machinery/vending/snlvend,
-/obj/machinery/camera/network/security{
-	dir = 6;
-	c_tag = "D1-Car-Stairwell1";
-	network = list("Cargo")
+/obj/structure/extinguisher_cabinet{
+	name = "1N-extinguisher cabinet";
+	pixel_y = 28
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/SouthernCrossV2/Cargo/Deck1_Stairwell)
@@ -2227,6 +2240,11 @@
 /obj/item/device/retail_scanner/cargo{
 	pixel_x = 5
 	},
+/obj/machinery/firealarm{
+	dir = 4;
+	pixel_x = 25;
+	name = "E-fire alarm"
+	},
 /turf/simulated/floor/tiled,
 /area/SouthernCrossV2/Cargo/Supply_Ship_Bay)
 "amc" = (
@@ -2445,6 +2463,12 @@
 	dir = 1
 	},
 /obj/machinery/door/airlock/maintenance/common,
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "Car Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!"
+	},
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Maints/Deck1_Cargo_Corridor2)
 "anx" = (
@@ -2655,6 +2679,13 @@
 	},
 /obj/structure/window/titanium{
 	dir = 8
+	},
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "Port Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!";
+	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Cargo/Supply_Ship_Bay)
@@ -2873,7 +2904,9 @@
 /area/shuttle/echidna)
 "aql" = (
 /obj/structure/flora/ausbushes/sparsegrass,
-/turf/simulated/floor/outdoors/grass/sif/forest/turfpack/station,
+/turf/simulated/floor/outdoors/grass/sif/forest/turfpack/station{
+	outdoors = -1
+	},
 /area/SouthernCrossV2/Commons/Star_1Deck_Atrium)
 "aqp" = (
 /obj/structure/flora/lily2,
@@ -3395,11 +3428,6 @@
 "atP" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden{
 	dir = 1
-	},
-/obj/machinery/embedded_controller/radio/airlock/airlock_controller{
-	frequency = 1381;
-	id_tag = "SC-docklane32";
-	pixel_y = 24
 	},
 /turf/simulated/floor/tiled/dark,
 /area/SouthernCrossV2/Harbor/Dock3)
@@ -4037,34 +4065,19 @@
 /turf/simulated/floor/tiled/white,
 /area/SouthernCrossV2/Maints/ab_Surgery)
 "ayH" = (
-/obj/machinery/door/firedoor/multi_tile/glass{
-	dir = 1
-	},
-/obj/effect/floor_decal/industrial/arrows/blue{
-	dir = 4
-	},
-/obj/effect/floor_decal/industrial/arrows/blue{
-	dir = 8
-	},
-/obj/machinery/door/airlock/angled_bay/double/glass/atmos{
-	dir = 8;
-	name = "Cargo Bay";
-	req_access = list(50);
-	req_one_access = list(48)
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/techmaint,
-/area/SouthernCrossV2/Cargo/Supply_Ship_Bay)
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/tiled,
+/area/SouthernCrossV2/Cargo/Deck1_Stairwell)
 "ayK" = (
 /obj/structure/disposalpipe/segment,
 /turf/simulated/wall,
@@ -4370,7 +4383,9 @@
 /area/SouthernCrossV2/Science/Xenobotany_Lab)
 "aBD" = (
 /obj/structure/flora/tree/sif,
-/turf/simulated/floor/outdoors/grass/sif/turfpack/station,
+/turf/simulated/floor/outdoors/grass/sif/turfpack/station{
+	outdoors = -1
+	},
 /area/SouthernCrossV2/Commons/Star_1Deck_Atrium)
 "aBE" = (
 /obj/random/junk,
@@ -5611,7 +5626,9 @@
 "aLf" = (
 /obj/structure/flora/tree/sif,
 /obj/structure/flora/ausbushes/sparsegrass,
-/turf/simulated/floor/outdoors/grass/sif/turfpack/station,
+/turf/simulated/floor/outdoors/grass/sif/turfpack/station{
+	outdoors = -1
+	},
 /area/SouthernCrossV2/Commons/Star_1Deck_Atrium)
 "aLh" = (
 /turf/simulated/floor/tiled/hydro,
@@ -5689,12 +5706,19 @@
 /obj/machinery/atmospheric_field_generator/perma/underdoors{
 	color = "Yellow"
 	},
-/obj/machinery/shield_diffuser,
 /obj/machinery/door/firedoor/border_only,
 /obj/machinery/door/blast/angled{
 	id = "sc-GCcargobay";
 	name = "Entrance Gate"
 	},
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "Port Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!";
+	dir = 4
+	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Cargo/Supply_Ship_Bay)
 "aLu" = (
@@ -6020,7 +6044,8 @@
 /obj/machinery/door/airlock/maintenance/rnd{
 	name = "Shuttle Bay Access";
 	req_one_access = list(7,47);
-	req_access = list(47)
+	req_access = list(47);
+	id_tag = "Sci Lockdown"
 	},
 /obj/machinery/door/blast/regular/open{
 	layer = 3.5;
@@ -6029,6 +6054,12 @@
 	desc = "A heavily reinforced gate, sector lockdown!"
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "Sci Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!"
+	},
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Science/Research_Ship_Bay)
 "aNl" = (
@@ -6180,6 +6211,12 @@
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
+	},
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "Port Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!"
 	},
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Cargo/Supply_Ship_Bay)
@@ -6352,6 +6389,11 @@
 /obj/effect/floor_decal/shuttle/blue{
 	pixel_x = -1;
 	pixel_y = 1
+	},
+/obj/structure/extinguisher_cabinet{
+	dir = 1;
+	name = "1S-extinguisher cabinet";
+	pixel_y = -27
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Science/PA_Chamber)
@@ -7064,7 +7106,9 @@
 "aVh" = (
 /obj/structure/flora/ausbushes/genericbush,
 /obj/structure/flora/ausbushes/sparsegrass,
-/turf/simulated/floor/outdoors/grass/sif/forest/turfpack/station,
+/turf/simulated/floor/outdoors/grass/sif/forest/turfpack/station{
+	outdoors = -1
+	},
 /area/SouthernCrossV2/Commons/Star_1Deck_Atrium)
 "aVi" = (
 /turf/simulated/floor/tiled/dark,
@@ -9002,16 +9046,16 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/SouthernCrossV2/Security/Exploration_Ship_Bay)
 "bCH" = (
-/obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/structure/closet/crate/freezer,
-/obj/random/maintenance/cargo,
-/obj/machinery/camera/network/security{
-	dir = 9;
-	c_tag = "D1-Car-Supply Ship Bay1";
-	network = list("Cargo")
+/obj/machinery/embedded_controller/radio/airlock/docking_port_multi{
+	dir = 1;
+	frequency = 1380;
+	id_tag = "escape_dock_ssouth_airlock";
+	master_tag = "escape_dock";
+	pixel_y = -27;
+	req_one_access = list(13)
 	},
-/turf/simulated/floor/tiled/steel_grid,
-/area/SouthernCrossV2/Cargo/Supply_Ship_Bay)
+/turf/simulated/floor/tiled/dark,
+/area/SouthernCrossV2/Harbor/Dock2)
 "bCJ" = (
 /obj/structure/table/darkglass,
 /obj/structure/window/reinforced/survival_pod{
@@ -9398,6 +9442,17 @@
 	},
 /turf/simulated/floor/tiled,
 /area/SouthernCrossV2/Harbor/Dock4)
+"bJq" = (
+/obj/structure/cable/white{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/obj/machinery/doorbell_chime{
+	id_tag = "sc-ChimeSci"
+	},
+/turf/simulated/wall/r_wall,
+/area/SouthernCrossV2/Science/Xenobiology_Lab)
 "bJP" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/reagent_dispensers/coolanttank,
@@ -9549,9 +9604,11 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Harbor/Dock3)
 "bMw" = (
-/obj/effect/floor_decal/industrial/hatch/yellow,
-/turf/simulated/floor/tiled/steel_grid,
-/area/SouthernCrossV2/Cargo/Supply_Ship_Bay)
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark,
+/area/SouthernCrossV2/Harbor/Dock2)
 "bMN" = (
 /turf/simulated/floor/tiled,
 /area/SouthernCrossV2/Cargo/Supply_Ship_Bay)
@@ -9709,17 +9766,11 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/SouthernCrossV2/Security/Exploration_Ship_Bay)
 "bPm" = (
-/obj/machinery/alarm{
-	dir = 1;
-	name = "S-alarm";
-	pixel_y = -25
+/obj/effect/floor_decal/techfloor/orange,
+/obj/effect/floor_decal/steeldecal/steel_decals9{
+	dir = 1
 	},
-/obj/machinery/power/apc{
-	dir = 8;
-	name = "west bump";
-	pixel_x = -24
-	},
-/obj/structure/cable/green,
+/obj/effect/floor_decal/techfloor/hole/right,
 /turf/simulated/floor/tiled,
 /area/SouthernCrossV2/Cargo/Deck1_Stairwell)
 "bPp" = (
@@ -9869,6 +9920,12 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/ai_status_display{
+	name = "1E-AI display";
+	pixel_x = 32
+	},
+/obj/structure/disposalpipe/segment,
+/obj/structure/table/steel_reinforced,
 /turf/simulated/floor/tiled,
 /area/SouthernCrossV2/Cargo/Supply_Ship_Bay)
 "bSz" = (
@@ -10142,7 +10199,7 @@
 	dir = 4;
 	pixel_x = -25
 	},
-/obj/machinery/computer/teleporter,
+/obj/machinery/flasher/portable,
 /turf/simulated/floor/tiled/monotile{
 	color = "#989898"
 	},
@@ -10486,7 +10543,6 @@
 /obj/machinery/atmospheric_field_generator/perma/underdoors{
 	color = "Yellow"
 	},
-/obj/machinery/shield_diffuser,
 /obj/machinery/door/firedoor/border_only,
 /obj/machinery/door/blast/angled{
 	id = "sc-GCtransitgate1";
@@ -10816,8 +10872,10 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Commons/AftPort_1_Deck_Observatory)
 "cnf" = (
-/obj/structure/railing{
-	dir = 1
+/obj/effect/floor_decal/techfloor/orange,
+/obj/machinery/light/floortube{
+	dir = 1;
+	pixel_y = 2
 	},
 /turf/simulated/floor/tiled,
 /area/SouthernCrossV2/Cargo/Deck1_Stairwell)
@@ -11654,7 +11712,9 @@
 /obj/effect/floor_decal/industrial/arrows/yellow{
 	dir = 1
 	},
-/obj/machinery/door/airlock/maintenance/common,
+/obj/machinery/door/airlock/maintenance/common{
+	id_tag = "Sci Lockdown"
+	},
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
@@ -11667,6 +11727,12 @@
 	desc = "A heavily reinforced gate, sector lockdown!"
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "Sci Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!"
+	},
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Maints/Deck1_ForStar_Corridor3)
 "cDX" = (
@@ -11835,6 +11901,12 @@
 	},
 /turf/simulated/floor/tiled,
 /area/SouthernCrossV2/Maints/Market_Stall_2)
+"cLt" = (
+/obj/machinery/doorbell_chime{
+	id_tag = "sc-ChimeCar"
+	},
+/turf/simulated/wall,
+/area/SouthernCrossV2/Cargo/Mining_Ship_Bay)
 "cLv" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -12870,11 +12942,6 @@
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Harbor/Ship_Bay3)
 "deb" = (
-/obj/structure/extinguisher_cabinet{
-	dir = 1;
-	pixel_y = -27;
-	name = "1S-extinguisher cabinet"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
 	},
@@ -13013,6 +13080,14 @@
 /obj/machinery/atmospheric_field_generator/perma/underdoors{
 	color = "Yellow"
 	},
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "For Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!";
+	dir = 4
+	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Security/Exploration_Ship_Bay)
 "dgg" = (
@@ -13242,10 +13317,7 @@
 "djQ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/structure/disposalpipe/segment{
-	dir = 1;
-	icon_state = "pipe-c"
-	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled,
 /area/SouthernCrossV2/Cargo/Supply_Ship_Bay)
 "djX" = (
@@ -13413,10 +13485,11 @@
 /turf/simulated/floor/tiled/milspec,
 /area/shuttle/needle)
 "dnS" = (
-/obj/structure/stairs/spawner/east,
-/obj/structure/railing{
-	dir = 1
+/obj/effect/floor_decal/techfloor/orange,
+/obj/effect/floor_decal/steeldecal/steel_decals9{
+	dir = 4
 	},
+/obj/effect/floor_decal/techfloor/hole,
 /turf/simulated/floor/tiled,
 /area/SouthernCrossV2/Cargo/Deck1_Stairwell)
 "doa" = (
@@ -13438,8 +13511,8 @@
 /turf/simulated/floor/tiled/white,
 /area/shuttle/baby_mammoth)
 "dow" = (
-/obj/machinery/vending/cigarette,
-/turf/simulated/floor/tiled/steel_grid,
+/obj/structure/railing,
+/turf/simulated/floor/tiled,
 /area/SouthernCrossV2/Cargo/Deck1_Stairwell)
 "dox" = (
 /turf/simulated/wall,
@@ -13847,7 +13920,14 @@
 	},
 /obj/machinery/door/airlock/angled_bay/double/glass{
 	dir = 8;
-	name = "Hazardous Research Atrium"
+	name = "Hazardous Research Atrium";
+	id_tag = "Sci Lockdown"
+	},
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "Sci Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!"
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Science/Observation_Hall)
@@ -14925,6 +15005,13 @@
 /obj/machinery/door/airlock/maintenance/command,
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Maints/Deck1_ForPort_Corridor2)
+"dTS" = (
+/obj/machinery/light{
+	dir = 1;
+	name = "1N-lighting fixture"
+	},
+/turf/simulated/floor/wood/alt/parquet/turfpack/station,
+/area/SouthernCrossV2/Commons/Cryostorage_Lounge)
 "dUf" = (
 /obj/structure/bed/chair/oldsofa/left,
 /obj/item/weapon/handcuffs/fuzzy,
@@ -15148,6 +15235,16 @@
 	},
 /turf/simulated/floor,
 /area/survivalpod/superpose/MechFabShip)
+"dVZ" = (
+/obj/effect/floor_decal/shuttle/loading/yellow{
+	dir = 8
+	},
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/steel_grid,
+/area/SouthernCrossV2/Cargo/Supply_Ship_Bay)
 "dWa" = (
 /obj/machinery/power/apc{
 	dir = 1;
@@ -17030,6 +17127,22 @@
 /obj/random/maintenance/engineering,
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Maints/Deck1_ForStar_Chamber2)
+"eid" = (
+/obj/machinery/door/firedoor/border_only,
+/obj/effect/floor_decal/industrial/arrows/yellow,
+/obj/effect/floor_decal/industrial/arrows/yellow{
+	dir = 1
+	},
+/obj/machinery/door/airlock/maintenance/common,
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "Car Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techmaint,
+/area/SouthernCrossV2/Maints/Deck1_Cargo_Corridor3)
 "ein" = (
 /obj/machinery/atmospherics/pipe/manifold/visible{
 	dir = 8
@@ -17385,6 +17498,13 @@
 /area/survivalpod/superpose/MechFabShip)
 "esa" = (
 /obj/effect/floor_decal/industrial/hatch/red,
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "For Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!";
+	dir = 4
+	},
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Commons/Deck1_Transit_Hall)
 "esc" = (
@@ -17643,6 +17763,10 @@
 "eyT" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
+	},
+/obj/machinery/light{
+	dir = 1;
+	name = "1N-lighting fixture"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/SouthernCrossV2/Harbor/Dock3)
@@ -17968,8 +18092,15 @@
 /turf/simulated/floor/tiled/white,
 /area/SouthernCrossV2/Domicile/Custodial_Office)
 "eEX" = (
-/turf/simulated/floor/tiled/techmaint,
-/area/SouthernCrossV2/Cargo/Supply_Ship_Bay)
+/obj/machinery/embedded_controller/radio/airlock/docking_port_multi{
+	frequency = 1380;
+	id_tag = "escape_dock_snorth_airlock";
+	master_tag = "escape_dock";
+	pixel_y = 27;
+	req_one_access = list(13)
+	},
+/turf/simulated/floor/tiled/dark,
+/area/SouthernCrossV2/Harbor/Dock2)
 "eFs" = (
 /obj/machinery/atmospherics/pipe/tank/air/full{
 	dir = 1
@@ -18549,6 +18680,13 @@
 	name = "Cargo Bay Access";
 	req_one_access = list(50)
 	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "Car Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!"
+	},
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Cargo/Supply_Ship_Bay)
 "eRZ" = (
@@ -18869,6 +19007,12 @@
 	name = "Cargo Bay";
 	req_access = list(50);
 	req_one_access = list(48)
+	},
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "Car Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!"
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Commons/Port_1Deck_Atrium)
@@ -19225,6 +19369,13 @@
 	},
 /obj/structure/window/titanium{
 	dir = 8
+	},
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "For Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!";
+	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Maints/Deck1_Security_PortChamber2)
@@ -20023,11 +20174,11 @@
 /turf/simulated/floor,
 /area/shuttle/needle)
 "fxY" = (
-/obj/machinery/status_display{
-	pixel_x = 32;
-	name = "E-status display"
-	},
 /obj/structure/closet/emcloset,
+/obj/machinery/status_display{
+	pixel_y = -32;
+	name = "S-status display"
+	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/SouthernCrossV2/Cargo/Supply_Ship_Bay)
 "fyf" = (
@@ -20190,6 +20341,11 @@
 	},
 /area/SouthernCrossV2/Engineering/Telecomms_Network)
 "fCD" = (
+/obj/machinery/firealarm{
+	dir = 4;
+	name = "E-fire alarm";
+	pixel_x = 25
+	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/SouthernCrossV2/Cargo/Deck1_Stairwell)
 "fCM" = (
@@ -20286,6 +20442,25 @@
 /obj/item/tape/police,
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Maints/Deck1_ForPort_Chamber1)
+"fGv" = (
+/obj/machinery/door/firedoor/border_only,
+/obj/effect/floor_decal/industrial/arrows/yellow,
+/obj/effect/floor_decal/industrial/arrows/yellow{
+	dir = 1
+	},
+/obj/machinery/door/airlock/maintenance/cargo{
+	name = "Mining Bay Access";
+	req_one_access = list(50)
+	},
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "Port Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!"
+	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor/tiled/techmaint,
+/area/SouthernCrossV2/Cargo/Mining_Ship_Bay)
 "fGO" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -20434,12 +20609,12 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Maints/ab_ChuteTrade)
 "fJP" = (
-/obj/machinery/ai_status_display{
-	name = "1E-AI display";
-	pixel_x = 32
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/disposal,
+/obj/structure/disposalpipe/trunk{
+	dir = 1
+	},
 /turf/simulated/floor/tiled,
 /area/SouthernCrossV2/Cargo/Supply_Ship_Bay)
 "fKj" = (
@@ -21087,6 +21262,13 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "Port Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!"
+	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Maints/Deck1_Cargo_Corridor1)
 "fWo" = (
@@ -21195,6 +21377,30 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/SouthernCrossV2/Science/PA_Chamber)
+"fXM" = (
+/obj/machinery/door/firedoor/border_only,
+/obj/effect/floor_decal/industrial/hatch,
+/obj/structure/grille,
+/obj/structure/window/titanium/full,
+/obj/structure/window/titanium,
+/obj/structure/window/titanium{
+	dir = 4
+	},
+/obj/structure/window/titanium{
+	dir = 1
+	},
+/obj/structure/window/titanium{
+	dir = 8
+	},
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "For Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!";
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/SouthernCrossV2/Maints/Deck1_Security_StarChamber1)
 "fXS" = (
 /obj/machinery/power/apc{
 	name = "south bump";
@@ -22911,11 +23117,8 @@
 /turf/space,
 /area/space)
 "gGZ" = (
-/obj/machinery/disposal,
-/obj/structure/disposalpipe/trunk{
-	dir = 8
-	},
-/turf/simulated/floor/tiled,
+/obj/machinery/door/firedoor/glass/hidden/steel,
+/turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Cargo/Supply_Ship_Bay)
 "gHK" = (
 /obj/item/clothing/suit/chef/classic,
@@ -22958,11 +23161,6 @@
 /turf/simulated/floor/tiled/white,
 /area/SouthernCrossV2/Maints/ab_Kitchen)
 "gIW" = (
-/obj/machinery/embedded_controller/radio/airlock/airlock_controller{
-	frequency = 1381;
-	id_tag = "SC-docklane16";
-	pixel_y = 24
-	},
 /obj/machinery/atmospherics/pipe/manifold/hidden{
 	dir = 1
 	},
@@ -24050,10 +24248,9 @@
 /area/SouthernCrossV2/Science/Research_Ship_Bay)
 "hgW" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/machinery/teleport/hub,
 /obj/machinery/hyperpad/centre{
-	map_pad_id = "pad_1_away";
-	map_pad_link_id = "pad_1_station"
+	map_pad_id = "pad_1_station";
+	map_pad_link_id = "pad_1_away"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/SouthernCrossV2/Security/Quantum_Pad_Checkpoint)
@@ -24388,6 +24585,12 @@
 /obj/effect/floor_decal/industrial/stand_clear/blue{
 	dir = 8
 	},
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "For Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!"
+	},
 /turf/simulated/floor/tiled/monotile{
 	color = "#989898"
 	},
@@ -24417,7 +24620,8 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/tiled,
+/obj/machinery/door/firedoor/glass/hidden/steel,
+/turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Cargo/Supply_Ship_Bay)
 "hpO" = (
 /obj/machinery/alarm{
@@ -25150,10 +25354,6 @@
 	icon_state = "freezer"
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/structure/extinguisher_cabinet{
-	name = "1N-extinguisher cabinet";
-	pixel_y = 28
-	},
 /turf/simulated/floor/tiled/dark,
 /area/SouthernCrossV2/Science/PA_Chamber)
 "hGg" = (
@@ -25411,6 +25611,12 @@
 	},
 /obj/structure/window/titanium{
 	dir = 8
+	},
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "For Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!"
 	},
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Maints/Deck1_Security_PortChamber1)
@@ -26005,7 +26211,9 @@
 /area/SouthernCrossV2/Maints/Deck1_Security_StarCorridor2)
 "iau" = (
 /obj/structure/flora/sif/eyes,
-/turf/simulated/floor/outdoors/grass/sif/forest/turfpack/station,
+/turf/simulated/floor/outdoors/grass/sif/forest/turfpack/station{
+	outdoors = -1
+	},
 /area/SouthernCrossV2/Commons/Star_1Deck_Atrium)
 "iaC" = (
 /obj/structure/flora/ausbushes/ywflowers,
@@ -26041,7 +26249,8 @@
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Maints/ab_CardTrading)
 "ibZ" = (
-/obj/machinery/vending/cart,
+/obj/structure/stairs/spawner/east,
+/obj/structure/railing,
 /turf/simulated/floor/tiled/steel_grid,
 /area/SouthernCrossV2/Cargo/Deck1_Stairwell)
 "icg" = (
@@ -26183,15 +26392,12 @@
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Maints/Deck1_AftPort_Corridor3)
 "iev" = (
-/obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/structure/closet/crate/freezer/nanotrasen,
-/obj/random/maintenance/cargo,
-/obj/machinery/firealarm{
-	dir = 4;
-	pixel_x = 25;
-	name = "E-fire alarm"
+/obj/machinery/light{
+	dir = 1;
+	name = "1N-lighting fixture"
 	},
-/turf/simulated/floor/tiled/steel_grid,
+/obj/machinery/door/firedoor/glass/hidden/steel,
+/turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Cargo/Supply_Ship_Bay)
 "ieT" = (
 /obj/structure/disposalpipe/segment{
@@ -26225,6 +26431,12 @@
 	},
 /obj/effect/floor_decal/industrial/arrows/blue{
 	dir = 8
+	},
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "Sci Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!"
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Science/Observation_Hall)
@@ -26632,6 +26844,18 @@
 	},
 /turf/simulated/floor/tiled,
 /area/SouthernCrossV2/Harbor/Dock1)
+"imo" = (
+/obj/machinery/power/apc{
+	dir = 1;
+	name = "north bump";
+	pixel_y = 24
+	},
+/obj/structure/cable/green{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/turf/simulated/floor/tiled,
+/area/SouthernCrossV2/Cargo/Deck1_Stairwell)
 "imA" = (
 /obj/machinery/light_construct/small{
 	dir = 4
@@ -27456,7 +27680,9 @@
 /mob/living/simple_mob/animal/passive/crab/sif{
 	name = "Scrable"
 	},
-/turf/simulated/floor/outdoors/grass/sif/turfpack/station,
+/turf/simulated/floor/outdoors/grass/sif/turfpack/station{
+	outdoors = -1
+	},
 /area/SouthernCrossV2/Commons/Star_1Deck_Atrium)
 "iEf" = (
 /obj/random/junk,
@@ -27791,6 +28017,14 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/hydro,
 /area/SouthernCrossV2/Science/Xenobotany_Lab)
+"iOY" = (
+/obj/machinery/camera/network/security{
+	dir = 6;
+	c_tag = "D1-Car-Stairwell1";
+	network = list("Cargo")
+	},
+/turf/simulated/floor/tiled,
+/area/SouthernCrossV2/Cargo/Deck1_Stairwell)
 "iPb" = (
 /obj/random/trash,
 /turf/simulated/floor/plating,
@@ -27963,6 +28197,13 @@
 /obj/machinery/door/firedoor/glass/hidden/steel{
 	dir = 2
 	},
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "Port Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!"
+	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Commons/Port_1Deck_Atrium)
 "iUO" = (
@@ -28554,7 +28795,9 @@
 /obj/item/seeds/siflettuce{
 	icon_state = "seed"
 	},
-/turf/simulated/floor/outdoors/grass/sif/turfpack/station,
+/turf/simulated/floor/outdoors/grass/sif/turfpack/station{
+	outdoors = -1
+	},
 /area/SouthernCrossV2/Commons/Star_1Deck_Atrium)
 "jkR" = (
 /obj/machinery/door/firedoor/glass,
@@ -28912,6 +29155,30 @@
 	},
 /turf/simulated/floor/tiled/yellow,
 /area/shuttle/spacebus)
+"jsH" = (
+/obj/machinery/door/firedoor/glass,
+/obj/effect/floor_decal/industrial/hatch/blue,
+/obj/structure/grille,
+/obj/structure/window/basic/full,
+/obj/structure/window/basic,
+/obj/structure/window/basic{
+	dir = 8
+	},
+/obj/structure/window/basic{
+	dir = 1
+	},
+/obj/structure/window/basic{
+	dir = 4
+	},
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "Car Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!";
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/SouthernCrossV2/Cargo/Mining_Ship_Bay)
 "jsL" = (
 /obj/random/trash,
 /obj/random/maintenance/medical,
@@ -29161,7 +29428,7 @@
 	},
 /obj/machinery/door/airlock/angled_bay/double/glass/atmos{
 	dir = 8;
-	name = "Hangar One";
+	name = "Hangar Three";
 	req_access = null
 	},
 /obj/structure/cable/green{
@@ -29287,12 +29554,11 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Harbor/Port_Docking_Foyer)
 "jCG" = (
-/obj/machinery/vending/assist,
-/obj/machinery/light{
-	dir = 1;
-	name = "1N-lighting fixture"
+/obj/machinery/door/firedoor/glass/hidden/steel{
+	dir = 8
 	},
-/turf/simulated/floor/tiled/steel_grid,
+/obj/machinery/door/airlock/angled_bay/elevator/glass,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/SouthernCrossV2/Cargo/Deck1_Stairwell)
 "jDc" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
@@ -30747,6 +31013,12 @@
 /obj/structure/table/rack/shelf/steel,
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Maints/Deck1_Cargo_Corridor1)
+"kgv" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark,
+/area/SouthernCrossV2/Harbor/Dock1)
 "kgX" = (
 /obj/structure/bed/chair/office/light{
 	dir = 1
@@ -30810,6 +31082,13 @@
 	color = "#989898"
 	},
 /area/SouthernCrossV2/Commons/Aft_Transit_Lobby)
+"kjp" = (
+/obj/machinery/light{
+	dir = 4;
+	name = "1E-light fixture"
+	},
+/turf/simulated/floor/tiled,
+/area/SouthernCrossV2/Cargo/Deck1_Stairwell)
 "kjz" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
@@ -31198,6 +31477,17 @@
 	},
 /turf/simulated/floor/tiled,
 /area/SouthernCrossV2/Cargo/Mining_Ship_Bay)
+"ksQ" = (
+/obj/machinery/embedded_controller/radio/airlock/docking_port_multi{
+	dir = 1;
+	frequency = 1380;
+	id_tag = "escape_dock_south_airlock";
+	master_tag = "escape_dock";
+	pixel_y = -27;
+	req_one_access = list(13)
+	},
+/turf/simulated/floor/tiled/dark,
+/area/SouthernCrossV2/Harbor/Dock3)
 "ktb" = (
 /obj/machinery/firealarm{
 	dir = 1;
@@ -31237,6 +31527,13 @@
 /obj/machinery/door/firedoor/glass/hidden/steel{
 	dir = 1
 	},
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "Port Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!"
+	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Commons/Port_1Deck_Atrium)
 "kuE" = (
@@ -32120,7 +32417,9 @@
 /obj/structure/prop/statue/stump_plaque{
 	desc = "A wooden stump adorned with a little plaque. -Sif's botanical garden-"
 	},
-/turf/simulated/floor/outdoors/grass/sif/turfpack/station,
+/turf/simulated/floor/outdoors/grass/sif/turfpack/station{
+	outdoors = -1
+	},
 /area/SouthernCrossV2/Commons/Star_1Deck_Atrium)
 "kPv" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
@@ -32209,7 +32508,9 @@
 /area/SouthernCrossV2/Harbor/Dock5)
 "kRH" = (
 /obj/structure/flora/rocks1,
-/turf/simulated/floor/outdoors/grass/sif/forest/turfpack/station,
+/turf/simulated/floor/outdoors/grass/sif/forest/turfpack/station{
+	outdoors = -1
+	},
 /area/SouthernCrossV2/Commons/Star_1Deck_Atrium)
 "kSm" = (
 /obj/structure/cable{
@@ -32467,6 +32768,25 @@
 	},
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Maints/Deck1_ForStar_Corridor1)
+"kXu" = (
+/obj/machinery/door/firedoor/border_only,
+/obj/effect/floor_decal/industrial/arrows/red{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/arrows/red,
+/obj/machinery/flasher{
+	layer = 2.5
+	},
+/obj/machinery/door/airlock/maintenance/command,
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "For Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!"
+	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor/tiled/techmaint,
+/area/SouthernCrossV2/Maints/Deck1_Security_StarCorridor3)
 "kXy" = (
 /obj/structure/bed/chair/backed_red{
 	dir = 1
@@ -32540,6 +32860,29 @@
 	},
 /turf/simulated/floor/carpet/purcarpet/turfpack/station,
 /area/SouthernCrossV2/Commons/Cryostorage_Lounge)
+"kYK" = (
+/obj/machinery/door/firedoor/border_only,
+/obj/effect/floor_decal/industrial/hatch,
+/obj/structure/grille,
+/obj/structure/window/titanium/full,
+/obj/structure/window/titanium,
+/obj/structure/window/titanium{
+	dir = 4
+	},
+/obj/structure/window/titanium{
+	dir = 1
+	},
+/obj/structure/window/titanium{
+	dir = 8
+	},
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "For Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!"
+	},
+/turf/simulated/floor/plating,
+/area/SouthernCrossV2/Maints/Deck1_Security_StarChamber2)
 "kZv" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
@@ -32679,10 +33022,10 @@
 /turf/simulated/floor,
 /area/survivalpod/superpose/MechFabShip)
 "lct" = (
-/obj/machinery/firealarm{
-	dir = 4;
-	pixel_x = 25;
-	name = "E-fire alarm"
+/obj/machinery/alarm{
+	name = "E-alarm";
+	dir = 8;
+	pixel_x = 25
 	},
 /turf/simulated/floor/tiled,
 /area/SouthernCrossV2/Cargo/Deck1_Stairwell)
@@ -33609,6 +33952,13 @@
 	},
 /obj/machinery/door/airlock/maintenance/command,
 /obj/structure/disposalpipe/segment,
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "For Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!"
+	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Maints/Deck1_Security_PortCorridor2)
 "lxi" = (
@@ -33654,6 +34004,13 @@
 	},
 /obj/structure/window/titanium{
 	dir = 8
+	},
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "Port Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!";
+	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Cargo/Mining_EVA)
@@ -34233,6 +34590,11 @@
 /obj/effect/floor_decal/rust,
 /turf/simulated/floor/tiled,
 /area/SouthernCrossV2/Maints/ab_GeneralStore)
+"lKS" = (
+/obj/machinery/door/firedoor/glass/hidden/steel,
+/obj/machinery/door/airlock/angled_bay/elevator/glass,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/SouthernCrossV2/Cargo/Deck1_Stairwell)
 "lLo" = (
 /obj/random/junk,
 /turf/simulated/floor/wood/alt/panel,
@@ -34792,6 +35154,12 @@
 /obj/effect/catwalk_plated/techmaint,
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Maints/Deck1_ForPort_Corridor1)
+"lSv" = (
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/closet/crate/freezer,
+/obj/random/maintenance/cargo,
+/turf/simulated/floor/tiled/dark,
+/area/SouthernCrossV2/Cargo/Depot1)
 "lSU" = (
 /obj/machinery/atmospherics/binary/pump/on{
 	dir = 4;
@@ -35286,7 +35654,9 @@
 /area/SouthernCrossV2/Commons/Port_1Deck_Atrium)
 "maQ" = (
 /obj/structure/flora/ausbushes/fullgrass,
-/turf/simulated/floor/outdoors/grass/sif/forest/turfpack/station,
+/turf/simulated/floor/outdoors/grass/sif/forest/turfpack/station{
+	outdoors = -1
+	},
 /area/SouthernCrossV2/Commons/Star_1Deck_Atrium)
 "maR" = (
 /obj/effect/catwalk_plated/techmaint,
@@ -35439,6 +35809,12 @@
 	},
 /obj/effect/floor_decal/industrial/arrows/blue{
 	dir = 8
+	},
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "Car Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!"
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Commons/Port_1Deck_Atrium)
@@ -36192,6 +36568,13 @@
 /obj/effect/floor_decal/industrial/hatch/red,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "For Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!";
+	dir = 4
+	},
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Commons/Deck1_Transit_Hall)
 "mvp" = (
@@ -36580,7 +36963,7 @@
 	},
 /obj/machinery/door/airlock/angled_bay/double/glass/atmos{
 	dir = 8;
-	name = "Hangar Two";
+	name = "Hangar Four";
 	req_access = null
 	},
 /obj/structure/cable/green{
@@ -36682,6 +37065,13 @@
 	name = "Quantumpad Lockdown"
 	},
 /obj/effect/floor_decal/industrial/hatch/red,
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "For Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!";
+	dir = 4
+	},
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Commons/Deck1_Transit_Hall)
 "mDP" = (
@@ -37691,12 +38081,10 @@
 /turf/simulated/floor/tiled,
 /area/SouthernCrossV2/Commons/Aft_Transit_Lobby)
 "mYa" = (
-/obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/structure/closet/crate/freezer,
-/obj/random/maintenance/cargo,
-/obj/random/maintenance/engineering,
-/turf/simulated/floor/tiled/steel_grid,
-/area/SouthernCrossV2/Cargo/Supply_Ship_Bay)
+/turf/simulated/floor/water/indoors{
+	outdoors = -1
+	},
+/area/SouthernCrossV2/Commons/Star_1Deck_Atrium)
 "mYA" = (
 /obj/effect/floor_decal/industrial/hatch,
 /obj/machinery/shield_diffuser,
@@ -38441,7 +38829,9 @@
 /area/shuttle/spacebus)
 "nrb" = (
 /obj/structure/flora/sif/eyes,
-/turf/simulated/floor/outdoors/grass/sif/turfpack/station,
+/turf/simulated/floor/outdoors/grass/sif/turfpack/station{
+	outdoors = -1
+	},
 /area/SouthernCrossV2/Commons/Star_1Deck_Atrium)
 "nrf" = (
 /obj/effect/decal/cleanable/flour,
@@ -38747,7 +39137,9 @@
 /area/survivalpod/superpose/ScienceShip)
 "nzf" = (
 /obj/structure/flora/tree/sif,
-/turf/simulated/floor/outdoors/grass/sif/forest/turfpack/station,
+/turf/simulated/floor/outdoors/grass/sif/forest/turfpack/station{
+	outdoors = -1
+	},
 /area/SouthernCrossV2/Commons/Star_1Deck_Atrium)
 "nzv" = (
 /obj/structure/grille/rustic,
@@ -39387,20 +39779,10 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Engineering/Telecomms_Foyer)
 "nLm" = (
-/obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/structure/closet/crate/freezer,
-/obj/random/maintenance/cargo,
-/obj/random/maintenance/engineering,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+/turf/simulated/floor/water/deep/indoors{
+	outdoors = -1
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/steel_grid,
-/area/SouthernCrossV2/Cargo/Supply_Ship_Bay)
+/area/SouthernCrossV2/Commons/Star_1Deck_Atrium)
 "nLC" = (
 /obj/structure/reagent_dispensers/coolanttank,
 /turf/simulated/floor/plating,
@@ -40419,7 +40801,6 @@
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Maints/Deck1_Security_StarCorridor1)
 "ogv" = (
-/obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
@@ -40428,7 +40809,12 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/steel_grid,
+/obj/machinery/camera/network/security{
+	dir = 9;
+	c_tag = "D1-Car-Supply Ship Bay1";
+	network = list("Cargo")
+	},
+/turf/simulated/floor/tiled,
 /area/SouthernCrossV2/Cargo/Supply_Ship_Bay)
 "ogI" = (
 /obj/structure/table/rack/shelf,
@@ -40734,6 +41120,13 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/SouthernCrossV2/Security/Aft_Security_Post)
+"ooD" = (
+/obj/effect/floor_decal/techfloor/corner{
+	dir = 6
+	},
+/obj/effect/floor_decal/techfloor/orange/corner,
+/turf/simulated/floor/tiled/steel_ridged,
+/area/SouthernCrossV2/Cargo/Deck1_Stairwell)
 "ooS" = (
 /obj/machinery/hologram/holopad,
 /obj/effect/floor_decal/shuttle/blue{
@@ -41087,6 +41480,15 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/SouthernCrossV2/Maints/Deck1_Cargo_Corridor3)
+"oxc" = (
+/obj/effect/floor_decal/techfloor/corner{
+	dir = 10
+	},
+/obj/effect/floor_decal/techfloor/orange/corner{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/steel_ridged,
+/area/SouthernCrossV2/Cargo/Deck1_Stairwell)
 "oxr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -41479,6 +41881,12 @@
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
+	},
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "Car Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!"
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Maints/Deck1_Cargo_Corridor1)
@@ -42141,6 +42549,13 @@
 "oSC" = (
 /turf/simulated/wall,
 /area/SouthernCrossV2/Maints/ab_CardTrading)
+"oSD" = (
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/closet/crate/freezer,
+/obj/random/maintenance/cargo,
+/obj/random/maintenance/engineering,
+/turf/simulated/floor/tiled/dark,
+/area/SouthernCrossV2/Cargo/Depot1)
 "oSV" = (
 /turf/simulated/floor/tiled/dark,
 /area/SouthernCrossV2/Harbor/Dock5)
@@ -42398,6 +42813,12 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/SouthernCrossV2/Commons/Port_1Deck_Atrium)
+"oXY" = (
+/obj/machinery/doorbell_chime{
+	id_tag = "sc-ChimeCar"
+	},
+/turf/simulated/wall,
+/area/SouthernCrossV2/Cargo/Supply_Ship_Bay)
 "oYt" = (
 /obj/machinery/alarm{
 	name = "W-alarm";
@@ -42424,6 +42845,12 @@
 	},
 /obj/structure/sign/department/miner_dock{
 	name = "HARBOR"
+	},
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "For Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!"
 	},
 /turf/simulated/floor/tiled/monotile{
 	color = "#989898"
@@ -43255,6 +43682,12 @@
 /obj/structure/window/titanium{
 	dir = 8
 	},
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "For Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!"
+	},
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Maints/Deck1_Security_StarChamber1)
 "pmM" = (
@@ -43583,7 +44016,9 @@
 /area/SouthernCrossV2/Maints/ab_Kitchen)
 "psu" = (
 /obj/structure/flora/rocks2,
-/turf/simulated/floor/outdoors/grass/sif/forest/turfpack/station,
+/turf/simulated/floor/outdoors/grass/sif/forest/turfpack/station{
+	outdoors = -1
+	},
 /area/SouthernCrossV2/Commons/Star_1Deck_Atrium)
 "psG" = (
 /obj/structure/disposalpipe/segment{
@@ -43691,7 +44126,9 @@
 /turf/simulated/floor/tiled,
 /area/SouthernCrossV2/Commons/Aft_1_Deck_Stairwell)
 "pvi" = (
-/turf/simulated/floor/outdoors/grass/sif/forest/turfpack/station,
+/turf/simulated/floor/outdoors/grass/sif/forest/turfpack/station{
+	outdoors = -1
+	},
 /area/SouthernCrossV2/Commons/Star_1Deck_Atrium)
 "pvk" = (
 /obj/machinery/door/firedoor/multi_tile/glass{
@@ -43725,7 +44162,9 @@
 /area/SouthernCrossV2/Maints/Deck1_Star_Corridor)
 "pvA" = (
 /obj/structure/flora/ausbushes/sparsegrass,
-/turf/simulated/floor/outdoors/grass/sif/turfpack/station,
+/turf/simulated/floor/outdoors/grass/sif/turfpack/station{
+	outdoors = -1
+	},
 /area/SouthernCrossV2/Commons/Star_1Deck_Atrium)
 "pvG" = (
 /obj/structure/railing,
@@ -43792,16 +44231,21 @@
 /obj/effect/catwalk_plated/techmaint,
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Maints/Deck1_Cargo_Corridor1)
+"pwQ" = (
+/obj/vehicle/train/trolley{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/steel_grid,
+/area/SouthernCrossV2/Cargo/Supply_Ship_Bay)
 "pwU" = (
 /obj/structure/bed/chair/sofa/right/beige,
 /turf/simulated/floor/glass/reinforced,
 /area/SouthernCrossV2/Commons/AftPort_1_Deck_Observatory)
 "pwY" = (
-/obj/structure/cable/green{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
@@ -44131,6 +44575,12 @@
 /obj/structure/closet/emcloset,
 /turf/simulated/floor/tiled/steel_ridged,
 /area/SouthernCrossV2/Cargo/Deck1_Stairwell)
+"pEf" = (
+/obj/machinery/computer/teleporter{
+	dir = 2
+	},
+/turf/simulated/floor/tiled/dark,
+/area/SouthernCrossV2/Engineering/Telecomms_Control_Room)
 "pEn" = (
 /obj/effect/catwalk_plated/techmaint,
 /obj/structure/cable{
@@ -44437,11 +44887,6 @@
 "pJV" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden{
 	dir = 1
-	},
-/obj/machinery/embedded_controller/radio/airlock/airlock_controller{
-	frequency = 1381;
-	id_tag = "SC-docklane22";
-	pixel_y = 24
 	},
 /turf/simulated/floor/tiled/dark,
 /area/SouthernCrossV2/Harbor/Dock2)
@@ -45246,6 +45691,10 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/SouthernCrossV2/Science/Xenobiology_Lab)
+"pVQ" = (
+/obj/machinery/teleport/hub,
+/turf/simulated/floor/tiled/dark,
+/area/SouthernCrossV2/Engineering/Telecomms_Control_Room)
 "pVV" = (
 /obj/machinery/alarm{
 	pixel_y = 25;
@@ -45727,8 +46176,7 @@
 	name = "S-alarm";
 	pixel_y = -25
 	},
-/obj/structure/closet/emcloset,
-/turf/simulated/floor/tiled/steel_ridged,
+/turf/simulated/floor/tiled,
 /area/SouthernCrossV2/Cargo/Supply_Ship_Bay)
 "qgk" = (
 /obj/random/maintenance/medical,
@@ -46235,6 +46683,15 @@
 	},
 /turf/simulated/wall/r_wall,
 /area/SouthernCrossV2/Science/Xenobiology_Lab)
+"qtB" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4
+	},
+/obj/machinery/light{
+	name = "1S-light fixture"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/SouthernCrossV2/Harbor/Dock3)
 "qtH" = (
 /obj/machinery/door/firedoor/glass,
 /obj/effect/floor_decal/industrial/arrows/blue{
@@ -46378,6 +46835,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /turf/simulated/floor/tiled,
 /area/SouthernCrossV2/Commons/Aft_1_Deck_Stairwell)
+"qwH" = (
+/obj/structure/closet/emcloset,
+/turf/simulated/floor/tiled/steel_ridged,
+/area/SouthernCrossV2/Cargo/Supply_Ship_Bay)
 "qwZ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -46891,6 +47352,13 @@
 /obj/structure/window/titanium{
 	dir = 8
 	},
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "For Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!";
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Maints/Deck1_Security_StarChamber2)
 "qIQ" = (
@@ -47183,6 +47651,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Maints/Deck1_Cargo_Corridor1)
 "qOv" = (
@@ -47329,12 +47798,6 @@
 /area/SouthernCrossV2/Commons/Port_1Deck_Central_Corridor_1)
 "qRr" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden,
-/obj/machinery/embedded_controller/radio/airlock/airlock_controller{
-	frequency = 1381;
-	id_tag = "SC-docklane21";
-	pixel_y = -24;
-	dir = 1
-	},
 /turf/simulated/floor/tiled/dark,
 /area/SouthernCrossV2/Harbor/Dock2)
 "qRs" = (
@@ -47435,14 +47898,13 @@
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Maints/Deck1_ForPort_Corridor1)
 "qSZ" = (
-/obj/effect/floor_decal/industrial/arrows/blue{
-	dir = 4
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
-/obj/effect/floor_decal/industrial/arrows/blue{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/techmaint,
-/area/SouthernCrossV2/Cargo/Supply_Ship_Bay)
+/turf/simulated/floor/tiled,
+/area/SouthernCrossV2/Cargo/Deck1_Stairwell)
 "qTd" = (
 /obj/structure/table/steel,
 /obj/item/weapon/photo,
@@ -47534,7 +47996,6 @@
 /obj/machinery/atmospheric_field_generator/perma/underdoors{
 	color = "Yellow"
 	},
-/obj/machinery/shield_diffuser,
 /obj/machinery/door/firedoor/border_only,
 /obj/machinery/door/blast/angled{
 	id = "sc-GCsciencebay";
@@ -50578,7 +51039,9 @@
 /obj/effect/floor_decal/industrial/arrows/yellow{
 	dir = 1
 	},
-/obj/machinery/door/airlock/maintenance/common,
+/obj/machinery/door/airlock/maintenance/common{
+	id_tag = "Sci Lockdown"
+	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
@@ -50597,6 +51060,12 @@
 	desc = "A heavily reinforced gate, sector lockdown!"
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "Sci Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!"
+	},
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Maints/Deck1_Science_AftCorridor1)
 "sda" = (
@@ -51245,6 +51714,16 @@
 /obj/random/obstruction,
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Maints/Deck1_Cargo_Chamber1)
+"suH" = (
+/obj/machinery/embedded_controller/radio/airlock/docking_port_multi{
+	frequency = 1380;
+	id_tag = "escape_dock_north_airlock";
+	master_tag = "escape_dock";
+	pixel_y = 27;
+	req_one_access = list(13)
+	},
+/turf/simulated/floor/tiled/dark,
+/area/SouthernCrossV2/Harbor/Dock1)
 "suV" = (
 /obj/machinery/computer/ship/helm,
 /turf/simulated/floor/tiled/milspec,
@@ -51379,6 +51858,12 @@
 	},
 /obj/structure/window/titanium{
 	dir = 8
+	},
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "Port Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!"
 	},
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Maints/Deck1_Cargo_Corridor3)
@@ -51518,6 +52003,13 @@
 /obj/machinery/door/airlock/maintenance/cargo{
 	name = "Cargo Bay Access";
 	req_one_access = list(50)
+	},
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "Car Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!";
+	dir = 4
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Cargo/Deck1_Stairwell)
@@ -52741,7 +53233,9 @@
 /turf/simulated/floor/tiled,
 /area/SouthernCrossV2/Maints/Market_Stall_2)
 "sZN" = (
-/obj/turbolift_map_holder/southern_cross/cargo,
+/obj/turbolift_map_holder/southern_cross/cargo{
+	dir = 1
+	},
 /turf/unsimulated/mask,
 /area/SouthernCrossV2/Maints/Deck1_Cargo_Corridor1)
 "sZQ" = (
@@ -52769,6 +53263,12 @@
 	},
 /obj/structure/sign/department/drones{
 	name = "Ship Bay"
+	},
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "For Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!"
 	},
 /turf/simulated/floor/tiled/monotile{
 	color = "#989898"
@@ -53855,7 +54355,9 @@
 /obj/effect/floor_decal/industrial/arrows/yellow{
 	dir = 1
 	},
-/obj/machinery/door/airlock/maintenance/common,
+/obj/machinery/door/airlock/maintenance/common{
+	id_tag = "Sci Lockdown"
+	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
@@ -53872,6 +54374,12 @@
 	desc = "A heavily reinforced gate, sector lockdown!"
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "Sci Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!"
+	},
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Maints/Deck1_ForStar_Corridor3)
 "tyS" = (
@@ -54002,7 +54510,9 @@
 /obj/item/seeds/sifbulb{
 	icon_state = "seed"
 	},
-/turf/simulated/floor/outdoors/grass/sif/forest/turfpack/station,
+/turf/simulated/floor/outdoors/grass/sif/forest/turfpack/station{
+	outdoors = -1
+	},
 /area/SouthernCrossV2/Commons/Star_1Deck_Atrium)
 "tAZ" = (
 /obj/machinery/power/apc{
@@ -54056,7 +54566,9 @@
 /obj/item/seeds/shrinkshroom{
 	icon_state = "seed"
 	},
-/turf/simulated/floor/outdoors/grass/sif/forest/turfpack/station,
+/turf/simulated/floor/outdoors/grass/sif/forest/turfpack/station{
+	outdoors = -1
+	},
 /area/SouthernCrossV2/Commons/Star_1Deck_Atrium)
 "tCf" = (
 /turf/simulated/wall,
@@ -54144,7 +54656,9 @@
 /area/SouthernCrossV2/Commons/Star_1Deck_Atrium)
 "tDP" = (
 /obj/structure/flora/rocks2,
-/turf/simulated/floor/outdoors/grass/sif/turfpack/station,
+/turf/simulated/floor/outdoors/grass/sif/turfpack/station{
+	outdoors = -1
+	},
 /area/SouthernCrossV2/Commons/Star_1Deck_Atrium)
 "tDY" = (
 /obj/structure/reagent_dispensers/foam,
@@ -55145,7 +55659,9 @@
 /obj/effect/floor_decal/industrial/arrows/yellow{
 	dir = 1
 	},
-/obj/machinery/door/airlock/maintenance/int,
+/obj/machinery/door/airlock/maintenance/int{
+	id_tag = "Sci Lockdown"
+	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/disposalpipe/segment,
@@ -55157,6 +55673,13 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "Sci Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!";
+	dir = 4
+	},
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Commons/Star_1Deck_Atrium)
 "ubb" = (
@@ -56484,6 +57007,12 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "Car Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!"
+	},
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Cargo/Depot2)
 "uFm" = (
@@ -56721,6 +57250,17 @@
 	},
 /turf/simulated/floor/tiled/kafel_full,
 /area/SouthernCrossV2/Domicile/For_Restroom)
+"uIA" = (
+/obj/machinery/embedded_controller/radio/airlock/docking_port_multi{
+	dir = 1;
+	frequency = 1380;
+	id_tag = "escape_dock_south_airlock";
+	master_tag = "escape_dock";
+	pixel_y = -27;
+	req_one_access = list(13)
+	},
+/turf/simulated/floor/tiled/dark,
+/area/SouthernCrossV2/Harbor/Dock1)
 "uIF" = (
 /obj/structure/window/reinforced/survival_pod,
 /obj/structure/bed/chair/bay/shuttle{
@@ -56867,8 +57407,9 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Engineering/Harbor_Substation)
 "uLx" = (
-/obj/structure/closet/crate/nanotrasen,
 /obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/closet/crate/freezer/nanotrasen,
+/obj/random/maintenance/cargo,
 /obj/machinery/light{
 	name = "1S-light fixture"
 	},
@@ -57309,12 +57850,6 @@
 /area/SouthernCrossV2/Maints/Deck1_Cargo_Corridor1)
 "uWK" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden,
-/obj/machinery/embedded_controller/radio/airlock/airlock_controller{
-	frequency = 1381;
-	id_tag = "SC-docklane31";
-	pixel_y = -24;
-	dir = 1
-	},
 /turf/simulated/floor/tiled/dark,
 /area/SouthernCrossV2/Harbor/Dock3)
 "uWP" = (
@@ -58225,7 +58760,7 @@
 	},
 /obj/machinery/door/airlock/angled_bay/double/glass/atmos{
 	dir = 8;
-	name = "Hangar Four";
+	name = "Hangar Two";
 	req_access = null
 	},
 /turf/simulated/floor/tiled/techmaint,
@@ -58259,12 +58794,6 @@
 /turf/simulated/shuttle/wall/voidcraft/hard_corner,
 /area/shuttle/ursula)
 "voH" = (
-/obj/machinery/embedded_controller/radio/airlock/airlock_controller{
-	frequency = 1381;
-	id_tag = "SC-docklane14";
-	pixel_y = -24;
-	dir = 1
-	},
 /obj/machinery/atmospherics/pipe/manifold/hidden,
 /turf/simulated/floor/tiled/dark,
 /area/SouthernCrossV2/Harbor/Dock1)
@@ -58293,12 +58822,19 @@
 /obj/machinery/atmospheric_field_generator/perma/underdoors{
 	color = "Yellow"
 	},
-/obj/machinery/shield_diffuser,
 /obj/machinery/door/firedoor/border_only,
 /obj/machinery/door/blast/angled{
 	id = "sc-GCminingbay";
 	name = "Entrance Gate"
 	},
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "Port Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!";
+	dir = 4
+	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Cargo/Mining_Ship_Bay)
 "vpF" = (
@@ -59442,7 +59978,9 @@
 /area/SouthernCrossV2/Maints/Deck1_Security_PortCorridor1)
 "vMv" = (
 /obj/structure/flora/sif/tendrils,
-/turf/simulated/floor/outdoors/grass/sif/forest/turfpack/station,
+/turf/simulated/floor/outdoors/grass/sif/forest/turfpack/station{
+	outdoors = -1
+	},
 /area/SouthernCrossV2/Commons/Star_1Deck_Atrium)
 "vMw" = (
 /obj/effect/floor_decal/industrial/outline/cut_corners/blue,
@@ -60458,7 +60996,9 @@
 /area/SouthernCrossV2/Cargo/Depot2)
 "wjR" = (
 /obj/structure/flora/ausbushes/fernybush,
-/turf/simulated/floor/outdoors/grass/sif/turfpack/station,
+/turf/simulated/floor/outdoors/grass/sif/turfpack/station{
+	outdoors = -1
+	},
 /area/SouthernCrossV2/Commons/Star_1Deck_Atrium)
 "wjT" = (
 /obj/structure/cable/green{
@@ -60477,7 +61017,9 @@
 /turf/simulated/floor/tiled,
 /area/SouthernCrossV2/Maints/ab_GeneralStore)
 "wjZ" = (
-/turf/simulated/floor/outdoors/grass/sif/turfpack/station,
+/turf/simulated/floor/outdoors/grass/sif/turfpack/station{
+	outdoors = -1
+	},
 /area/SouthernCrossV2/Commons/Star_1Deck_Atrium)
 "wkg" = (
 /obj/structure/cable/white{
@@ -60488,6 +61030,22 @@
 /obj/effect/catwalk_plated/white,
 /turf/simulated/floor/plating/turfpack/airless,
 /area/SouthernCrossV2/Harbor/Dock1)
+"wkU" = (
+/obj/machinery/door/firedoor/border_only,
+/obj/effect/floor_decal/industrial/arrows/yellow,
+/obj/effect/floor_decal/industrial/arrows/yellow{
+	dir = 1
+	},
+/obj/machinery/door/airlock/maintenance/int,
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "Sci Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techmaint,
+/area/SouthernCrossV2/Commons/Star_1Deck_Atrium)
 "wll" = (
 /obj/machinery/r_n_d/protolathe,
 /obj/screen/alert/highpressure,
@@ -62048,8 +62606,7 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Science/Xenobiology_Lab)
 "wSm" = (
-/obj/effect/floor_decal/industrial/hatch/red,
-/obj/machinery/teleport/station,
+/obj/structure/table/reinforced,
 /turf/simulated/floor/tiled/monotile{
 	color = "#989898"
 	},
@@ -65005,6 +65562,17 @@
 /obj/structure/lattice,
 /turf/space,
 /area/space)
+"yhx" = (
+/obj/structure/cable/white{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/obj/machinery/doorbell_chime{
+	id_tag = "sc-ChimeSci"
+	},
+/turf/simulated/wall/r_wall,
+/area/SouthernCrossV2/Science/Xenobiology_Lab)
 "yhT" = (
 /obj/item/clothing/suit/storage/teshari/cloak/standard/black_brown{
 	pixel_x = 3;
@@ -73822,7 +74390,7 @@ mlp
 mlp
 mlp
 mlp
-aKw
+eid
 mlp
 wmB
 dxk
@@ -73830,7 +74398,7 @@ mlp
 yet
 mlp
 mlp
-aKw
+eid
 mlp
 mlp
 uoE
@@ -76673,8 +77241,8 @@ agZ
 agZ
 jvc
 bIB
-afz
-afz
+oSD
+oSD
 alZ
 ani
 jsR
@@ -76932,7 +77500,7 @@ bRj
 wjg
 bIB
 wyj
-afz
+lSv
 afz
 ani
 aWa
@@ -77173,7 +77741,7 @@ aSk
 noW
 bgU
 aau
-aiB
+cLt
 dXi
 dXi
 aVC
@@ -77192,7 +77760,7 @@ cqu
 aWv
 lsQ
 aWv
-ani
+oXY
 axo
 vYv
 ati
@@ -78722,7 +79290,7 @@ owo
 dSv
 xcV
 gDB
-aau
+jsH
 xrX
 abe
 aag
@@ -78747,13 +79315,13 @@ bMN
 bMN
 bMN
 bMN
+bMN
+bMN
 hcO
 aVn
 aVn
+dVZ
 aVn
-aVn
-eHa
-bMN
 jWC
 gia
 aov
@@ -78980,7 +79548,7 @@ caq
 aGh
 aGh
 aGh
-aau
+jsH
 xrX
 xrX
 lRw
@@ -79005,13 +79573,13 @@ bMN
 bMN
 bMN
 bMN
+bMN
+bMN
 ufm
 oTt
 oTt
+pwQ
 oTt
-oTt
-eHa
-bMN
 jWC
 bCn
 agF
@@ -79238,7 +79806,7 @@ owo
 aGh
 aGh
 aGh
-aau
+jsH
 xrX
 xrX
 hIf
@@ -79260,8 +79828,8 @@ iuu
 lOo
 yeg
 bMN
-mYa
-bMw
+bMN
+bMN
 bMN
 bMN
 bMN
@@ -79519,7 +80087,7 @@ iJX
 dld
 dld
 ogv
-nLm
+dld
 dld
 vLq
 djQ
@@ -79527,7 +80095,7 @@ bSu
 fJP
 dQu
 oVm
-bMN
+qwH
 fxY
 ani
 eQD
@@ -79776,16 +80344,16 @@ vAs
 coq
 amb
 bMN
-bCH
+ani
 iev
-bMN
+gGZ
 hpI
 gGZ
 agF
 agF
-eEX
-eEX
-eEX
+agF
+agF
+agF
 agF
 agF
 eQD
@@ -79999,7 +80567,7 @@ aiB
 aiB
 aiB
 aiB
-acd
+fGv
 aiB
 aiB
 avI
@@ -80012,7 +80580,7 @@ adC
 gdS
 jzz
 wsf
-aau
+jsH
 xrX
 xrX
 aaM
@@ -80034,12 +80602,12 @@ ani
 ani
 ani
 eRr
-ani
-ani
+aCE
+imo
 qSZ
 ayH
-ani
-agF
+ooD
+aEy
 dcA
 dcA
 dcA
@@ -80100,15 +80668,15 @@ aaa
 aaa
 aaa
 aBe
-xMB
-kIK
+suH
+kgv
 aBe
 aaa
 aaa
 aaa
 aBe
-jgn
-esc
+kgv
+uIA
 aBe
 aaa
 aaa
@@ -80270,7 +80838,7 @@ aGh
 aGh
 jzz
 wsf
-aau
+jsH
 xrX
 xrX
 aaM
@@ -80297,7 +80865,7 @@ dow
 aGb
 pwY
 bPm
-aEy
+lKS
 dcA
 dcA
 dcA
@@ -80358,15 +80926,15 @@ aaa
 aaa
 aaa
 aBe
-gwU
-tWM
+xMB
+kIK
 aBe
 aaa
 aaa
 aaa
 aBe
-tWM
-edM
+jgn
+esc
 aBe
 aaa
 aaa
@@ -80555,7 +81123,7 @@ ibZ
 xGq
 usf
 cnf
-aEy
+abY
 dcA
 dcA
 dcA
@@ -80614,23 +81182,23 @@ aaa
 aaa
 aaa
 aaa
-pFU
-pFU
-pFU
-pFU
-pFU
-pFU
-pFU
-pFU
-pFU
-pFU
-pFU
-pFU
-pFU
-pFU
-pFU
-pFU
-pFU
+aaa
+aBe
+gwU
+tWM
+aBe
+aaa
+aaa
+aaa
+aBe
+tWM
+edM
+aBe
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -80786,7 +81354,7 @@ iXQ
 iXQ
 iXQ
 wsf
-aau
+jsH
 xrX
 xrX
 aaM
@@ -80809,11 +81377,11 @@ sjZ
 xYL
 xcs
 aCE
-jCG
-aGb
+aCE
+iOY
 cDG
 dnS
-aEy
+jCG
 dcA
 dcA
 dcA
@@ -80868,13 +81436,13 @@ cfp
 aaa
 aaa
 aaa
+aaa
+aaa
+aaa
+aaa
 pFU
 pFU
 pFU
-pFU
-pFU
-pFU
-vXj
 pFU
 pFU
 pFU
@@ -81070,7 +81638,7 @@ aCE
 ake
 ket
 deb
-aCE
+oxc
 aEy
 dcA
 dcA
@@ -81125,14 +81693,14 @@ dXg
 cfp
 aaa
 aaa
+aaa
 pFU
 pFU
 pFU
 pFU
 pFU
 pFU
-pFU
-pFU
+vXj
 pFU
 pFU
 pFU
@@ -81326,7 +81894,7 @@ vYi
 xcs
 sAw
 fCD
-aGb
+kjp
 lct
 pDP
 aEy
@@ -81405,7 +81973,7 @@ pFU
 pFU
 pFU
 pFU
-pFU
+aaa
 aaa
 aaa
 aaa
@@ -81910,7 +82478,7 @@ pFU
 pFU
 pFU
 pFU
-jHx
+pFU
 pFU
 pFU
 pFU
@@ -82168,7 +82736,7 @@ pFU
 pFU
 pFU
 pFU
-pFU
+jHx
 pFU
 pFU
 pFU
@@ -82695,7 +83263,7 @@ pFU
 pFU
 pFU
 pFU
-aaa
+pFU
 aaa
 aaa
 aaa
@@ -82931,7 +83499,7 @@ aiO
 aaa
 aaa
 aaa
-aaa
+pFU
 pFU
 pFU
 pFU
@@ -83190,10 +83758,10 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
+pFU
+pFU
+pFU
+pFU
 pFU
 pFU
 pFU
@@ -83452,23 +84020,23 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+pFU
+pFU
+pFU
+pFU
+pFU
+pFU
+pFU
+pFU
+pFU
+pFU
+pFU
+pFU
+pFU
+pFU
+pFU
+pFU
+pFU
 aaa
 aaa
 aaa
@@ -83711,17 +84279,17 @@ aaa
 aaa
 aaa
 aaa
+act
+acF
+lbO
+act
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+act
+lbO
+kxP
+act
 aaa
 aaa
 aaa
@@ -83970,15 +84538,15 @@ aaa
 aaa
 aaa
 act
-acF
-lbO
+vQS
+aKj
 act
 aaa
 aaa
 aaa
 act
-lbO
-kxP
+aNx
+aGt
 act
 aaa
 aaa
@@ -84228,15 +84796,15 @@ aaa
 aaa
 aaa
 act
-vQS
-aKj
+eEX
+bMw
 act
 aaa
 aaa
 aaa
 act
-aNx
-aGt
+bMw
+bCH
 act
 aaa
 aaa
@@ -97030,7 +97598,7 @@ aaa
 aaa
 aaa
 bdG
-dZQ
+cpH
 doD
 ilo
 lhl
@@ -98062,7 +98630,7 @@ aaa
 aaa
 aaa
 beg
-cpH
+rPl
 fvr
 dcd
 dPz
@@ -98287,7 +98855,7 @@ gTX
 lkk
 bcV
 aVL
-eaL
+dTS
 eaL
 pSW
 eaL
@@ -98578,7 +99146,7 @@ aaa
 aaa
 aaa
 bdG
-rPl
+pVQ
 lXb
 pFS
 hqp
@@ -99094,7 +99662,7 @@ aaa
 aaa
 aaa
 bdG
-rPl
+pEf
 tio
 uKG
 hqp
@@ -100619,7 +101187,7 @@ uUf
 jfn
 jfn
 jfn
-aMi
+kXu
 jfn
 jfn
 wHF
@@ -101100,7 +101668,7 @@ ixO
 xrL
 ixO
 crG
-qIN
+kYK
 crG
 rse
 krs
@@ -101618,7 +102186,7 @@ aaa
 aaa
 aaa
 aaa
-pmK
+fXM
 vYL
 aJl
 aJl
@@ -101876,7 +102444,7 @@ aaa
 aaa
 aaa
 aaa
-pmK
+fXM
 oLf
 oLf
 oLf
@@ -105556,7 +106124,7 @@ pPv
 gdQ
 awX
 nrg
-kEx
+mYa
 kXb
 iEe
 nrb
@@ -105901,14 +106469,14 @@ aaa
 aaa
 aqv
 afw
-eyT
+qtB
 aqv
 pmj
 pmj
 pmj
 aqv
 eyT
-afw
+ksQ
 aqv
 aaa
 aaa
@@ -106331,7 +106899,7 @@ dCc
 awX
 gpT
 xNM
-kHT
+nLm
 fYQ
 wzV
 pwH
@@ -111230,7 +111798,7 @@ dYF
 eaE
 dpG
 dpG
-xyC
+wkU
 jww
 jAH
 tNe
@@ -113544,7 +114112,7 @@ cOF
 qCx
 hRQ
 hRQ
-viL
+yhx
 tPr
 lvu
 lvu
@@ -113572,7 +114140,7 @@ lvu
 lvu
 lvu
 tPr
-htH
+bJq
 hGe
 uOP
 xjo
