@@ -5012,6 +5012,10 @@
 	icon_state = "carpet"
 	},
 /area/ninja_dojo/dojo)
+"dRf" = (
+/obj/effect/shuttle_landmark/southern_cross/escape_pod1/offsite,
+/turf/simulated/shuttle/plating,
+/area/space)
 "dRv" = (
 /obj/structure/window/reinforced/survival_pod{
 	dir = 4;
@@ -59564,7 +59568,7 @@ aGK
 aGK
 hOO
 aGK
-aGK
+dRf
 aGK
 hOO
 aGK

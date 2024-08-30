@@ -1898,6 +1898,90 @@ End Chompstation Edit*/
 /area/shuttle/escape_pod8/transit
 	icon_state = "shuttle"
 
+/area/shuttle/escape_pod9
+	name = "\improper Escape Pod Nine"
+	music = "music/escape.ogg"
+
+/area/shuttle/escape_pod9/station
+	icon_state = "shuttle2"
+	base_turf = /turf/simulated/floor/reinforced/airless
+
+/area/shuttle/escape_pod9/centcom
+	icon_state = "shuttle"
+
+/area/shuttle/escape_pod9/transit
+	icon_state = "shuttle"
+
+/area/shuttle/escape_pod10
+	name = "\improper Escape Pod Ten"
+	music = "music/escape.ogg"
+
+/area/shuttle/escape_pod10/station
+	icon_state = "shuttle2"
+	base_turf = /turf/simulated/floor/reinforced/airless
+
+/area/shuttle/escape_pod10/centcom
+	icon_state = "shuttle"
+
+/area/shuttle/escape_pod10/transit
+	icon_state = "shuttle"
+
+/area/shuttle/escape_pod11
+	name = "\improper Escape Pod Eleven"
+	music = "music/escape.ogg"
+
+/area/shuttle/escape_pod11/station
+	icon_state = "shuttle2"
+	base_turf = /turf/simulated/floor/reinforced/airless
+
+/area/shuttle/escape_pod11/centcom
+	icon_state = "shuttle"
+
+/area/shuttle/escape_pod11/transit
+	icon_state = "shuttle"
+
+/area/shuttle/escape_pod12
+	name = "\improper Escape Pod Twelve"
+	music = "music/escape.ogg"
+
+/area/shuttle/escape_pod12/station
+	icon_state = "shuttle2"
+	base_turf = /turf/simulated/floor/reinforced/airless
+
+/area/shuttle/escape_pod12/centcom
+	icon_state = "shuttle"
+
+/area/shuttle/escape_pod12/transit
+	icon_state = "shuttle"
+
+/area/shuttle/escape_pod13
+	name = "\improper Escape Pod Thirteen"
+	music = "music/escape.ogg"
+
+/area/shuttle/escape_pod13/station
+	icon_state = "shuttle2"
+	base_turf = /turf/simulated/floor/reinforced/airless
+
+/area/shuttle/escape_pod13/centcom
+	icon_state = "shuttle"
+
+/area/shuttle/escape_pod13/transit
+	icon_state = "shuttle"
+
+/area/shuttle/escape_pod14
+	name = "\improper Escape Pod Fourteen"
+	music = "music/escape.ogg"
+
+/area/shuttle/escape_pod14/station
+	icon_state = "shuttle2"
+	base_turf = /turf/simulated/floor/reinforced/airless
+
+/area/shuttle/escape_pod14/centcom
+	icon_state = "shuttle"
+
+/area/shuttle/escape_pod14/transit
+	icon_state = "shuttle"
+
 //Large Escape Pods
 
 /area/shuttle/large_escape_pod1
@@ -1928,6 +2012,33 @@ End Chompstation Edit*/
 /area/shuttle/large_escape_pod2/transit
 	icon_state = "shuttle"
 
+/area/shuttle/large_escape_pod3
+	name = "\improper Large Escape Pod Three"
+	music = "music/escape.ogg"
+
+/area/shuttle/large_escape_pod3/station
+	icon_state = "shuttle2"
+	base_turf = /turf/simulated/floor/airless
+
+/area/shuttle/large_escape_pod3/centcom
+	icon_state = "shuttle"
+
+/area/shuttle/large_escape_pod3/transit
+	icon_state = "shuttle"
+
+/area/shuttle/large_escape_pod4
+	name = "\improper Large Escape Pod Four"
+	music = "music/escape.ogg"
+
+/area/shuttle/large_escape_pod4/station
+	icon_state = "shuttle2"
+	base_turf = /turf/simulated/floor/airless
+
+/area/shuttle/large_escape_pod4/centcom
+	icon_state = "shuttle"
+
+/area/shuttle/large_escape_pod4/transit
+	icon_state = "shuttle"
 /area/shuttle/cryo
 	name = "\improper Cryogenic Storage"
 
