@@ -2413,6 +2413,7 @@ End Chompstation Edit*/
 /area/maintenance/bar/dorm_2
 	name = "Maintenance Deck Bar Dorms 2"
 
+//ALL THE NEW AREAS FOR NEW STATION! KAS
 
 /area/SouthernCrossV2 // Parent for var inheritence
     name = "\improper SouthernCross Areas"
@@ -2421,6 +2422,13 @@ End Chompstation Edit*/
 
 //BRIDGE AREAS
 
+/area/SouthernCrossV2/Bridge/
+    icon_state = "bridge"
+    holomap_color = HOLOMAP_AREACOLOR_COMMAND
+    ambience = AMBIENCE_ARRIVALS
+    sound_env = LARGE_ENCLOSED
+    lightswitch = 0
+
 /area/SouthernCrossV2/Bridge/HoP_Office
     name = "\improper HoP Office"
     icon_state = "bridge"
@@ -2428,18 +2436,22 @@ End Chompstation Edit*/
 /area/SouthernCrossV2/Bridge/AI_Core_Chamber
     name = "\improper AI Core Chamber"
     icon_state = "bridge"
+    sound_env = AMBIENCE_AI
 
 /area/SouthernCrossV2/Bridge/AI_Upload_Hall
     name = "\improper AI Upload Hall"
     icon_state = "bridge"
+    sound_env = AMBIENCE_AI
 
 /area/SouthernCrossV2/Bridge/Cyborg_Station
     name = "\improper Cyborg Station"
     icon_state = "bridge"
+    sound_env = AMBIENCE_AI
 
 /area/SouthernCrossV2/Bridge/Server_Room
     name = "\improper Server Room"
     icon_state = "bridge"
+    sound_env = AMBIENCE_AI
 
 /area/SouthernCrossV2/Bridge/Deck3_Corridor
     name = "\improper 3 Deck Corridor"
@@ -2448,26 +2460,62 @@ End Chompstation Edit*/
 /area/SouthernCrossV2/Bridge/HoP_Quarters
     name = "\improper HoP Quarters"
     icon_state = "bridge"
+    flags = RAD_SHIELDED
+    limit_mob_size = FALSE
+    block_suit_sensors = TRUE
+    block_tracking = TRUE
+    soundproofed = TRUE
+    forbid_events = TRUE
 
 /area/SouthernCrossV2/Bridge/CE_Quarters
     name = "\improper CE Quarters"
     icon_state = "bridge"
+    flags = RAD_SHIELDED
+    limit_mob_size = FALSE
+    block_suit_sensors = TRUE
+    block_tracking = TRUE
+    soundproofed = TRUE
+    forbid_events = TRUE
 
 /area/SouthernCrossV2/Bridge/CMO_Quarters
     name = "\improper CMO Quarters"
     icon_state = "bridge"
+    flags = RAD_SHIELDED
+    limit_mob_size = FALSE
+    block_suit_sensors = TRUE
+    block_tracking = TRUE
+    soundproofed = TRUE
+    forbid_events = TRUE
 
 /area/SouthernCrossV2/Bridge/RD_Quarters
     name = "\improper RD Quarters"
     icon_state = "bridge"
+    flags = RAD_SHIELDED
+    limit_mob_size = FALSE
+    block_suit_sensors = TRUE
+    block_tracking = TRUE
+    soundproofed = TRUE
+    forbid_events = TRUE
 
 /area/SouthernCrossV2/Bridge/HoS_Quarters
     name = "\improper HoS Quarters"
     icon_state = "bridge"
+    flags = RAD_SHIELDED
+    limit_mob_size = FALSE
+    block_suit_sensors = TRUE
+    block_tracking = TRUE
+    soundproofed = TRUE
+    forbid_events = TRUE
 
 /area/SouthernCrossV2/Bridge/Secretary_Quarters
     name = "\improper Secretary Quarters"
     icon_state = "bridge"
+    flags = RAD_SHIELDED
+    limit_mob_size = FALSE
+    block_suit_sensors = TRUE
+    block_tracking = TRUE
+    soundproofed = TRUE
+    forbid_events = TRUE
 
 /area/SouthernCrossV2/Bridge/Leisure_Room
     name = "\improper Leisure Room"
@@ -2488,6 +2536,12 @@ End Chompstation Edit*/
 /area/SouthernCrossV2/Bridge/Captain_Quarters
     name = "\improper Captain Quarters"
     icon_state = "bridge"
+    flags = RAD_SHIELDED
+    limit_mob_size = FALSE
+    block_suit_sensors = TRUE
+    block_tracking = TRUE
+    soundproofed = TRUE
+    forbid_events = TRUE
 
 /area/SouthernCrossV2/Bridge/Conference_Room
     name = "\improper Conference Room"
@@ -2510,6 +2564,13 @@ End Chompstation Edit*/
     icon_state = "bridge"
 
 //SECURITY AREAS
+
+/area/SouthernCrossV2/Security
+    icon_state = "security"
+    holomap_color = HOLOMAP_AREACOLOR_SECURITY
+    ambience = AMBIENCE_HIGHSEC
+    sound_env = STANDARD_STATION
+    lightswitch = 0
 
 /area/SouthernCrossV2/Security/Aft_Security_Post
     name = "\improper Aft Security Post"
@@ -2606,8 +2667,16 @@ End Chompstation Edit*/
 /area/SouthernCrossV2/Security/Exploration_Ship_Bay
     name = "\improper Exploration Ship Bay"
     icon_state = "security"
+    ambience = AMBIENCE_HANGAR
 
 //MEDICAL AREAS
+
+/area/SouthernCrossV2/Medical
+    icon_state = "medbay"
+    holomap_color = HOLOMAP_AREACOLOR_MEDICAL
+    ambience = AMBIENCE_GENERIC
+    sound_env = STANDARD_STATION
+    lightswitch = 0
 
 /area/SouthernCrossV2/Medical/For_Medical_Post
     name = "\improper For Medical Post"
@@ -2688,6 +2757,7 @@ End Chompstation Edit*/
 /area/SouthernCrossV2/Medical/Morgue
     name = "\improper Morgue"
     icon_state = "medbay"
+    ambience = AMBIENCE_GHOSTLY
 
 /area/SouthernCrossV2/Medical/Resleeving
     name = "\improper Resleeving"
@@ -2740,12 +2810,20 @@ End Chompstation Edit*/
 /area/SouthernCrossV2/Medical/Autoresleeving
     name = "\improper Autoresleeving"
     icon_state = "medbay"
+    ambience = AMBIENCE_GHOSTLY
 
 /area/SouthernCrossV2/Medical/Restrooms
     name = "\improper Restrooms"
     icon_state = "medbay"
 
 //SCIENCE AREAS
+
+/area/SouthernCrossV2/Science
+    icon_state = "research"
+    holomap_color = HOLOMAP_AREACOLOR_SCIENCE
+    ambience = AMBIENCE_ENGINEERING
+    sound_env = LARGE_SOFTFLOOR
+    lightswitch = 0
 
 /area/SouthernCrossV2/Science/Research_Lab
     name = "\improper Research Lab"
@@ -2802,6 +2880,7 @@ End Chompstation Edit*/
 /area/SouthernCrossV2/Science/Research_Ship_Bay
     name = "\improper Research Ship Bay"
     icon_state = "research"
+    ambience = AMBIENCE_HANGAR
 
 /area/SouthernCrossV2/Science/Xenobiology_Lab
     name = "\improper Xenobiology Lab"
@@ -2830,49 +2909,77 @@ End Chompstation Edit*/
 
 //ENGINEERING AREAS
 
+/area/SouthernCrossV2/Engineering
+    icon_state = "engineering"
+    holomap_color = HOLOMAP_AREACOLOR_ENGINEERING
+    ambience = AMBIENCE_ENGINEERING
+    sound_env = LARGE_ENCLOSED
+    lightswitch = 0
+
 /area/SouthernCrossV2/Engineering/Research_Substation
     name = "\improper Research Substation"
     icon_state = "engineering"
+    ambience = AMBIENCE_SUBSTATION
+    lightswitch = 1
 
 /area/SouthernCrossV2/Engineering/Medical_Substation
     name = "\improper Medical Substation"
     icon_state = "engineering"
+    ambience = AMBIENCE_SUBSTATION
+    lightswitch = 1
 
 /area/SouthernCrossV2/Engineering/Dorms_Substation
     name = "\improper Dorms Substation"
     icon_state = "engineering"
+    ambience = AMBIENCE_SUBSTATION
+    lightswitch = 1
 
 /area/SouthernCrossV2/Engineering/Domicile_Substation
     name = "\improper Domicile Substation"
     icon_state = "engineering"
+    ambience = AMBIENCE_SUBSTATION
+    lightswitch = 1
 
 /area/SouthernCrossV2/Engineering/Harbor_Substation
     name = "\improper Harbor Substation"
     icon_state = "engineering"
+    ambience = AMBIENCE_SUBSTATION
+    lightswitch = 1
 
 /area/SouthernCrossV2/Engineering/Telecomms_Substation
     name = "\improper Telecomms Substation"
     icon_state = "engineering"
+    ambience = AMBIENCE_SUBSTATION
+    lightswitch = 1
 
 /area/SouthernCrossV2/Engineering/Security_Substation
     name = "\improper Security Substation"
     icon_state = "engineering"
+    ambience = AMBIENCE_SUBSTATION
+    lightswitch = 1
 
 /area/SouthernCrossV2/Engineering/Bridge_Substation
     name = "\improper Bridge Substation"
     icon_state = "engineering"
+    ambience = AMBIENCE_SUBSTATION
+    lightswitch = 1
 
 /area/SouthernCrossV2/Engineering/AI_Substation
     name = "\improper AI Substation"
     icon_state = "engineering"
+    ambience = AMBIENCE_SUBSTATION
+    lightswitch = 1
 
 /area/SouthernCrossV2/Engineering/Cargo_Substation
     name = "\improper Cargo Substation"
     icon_state = "engineering"
+    ambience = AMBIENCE_SUBSTATION
+    lightswitch = 1
 
 /area/SouthernCrossV2/Engineering/Engineering_Substation
     name = "\improper Engineering Substation"
     icon_state = "engineering"
+    ambience = AMBIENCE_SUBSTATION
 
 /area/SouthernCrossV2/Engineering/Central_Engineering_Post
     name = "\improper Central Engineering Post"
@@ -2885,14 +2992,17 @@ End Chompstation Edit*/
 /area/SouthernCrossV2/Engineering/Telecomms_Foyer
     name = "\improper Telecomms Foyer"
     icon_state = "engineering"
+    ambience = AMBIENCE_AI
 
 /area/SouthernCrossV2/Engineering/Telecomms_Control_Room
     name = "\improper Telecomms Control Room"
     icon_state = "engineering"
+    ambience = AMBIENCE_AI
 
 /area/SouthernCrossV2/Engineering/Telecomms_Network
     name = "\improper Telecomms Network"
     icon_state = "engineering"
+    ambience = AMBIENCE_AI
 
 /area/SouthernCrossV2/Engineering/Reception
     name = "\improper Reception"
@@ -2957,6 +3067,7 @@ End Chompstation Edit*/
 /area/SouthernCrossV2/Engineering/Atmospherics_Chamber
     name = "\improper Atmospherics Chamber"
     icon_state = "engineering"
+    ambience = AMBIENCE_ATMOS
 
 /area/SouthernCrossV2/Engineering/Atmospherics_Control_Room
     name = "\improper Atmospherics Control Room"
@@ -3021,49 +3132,71 @@ End Chompstation Edit*/
 /area/SouthernCrossV2/Engineering/Solar_Control_ForPort
     name = "\improper Solar Control ForPort"
     icon_state = "engineering"
+    ambience = AMBIENCE_SPACE
 
 /area/SouthernCrossV2/Engineering/Solar_Control_ForStar
     name = "\improper Solar Control ForStar"
     icon_state = "engineering"
+    ambience = AMBIENCE_SPACE
 
 /area/SouthernCrossV2/Engineering/Solar_Control_AftPort
     name = "\improper Solar Control AftPort"
     icon_state = "engineering"
+    ambience = AMBIENCE_SPACE
 
 /area/SouthernCrossV2/Engineering/Solar_Control_AftStar
     name = "\improper Solar Control AftStar"
     icon_state = "engineering"
+    ambience = AMBIENCE_SPACE
 
 /area/SouthernCrossV2/Engineering/Solar_Array_ForPort
     name = "\improper Solar Array ForPort"
     icon_state = "engineering"
+    ambience = AMBIENCE_SPACE
+    dynamic_lighting = 0
 
 /area/SouthernCrossV2/Engineering/Solar_Array_ForStar
     name = "\improper Solar Array ForStar"
     icon_state = "engineering"
+    ambience = AMBIENCE_SPACE
+    dynamic_lighting = 0
 
 /area/SouthernCrossV2/Engineering/Solar_Array_AftPort
     name = "\improper Solar Array AftPort"
     icon_state = "engineering"
+    ambience = AMBIENCE_SPACE
+    dynamic_lighting = 0
 
 /area/SouthernCrossV2/Engineering/Solar_Array_AftStar
     name = "\improper Solar Array AftStar"
     icon_state = "engineering"
+    ambience = AMBIENCE_SPACE
+    dynamic_lighting = 0
 
 /area/SouthernCrossV2/Engineering/Distro_Central
     name = "\improper Distro Central"
     icon_state = "engineering"
+    ambience = AMBIENCE_ATMOS
 
 /area/SouthernCrossV2/Engineering/Distro_Harbor
     name = "\improper Distro Harbor"
     icon_state = "engineering"
+    ambience = AMBIENCE_ATMOS
 
 /area/SouthernCrossV2/Engineering/Distro_Civilian
     name = "\improper Distro Civilian"
     icon_state = "engineering"
+    ambience = AMBIENCE_ATMOS
 
 
 //CARGO AREAS
+
+/area/SouthernCrossV2/Cargo
+    icon_state = "quart"
+    holomap_color = HOLOMAP_AREACOLOR_CARGO
+    ambience = AMBIENCE_HANGAR
+    sound_env = SOUND_ENVIRONMENT_HANGAR
+    lightswitch = 0
 
 /area/SouthernCrossV2/Cargo/For_Tool_Storage
     name = "\improper For Tool Storage"
@@ -3104,6 +3237,7 @@ End Chompstation Edit*/
 /area/SouthernCrossV2/Cargo/Supply_Ship_Bay
     name = "\improper Supply Ship Bay"
     icon_state = "quart"
+    ambience = AMBIENCE_HANGAR
 
 /area/SouthernCrossV2/Cargo/Depot1
     name = "\improper 1 Depot"
@@ -3116,6 +3250,7 @@ End Chompstation Edit*/
 /area/SouthernCrossV2/Cargo/Mining_Ship_Bay
     name = "\improper Mining Ship Bay"
     icon_state = "quart"
+    ambience = AMBIENCE_HANGAR
 
 /area/SouthernCrossV2/Cargo/Mining_EVA
     name = "\improper Mail Room"
@@ -3139,6 +3274,12 @@ End Chompstation Edit*/
 
 //DOMICILE AREAS
 
+/area/SouthernCrossV2/Domicile
+    icon_state = "gaming"
+    ambience = AMBIENCE_GENERIC
+    sound_env = SOUND_ENVIRONMENT_HALLWAY
+    lightswitch = 0
+
 /area/SouthernCrossV2/Domicile/Holodeck
     name = "\improper Holodeck"
     icon_state = "gaming"
@@ -3146,10 +3287,12 @@ End Chompstation Edit*/
 /area/SouthernCrossV2/Domicile/Midnight_Bar
     name = "\improper Midnight Bar"
     icon_state = "gaming"
+    flags = RAD_SHIELDED
 
 /area/SouthernCrossV2/Domicile/Midnight_Kitchen
     name = "\improper Midnight Kitchen"
     icon_state = "gaming"
+    flags = RAD_SHIELDED
 
 /area/SouthernCrossV2/Domicile/Gallery
     name = "\improper Gallery"
@@ -3170,46 +3313,57 @@ End Chompstation Edit*/
 /area/SouthernCrossV2/Domicile/Chapel_Lobby
     name = "\improper Chapel Lobby"
     icon_state = "gaming"
+    ambience = AMBIENCE_CHAPEL
 
 /area/SouthernCrossV2/Domicile/Chapel_Morgue
     name = "\improper Chapel Morgue"
     icon_state = "gaming"
+    ambience = AMBIENCE_CHAPEL
 
 /area/SouthernCrossV2/Domicile/Chapel_Office
     name = "\improper Chapel Office"
     icon_state = "gaming"
+    ambience = AMBIENCE_CHAPEL
 
 /area/SouthernCrossV2/Domicile/Central_Restroom
     name = "\improper Central Restroom"
     icon_state = "gaming"
+    flags = RAD_SHIELDED
 
 /area/SouthernCrossV2/Domicile/For_Restroom
     name = "\improper For Restroom"
     icon_state = "gaming"
+    flags = RAD_SHIELDED
 
 /area/SouthernCrossV2/Domicile/Star_Restroom
     name = "\improper Star Restroom"
     icon_state = "gaming"
+    flags = RAD_SHIELDED
 
 /area/SouthernCrossV2/Domicile/Aft_Restroom
     name = "\improper Aft Restroom"
     icon_state = "gaming"
+    flags = RAD_SHIELDED
 
 /area/SouthernCrossV2/Domicile/Port_Restroom
     name = "\improper Port Restroom"
     icon_state = "gaming"
+    flags = RAD_SHIELDED
 
 /area/SouthernCrossV2/Domicile/Library
     name = "\improper Library"
     icon_state = "gaming"
+    ambience = AMBIENCE_SPACE
 
 /area/SouthernCrossV2/Domicile/Library_Cafe
     name = "\improper Library Cafe"
     icon_state = "gaming"
+    ambience = AMBIENCE_SPACE
 
 /area/SouthernCrossV2/Domicile/Library_Office
     name = "\improper Library Office"
     icon_state = "gaming"
+    ambience = AMBIENCE_SPACE
 
 /area/SouthernCrossV2/Domicile/Rec_Lounge
     name = "\improper Rec Lounge"
@@ -3222,22 +3376,27 @@ End Chompstation Edit*/
 /area/SouthernCrossV2/Domicile/Chomp_Hydroponics
     name = "\improper Chomp Hydroponics"
     icon_state = "gaming"
+    flags = RAD_SHIELDED
 
 /area/SouthernCrossV2/Domicile/Chomp_Kitchen
     name = "\improper Chomp Kitchen"
     icon_state = "gaming"
+    flags = RAD_SHIELDED
 
 /area/SouthernCrossV2/Domicile/Chomp_Dinner_1
     name = "\improper Chomp Dinner 1"
     icon_state = "gaming"
+    flags = RAD_SHIELDED
 
 /area/SouthernCrossV2/Domicile/Chomp_Dinner_2
     name = "\improper Chomp Dinner 2"
     icon_state = "gaming"
+    flags = RAD_SHIELDED
 
 /area/SouthernCrossV2/Domicile/Chomp_Lounge
     name = "\improper Chomp Lounge"
     icon_state = "gaming"
+    flags = RAD_SHIELDED
 
 /area/SouthernCrossV2/Domicile/Public_Hydroponics
     name = "\improper Public Hydroponics"
@@ -3262,50 +3421,125 @@ End Chompstation Edit*/
 /area/SouthernCrossV2/Domicile/Dormitory_01
     name = "\improper Dormitory 01"
     icon_state = "gaming"
+    flags = RAD_SHIELDED
+    lightswitch = 0
+    limit_mob_size = FALSE
+    block_suit_sensors = TRUE
+    block_tracking = TRUE
+    soundproofed = TRUE
+    forbid_events = TRUE
 
 /area/SouthernCrossV2/Domicile/Dormitory_02
     name = "\improper Dormitory 02"
     icon_state = "gaming"
+    flags = RAD_SHIELDED
+    lightswitch = 0
+    limit_mob_size = FALSE
+    block_suit_sensors = TRUE
+    block_tracking = TRUE
+    soundproofed = TRUE
+    forbid_events = TRUE
 
 /area/SouthernCrossV2/Domicile/Dormitory_03
     name = "\improper Dormitory 03"
     icon_state = "gaming"
+    flags = RAD_SHIELDED
+    lightswitch = 0
+    limit_mob_size = FALSE
+    block_suit_sensors = TRUE
+    block_tracking = TRUE
+    soundproofed = TRUE
+    forbid_events = TRUE
 
 /area/SouthernCrossV2/Domicile/Dormitory_04
     name = "\improper Dormitory 04"
     icon_state = "gaming"
+    flags = RAD_SHIELDED
+    limit_mob_size = FALSE
+    block_suit_sensors = TRUE
+    block_tracking = TRUE
+    soundproofed = TRUE
+    forbid_events = TRUE
 
 /area/SouthernCrossV2/Domicile/Dormitory_05
     name = "\improper Dormitory 05"
     icon_state = "gaming"
+    flags = RAD_SHIELDED
+    limit_mob_size = FALSE
+    block_suit_sensors = TRUE
+    block_tracking = TRUE
+    soundproofed = TRUE
+    forbid_events = TRUE
 
 /area/SouthernCrossV2/Domicile/Dormitory_06
     name = "\improper Dormitory 06"
     icon_state = "gaming"
+    flags = RAD_SHIELDED
+    limit_mob_size = FALSE
+    block_suit_sensors = TRUE
+    block_tracking = TRUE
+    soundproofed = TRUE
+    forbid_events = TRUE
 
 /area/SouthernCrossV2/Domicile/Dormitory_07
     name = "\improper Dormitory 07"
     icon_state = "gaming"
+    flags = RAD_SHIELDED
+    limit_mob_size = FALSE
+    block_suit_sensors = TRUE
+    block_tracking = TRUE
+    soundproofed = TRUE
+    forbid_events = TRUE
 
 /area/SouthernCrossV2/Domicile/Dormitory_08
     name = "\improper Dormitory 08"
     icon_state = "gaming"
+    flags = RAD_SHIELDED
+    limit_mob_size = FALSE
+    block_suit_sensors = TRUE
+    block_tracking = TRUE
+    soundproofed = TRUE
+    forbid_events = TRUE
 
 /area/SouthernCrossV2/Domicile/Dormitory_09
     name = "\improper Dormitory 09"
     icon_state = "gaming"
+    flags = RAD_SHIELDED
+    limit_mob_size = FALSE
+    block_suit_sensors = TRUE
+    block_tracking = TRUE
+    soundproofed = TRUE
+    forbid_events = TRUE
 
 /area/SouthernCrossV2/Domicile/Dormitory_10
     name = "\improper Dormitory 10"
     icon_state = "gaming"
+    flags = RAD_SHIELDED
+    limit_mob_size = FALSE
+    block_suit_sensors = TRUE
+    block_tracking = TRUE
+    soundproofed = TRUE
+    forbid_events = TRUE
 
 /area/SouthernCrossV2/Domicile/Dormitory_11
     name = "\improper Dormitory 11"
     icon_state = "gaming"
+    flags = RAD_SHIELDED
+    limit_mob_size = FALSE
+    block_suit_sensors = TRUE
+    block_tracking = TRUE
+    soundproofed = TRUE
+    forbid_events = TRUE
 
 /area/SouthernCrossV2/Domicile/Dormitory_12
     name = "\improper Dormitory 12"
     icon_state = "gaming"
+    flags = RAD_SHIELDED
+    limit_mob_size = FALSE
+    block_suit_sensors = TRUE
+    block_tracking = TRUE
+    soundproofed = TRUE
+    forbid_events = TRUE
 
 /area/SouthernCrossV2/Domicile/Dorm_Corridor_1
     name = "\improper Dorm Corridor 1"
@@ -3344,6 +3578,10 @@ End Chompstation Edit*/
     icon_state = "gaming"
 
 //COMMONS AREAS
+/area/SouthernCrossV2/Commons
+    icon_state = "hallA"
+    ambience = AMBIENCE_GENERIC
+    sound_env = MEDIUM_SOFTFLOOR
 
 /area/SouthernCrossV2/Commons/ForPort_1_Deck_Observatory
     name = "\improper ForPort 1 Deck Observatory"
@@ -3384,6 +3622,7 @@ End Chompstation Edit*/
 /area/SouthernCrossV2/Commons/Star_Transit_Foyer
     name = "\improper Star Transit Foyer"
     icon_state = "hallA"
+    flags = RAD_SHIELDED
 
 /area/SouthernCrossV2/Commons/Aft_Transit_Lobby
     name = "\improper Aft Transit Lobby"
@@ -3392,6 +3631,7 @@ End Chompstation Edit*/
 /area/SouthernCrossV2/Commons/Port_Transit_Foyer
     name = "\improper Port Transit Foyer"
     icon_state = "hallA"
+    flags = RAD_SHIELDED
 
 /area/SouthernCrossV2/Commons/For_1_Deck_Stairwell
     name = "\improper For 1 Deck Stairwell"
@@ -3562,27 +3802,27 @@ End Chompstation Edit*/
     icon_state = "hallA"
 
 /area/SouthernCrossV2/Commons/Port_1Deck_Central_Corridor_1
-    name = "\improper Port 1Deck Central Corridor 1"
+    name = "\improper Port Deck1 Central Corridor 1"
     icon_state = "hallA"
 
 /area/SouthernCrossV2/Commons/Port_1Deck_Central_Corridor_2
-    name = "\improper Port 1Deck Central Corridor 2"
+    name = "\improper Port Deck1 Central Corridor 2"
     icon_state = "hallA"
 
 /area/SouthernCrossV2/Commons/Star_1Deck_Central_Corridor_1
-    name = "\improper Star 1Deck Central Corridor 1"
+    name = "\improper Star Deck1 Central Corridor 1"
     icon_state = "hallA"
 
 /area/SouthernCrossV2/Commons/Star_1Deck_Central_Corridor_2
-    name = "\improper Star 1Deck Central Corridor 2"
+    name = "\improper Star Deck1 Central Corridor 2"
     icon_state = "hallA"
 
 /area/SouthernCrossV2/Commons/Port_1Deck_Atrium
-    name = "\improper Port 1Deck Atrium"
+    name = "\improper Port Deck1 Atrium"
     icon_state = "hallA"
 
 /area/SouthernCrossV2/Commons/Star_1Deck_Atrium
-    name = "\improper Star 1Deck Atrium"
+    name = "\improper Star Deck1 Atrium"
     icon_state = "hallA"
 
 /area/SouthernCrossV2/Commons/Stairwell_For
@@ -3604,49 +3844,66 @@ End Chompstation Edit*/
 
 //HARBOR AREAS
 
+/area/SouthernCrossV2/Harbor
+    icon_state = "hangar"
+    ambience = AMBIENCE_ARRIVALS
+    sound_env = SOUND_ENVIRONMENT_HANGAR
+
+
 /area/SouthernCrossV2/Harbor/Dock1
     name = "\improper 1 Dock"
     icon_state = "hangar"
+    flags = RAD_SHIELDED
 
 /area/SouthernCrossV2/Harbor/Dock2
     name = "\improper 2 Dock"
     icon_state = "hangar"
+    flags = RAD_SHIELDED
 
 /area/SouthernCrossV2/Harbor/Dock3
     name = "\improper 3 Dock"
     icon_state = "hangar"
+    flags = RAD_SHIELDED
 
 /area/SouthernCrossV2/Harbor/Dock4
     name = "\improper 4 Dock"
     icon_state = "hangar"
+    flags = RAD_SHIELDED
 
 /area/SouthernCrossV2/Harbor/Dock5
     name = "\improper 5 Dock"
     icon_state = "hangar"
+    flags = RAD_SHIELDED
 
 /area/SouthernCrossV2/Harbor/Ship_Bay1
     name = "\improper 1 Ship Bay"
     icon_state = "hangar"
+    ambience = AMBIENCE_HANGAR
 
 /area/SouthernCrossV2/Harbor/Ship_Bay2
     name = "\improper 2 Ship Bay"
     icon_state = "hangar"
+    ambience = AMBIENCE_HANGAR
 
 /area/SouthernCrossV2/Harbor/Ship_Bay3
     name = "\improper 3 Ship Bay"
     icon_state = "hangar"
+    ambience = AMBIENCE_HANGAR
 
 /area/SouthernCrossV2/Harbor/Ship_Bay4
     name = "\improper 4 Ship Bay"
     icon_state = "hangar"
+    ambience = AMBIENCE_HANGAR
 
 /area/SouthernCrossV2/Harbor/Port_Docking_Foyer
     name = "\improper Port Docking Foyer"
     icon_state = "hangar"
+    flags = RAD_SHIELDED
 
 /area/SouthernCrossV2/Harbor/Star_Docking_Foyer
     name = "\improper Star Docking Foyer"
     icon_state = "hangar"
+    flags = RAD_SHIELDED
 
 /area/SouthernCrossV2/Harbor/Fueling_Post
     name = "\improper Fueling Post"
@@ -3701,6 +3958,14 @@ End Chompstation Edit*/
     icon_state = "hangar"
 
 //EVACUATION AREAS
+
+/area/SouthernCrossV2/Evac
+    icon_state = "shuttle2"
+    requires_power = FALSE
+    flags = RAD_SHIELDED
+    ambience = AMBIENCE_SPACE
+    sound_env = SMALL_SOFTFLOOR
+    base_turf = /turf/simulated/floor/airless
 
 /area/SouthernCrossV2/Evac/Pod01
     name = "\improper 01 Pod"
@@ -3779,6 +4044,12 @@ End Chompstation Edit*/
     icon_state = "shuttle2"
 
 //MAINTENANCE AREAS
+
+/area/SouthernCrossV2/Maints
+    icon_state = "fsmaint"
+    flags = RAD_SHIELDED
+    ambience = AMBIENCE_MAINTENANCE
+    sound_env = SOUND_ENVIRONMENT_SEWER_PIPE
 
 /area/SouthernCrossV2/Maints/ab_StripBar
     name = "\improper abandoned StripBar"

@@ -1953,8 +1953,7 @@
 /area/space)
 "bnr" = (
 /obj/machinery/door/window/survival_pod{
-	dir = 1;
-	icon_state = "windoor"
+	dir = 1
 	},
 /turf/simulated/floor/carpet/bcarpet,
 /area/space)
@@ -2086,8 +2085,7 @@
 /area/space)
 "bue" = (
 /obj/structure/window/reinforced/survival_pod{
-	dir = 1;
-	icon_state = "pwindow"
+	dir = 1
 	},
 /obj/machinery/holoplant,
 /turf/simulated/floor/carpet/bcarpet,
@@ -2200,8 +2198,7 @@
 	opacity = 1
 	},
 /obj/structure/window/reinforced/survival_pod{
-	dir = 8;
-	icon_state = "pwindow"
+	dir = 8
 	},
 /obj/item/device/gps/mining{
 	pixel_x = -5
@@ -2639,7 +2636,6 @@
 	id = "SD-1";
 	name = "Shelter Lock";
 	pixel_x = 26;
-	req_access = null;
 	specialfunctions = 4
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
@@ -4078,8 +4074,7 @@
 /obj/structure/bed/pod,
 /obj/item/weapon/bedsheet/mime,
 /obj/machinery/light/small{
-	dir = 4;
-	pixel_y = 0
+	dir = 4
 	},
 /turf/simulated/shuttle/floor/voidcraft,
 /area/space)
@@ -5713,12 +5708,10 @@
 /area/space)
 "dLQ" = (
 /obj/machinery/door/window/northright{
-	name = "Server Room";
-	req_access = null
+	name = "Server Room"
 	},
 /obj/machinery/door/window/southleft{
-	name = "Server Room";
-	req_access = null
+	name = "Server Room"
 	},
 /obj/effect/floor_decal/industrial/warning/full,
 /obj/machinery/door/firedoor/glass,
@@ -6645,12 +6638,10 @@
 	},
 /obj/structure/table/rack/shelf/steel,
 /obj/structure/window/reinforced/survival_pod{
-	dir = 1;
-	icon_state = "pwindow"
+	dir = 1
 	},
 /obj/structure/window/reinforced/survival_pod{
-	dir = 8;
-	icon_state = "pwindow"
+	dir = 8
 	},
 /obj/item/device/gps/mining{
 	pixel_x = -5
@@ -9841,8 +9832,7 @@
 	opacity = 1
 	},
 /obj/structure/window/reinforced/survival_pod{
-	dir = 8;
-	icon_state = "pwindow"
+	dir = 8
 	},
 /turf/simulated/shuttle/floor/voidcraft/light,
 /area/space)
@@ -10785,8 +10775,7 @@
 /area/space)
 "hhG" = (
 /obj/machinery/door/window/survival_pod{
-	dir = 1;
-	icon_state = "windoor"
+	dir = 1
 	},
 /turf/simulated/floor/tiled/freezer,
 /area/space)
@@ -11631,13 +11620,6 @@
 	temperature = 80
 	},
 /area/space)
-"hLe" = (
-/obj/machinery/door/window/survival_pod{
-	dir = 2;
-	req_one_access = null
-	},
-/turf/simulated/shuttle/floor/voidcraft/light,
-/area/space)
 "hLg" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/yellow,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -11691,8 +11673,7 @@
 "hNE" = (
 /obj/structure/bed/chair/comfy/black,
 /obj/structure/window/reinforced/survival_pod{
-	dir = 1;
-	icon_state = "pwindow"
+	dir = 1
 	},
 /turf/simulated/floor/carpet/bcarpet,
 /area/space)
@@ -11945,11 +11926,9 @@
 	dir = 1
 	},
 /obj/structure/curtain/bed{
-	dir = 2;
 	icon_state = "open";
 	name = "Bathroom curtain";
-	opacity = 0;
-	pixel_y = 0
+	opacity = 0
 	},
 /turf/simulated/floor/tiled/freezer,
 /area/space)
@@ -12188,14 +12167,6 @@
 	name = "Veil of sanity"
 	},
 /turf/simulated/floor/gorefloor,
-/area/space)
-"idJ" = (
-/obj/structure/fans,
-/obj/structure/window/reinforced/survival_pod{
-	dir = 8;
-	icon_state = "pwindow"
-	},
-/turf/simulated/shuttle/floor/voidcraft/light,
 /area/space)
 "iei" = (
 /obj/effect/floor_decal/borderfloorblack/corner{
@@ -13362,8 +13333,7 @@
 	use_power = 1
 	},
 /obj/machinery/light/small{
-	dir = 4;
-	pixel_y = 0
+	dir = 4
 	},
 /turf/simulated/floor/bluegrid{
 	name = "Server Base";
@@ -13519,8 +13489,7 @@
 	desc = "A mysterious machine which can fabricate many tools for acquiring test subjects.";
 	icon = 'icons/obj/abductor.dmi';
 	icon_state = "dispenser";
-	name = "Garmentier";
-	req_access = null
+	name = "Garmentier"
 	},
 /obj/item/clothing/head/headband/maid,
 /obj/item/clothing/head/headband/maid,
@@ -13824,12 +13793,10 @@
 /obj/structure/table/rack/shelf/steel,
 /obj/item/device/suit_cooling_unit,
 /obj/structure/window/reinforced/survival_pod{
-	dir = 1;
-	icon_state = "pwindow"
+	dir = 1
 	},
 /obj/structure/window/reinforced/survival_pod{
-	dir = 8;
-	icon_state = "pwindow"
+	dir = 8
 	},
 /turf/simulated/shuttle/floor/voidcraft/light,
 /area/space)
@@ -14666,8 +14633,7 @@
 	},
 /obj/item/weapon/storage/toolbox/mechanical,
 /obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
+	dir = 4
 	},
 /turf/simulated/shuttle/floor/voidcraft/light,
 /area/space)
@@ -14958,7 +14924,6 @@
 	icon_state = "door_locked";
 	id_tag = "estrella_side_hatch";
 	locked = 1;
-	req_access = null;
 	req_one_access = null
 	},
 /obj/machinery/button/remote/airlock{
@@ -15113,8 +15078,7 @@
 	pixel_x = 5
 	},
 /obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
+	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
 /area/space)
@@ -15475,9 +15439,7 @@
 /turf/simulated/shuttle/floor/alien,
 /area/space)
 "kfJ" = (
-/obj/vehicle/train/engine/quadbike/built{
-	dir = 4
-	},
+/obj/vehicle/train/engine/quadbike/built,
 /turf/simulated/floor/plating,
 /area/space)
 "khd" = (
@@ -17573,8 +17535,7 @@
 	dir = 4
 	},
 /obj/machinery/door/window/survival_pod{
-	dir = 2;
-	req_one_access = null
+	dir = 2
 	},
 /turf/simulated/floor/tiled/freezer,
 /area/space)
@@ -18570,7 +18531,6 @@
 /area/space)
 "miF" = (
 /obj/structure/reagent_dispensers/acid{
-	density = 0;
 	pixel_x = -30
 	},
 /obj/structure/sink/kitchen{
@@ -18783,8 +18743,7 @@
 /area/space)
 "mmw" = (
 /obj/structure/window/reinforced/survival_pod{
-	dir = 8;
-	icon_state = "pwindow"
+	dir = 8
 	},
 /turf/simulated/floor/carpet/bcarpet,
 /area/space)
@@ -19629,7 +19588,6 @@
 	dir = 1
 	},
 /obj/machinery/computer/security/telescreen/entertainment{
-	icon_state = "screen";
 	layer = 4;
 	pixel_y = -32
 	},
@@ -20149,8 +20107,7 @@
 "mWF" = (
 /obj/machinery/appliance/cooker/grill,
 /obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
+	dir = 4
 	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
@@ -20482,9 +20439,7 @@
 /turf/simulated/floor/plating,
 /area/space)
 "nhU" = (
-/obj/structure/bed/chair/sofa/left/black{
-	dir = 2
-	},
+/obj/structure/bed/chair/sofa/left/black,
 /turf/simulated/floor/wood,
 /area/space)
 "niu" = (
@@ -20553,8 +20508,7 @@
 "nmI" = (
 /obj/structure/urinal{
 	dir = 4;
-	pixel_x = -31;
-	pixel_y = 0
+	pixel_x = -31
 	},
 /obj/machinery/light,
 /turf/simulated/floor/tiled/freezer,
@@ -22203,8 +22157,7 @@
 	layer = 2.6
 	},
 /obj/machinery/door/window/survival_pod{
-	dir = 1;
-	icon_state = "windoor"
+	dir = 1
 	},
 /turf/simulated/floor/carpet/bcarpet,
 /area/space)
@@ -22340,8 +22293,7 @@
 "ozz" = (
 /obj/structure/urinal{
 	dir = 4;
-	pixel_x = -31;
-	pixel_y = 0
+	pixel_x = -31
 	},
 /turf/simulated/floor/tiled/freezer,
 /area/space)
@@ -22471,7 +22423,6 @@
 	id = "estrella_back_hatch";
 	name = "Rear Hatch Control";
 	pixel_y = 27;
-	req_access = null;
 	specialfunctions = 4
 	},
 /obj/machinery/door/firedoor/border_only,
@@ -22998,8 +22949,7 @@
 /area/space)
 "oTJ" = (
 /obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
+	dir = 4
 	},
 /obj/structure/table/steel_reinforced,
 /obj/machinery/chemical_dispenser/ert/specialops,
@@ -23356,9 +23306,7 @@
 /obj/structure/sign/securearea{
 	desc = "A warning sign which reads 'RADIOACTIVE AREA'";
 	icon_state = "radiation";
-	name = "RADIOACTIVE AREA";
-	pixel_x = 0;
-	pixel_y = 0
+	name = "RADIOACTIVE AREA"
 	},
 /turf/simulated/shuttle/wall/alien/blue/hard_corner,
 /area/space)
@@ -23396,8 +23344,7 @@
 	pixel_y = -2
 	},
 /obj/structure/window/reinforced/survival_pod{
-	dir = 1;
-	icon_state = "pwindow"
+	dir = 1
 	},
 /obj/structure/table/steel{
 	pixel_y = -9
@@ -23671,7 +23618,6 @@
 /area/space)
 "ppZ" = (
 /obj/machinery/atmospherics/binary/pump/on{
-	dir = 2;
 	name = "Waste Compresser"
 	},
 /obj/structure/cable/green{
@@ -24550,8 +24496,7 @@
 	},
 /obj/machinery/disposal/wall{
 	dir = 4;
-	pixel_x = -37;
-	pixel_y = 0
+	pixel_x = -37
 	},
 /obj/structure/disposalpipe/trunk{
 	dir = 4
@@ -25341,7 +25286,6 @@
 	id = "baby_mammoth_hatch";
 	name = "Rear Hatch Control";
 	pixel_x = -26;
-	req_access = null;
 	specialfunctions = 4
 	},
 /obj/machinery/door/blast/regular/open{
@@ -25589,8 +25533,7 @@
 /obj/structure/bed/pod,
 /obj/item/weapon/bedsheet/mime,
 /obj/machinery/light/small{
-	dir = 4;
-	pixel_y = 0
+	dir = 4
 	},
 /turf/simulated/shuttle/floor/voidcraft,
 /area/survivalpod)
@@ -27523,8 +27466,7 @@
 "rKI" = (
 /obj/structure/window/reinforced/survival_pod{
 	density = 0;
-	dir = 9;
-	icon_state = "pwindow"
+	dir = 9
 	},
 /turf/simulated/floor/carpet/bcarpet,
 /area/space)
@@ -28466,7 +28408,6 @@
 /area/space)
 "sof" = (
 /obj/structure/reagent_dispensers/acid{
-	density = 0;
 	pixel_x = -30
 	},
 /turf/simulated/shuttle/floor/purple,
@@ -28536,8 +28477,7 @@
 /area/space)
 "ssc" = (
 /obj/structure/disposalpipe/sortjunction{
-	dir = 4;
-	pixel_y = 0
+	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/space)
@@ -29064,8 +29004,7 @@
 "sKv" = (
 /obj/machinery/disposal/wall{
 	dir = 8;
-	pixel_x = 35;
-	pixel_y = 0
+	pixel_x = 35
 	},
 /obj/structure/disposalpipe/trunk{
 	dir = 1
@@ -29181,7 +29120,6 @@
 	id = "SP-CargoHatch";
 	name = "Rear Hatch Control";
 	pixel_x = -26;
-	req_access = null;
 	specialfunctions = 4
 	},
 /turf/simulated/floor/tiled/techmaint,
@@ -30301,14 +30239,6 @@
 	},
 /turf/simulated/floor/wood,
 /area/space)
-"tAt" = (
-/obj/machinery/sleeper/survival_pod,
-/obj/structure/window/reinforced/survival_pod{
-	dir = 8;
-	icon_state = "pwindow"
-	},
-/turf/simulated/shuttle/floor/voidcraft/light,
-/area/space)
 "tAG" = (
 /obj/effect/gateway/active/cult,
 /turf/simulated/floor/gorefloor2,
@@ -30741,8 +30671,7 @@
 /obj/item/weapon/storage/toolbox/syndicate/powertools,
 /obj/item/weapon/storage/toolbox/syndicate/powertools,
 /obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
+	dir = 4
 	},
 /obj/item/stack/cable_coil,
 /obj/item/stack/cable_coil,
@@ -31289,7 +31218,6 @@
 /obj/effect/floor_decal/industrial/danger/full,
 /obj/machinery/door/blast/regular{
 	density = 0;
-	dir = 1;
 	icon_state = "pdoor0";
 	id = "shelterblast";
 	name = "Shelter Blast Doors";
@@ -31367,16 +31295,13 @@
 "ufx" = (
 /obj/structure/table/survival_pod,
 /obj/structure/window/reinforced/survival_pod{
-	dir = 8;
-	icon_state = "pwindow"
+	dir = 8
 	},
 /obj/machinery/recharger{
-	pixel_x = -5;
-	pixel_y = 0
+	pixel_x = -5
 	},
 /obj/machinery/recharger{
-	pixel_x = 6;
-	pixel_y = 0
+	pixel_x = 6
 	},
 /turf/simulated/shuttle/floor/voidcraft/light,
 /area/space)
@@ -32179,8 +32104,7 @@
 /area/space)
 "uIb" = (
 /obj/machinery/door/window/survival_pod{
-	dir = 2;
-	req_one_access = null
+	dir = 2
 	},
 /obj/effect/floor_decal/spline/fancy/wood,
 /turf/simulated/shuttle/floor/voidcraft/light,
@@ -33207,7 +33131,6 @@
 /area/space)
 "vqK" = (
 /obj/machinery/computer/security/telescreen/entertainment{
-	icon_state = "screen";
 	pixel_y = 32
 	},
 /turf/simulated/shuttle/plating/skipjack,
@@ -34927,8 +34850,7 @@
 	icon_state = "2-8"
 	},
 /obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
+	dir = 4
 	},
 /obj/structure/bed/chair/office/dark{
 	dir = 1
@@ -61221,8 +61143,8 @@ ucE
 qAN
 nwG
 qAN
-idJ
-tAt
+tvv
+wwm
 ufx
 jcH
 gCJ
@@ -61485,7 +61407,7 @@ hpn
 hpn
 hpn
 hpn
-hLe
+bbk
 hpn
 hpn
 bZb
@@ -64059,7 +63981,7 @@ nwG
 kwC
 qGu
 dtM
-hLe
+bbk
 rie
 nnV
 nMg
@@ -64731,31 +64653,31 @@ nwG
 nwG
 nwG
 nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -64989,31 +64911,31 @@ nwG
 nwG
 nwG
 nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -65247,31 +65169,31 @@ nwG
 nwG
 nwG
 nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -65505,31 +65427,31 @@ nwG
 nwG
 nwG
 nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -65763,31 +65685,31 @@ nwG
 nwG
 nwG
 nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -66037,15 +65959,15 @@ nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -67057,27 +66979,27 @@ nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -67315,27 +67237,27 @@ nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -67573,27 +67495,27 @@ nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -67831,27 +67753,27 @@ nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -68089,27 +68011,27 @@ nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -68347,27 +68269,27 @@ nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -68605,27 +68527,27 @@ nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -68863,27 +68785,27 @@ nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -69121,6 +69043,27 @@ nwG
 nwG
 nwG
 nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -69128,39 +69071,18 @@ nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
 nwG
 nwG
 nwG
 xCP
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -69404,21 +69326,21 @@ nwG
 nwG
 nwG
 nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -69662,21 +69584,21 @@ nwG
 nwG
 nwG
 nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -69920,21 +69842,21 @@ nwG
 nwG
 nwG
 nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -70402,27 +70324,27 @@ nwG
 nwG
 nwG
 nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -70660,6 +70582,32 @@ nwG
 nwG
 nwG
 nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+nwG
+nwG
+nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -70678,40 +70626,14 @@ nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 jLp
 nwG
@@ -70918,6 +70840,32 @@ nwG
 nwG
 nwG
 nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+nwG
+nwG
+nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -70927,49 +70875,23 @@ nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 xHY
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -71176,6 +71098,32 @@ nwG
 nwG
 nwG
 nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+nwG
+nwG
+nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -71185,49 +71133,23 @@ nwG
 nwG
 nwG
 nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -71449,43 +71371,43 @@ nwG
 nwG
 nwG
 nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
 nwG
 nwG
 nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -71707,33 +71629,33 @@ nwG
 nwG
 nwG
 nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -71965,33 +71887,33 @@ nwG
 nwG
 nwG
 nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -72223,6 +72145,17 @@ nwG
 nwG
 nwG
 nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -72232,24 +72165,13 @@ nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -72261,16 +72183,16 @@ nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 gOV
 nwG
 nwG
@@ -72481,6 +72403,17 @@ nwG
 nwG
 nwG
 nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -72499,36 +72432,25 @@ nwG
 nwG
 nwG
 nwG
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -72739,6 +72661,17 @@ nwG
 nwG
 nwG
 nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -72766,27 +72699,16 @@ nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -73035,16 +72957,16 @@ nwG
 nwG
 nwG
 qta
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -73545,8 +73467,8 @@ nwG
 nwG
 nwG
 nwG
-nwG
-nwG
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -73797,15 +73719,15 @@ nwG
 nwG
 nwG
 nwG
+hkY
+hkY
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -74054,16 +73976,16 @@ nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -74311,17 +74233,17 @@ nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -74540,6 +74462,10 @@ nwG
 nwG
 nwG
 nwG
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -74566,20 +74492,16 @@ nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -74798,6 +74720,15 @@ nwG
 nwG
 nwG
 nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -74819,25 +74750,16 @@ nwG
 nwG
 nwG
 nwG
+hkY
+hkY
+hkY
+hkY
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -75056,6 +74978,21 @@ nwG
 nwG
 nwG
 nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -75078,23 +75015,8 @@ nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -75314,23 +75236,23 @@ nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -75571,24 +75493,24 @@ nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -75829,24 +75751,24 @@ nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -76088,6 +76010,23 @@ nwG
 nwG
 nwG
 nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -76100,38 +76039,21 @@ nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -76346,6 +76268,21 @@ nwG
 nwG
 nwG
 nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -76360,36 +76297,21 @@ nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -76604,6 +76526,21 @@ nwG
 nwG
 nwG
 nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -76618,36 +76555,21 @@ nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -76862,6 +76784,17 @@ nwG
 nwG
 nwG
 nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+nwG
+nwG
+nwG
+nwG
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -76877,37 +76810,26 @@ nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -77120,6 +77042,11 @@ nwG
 nwG
 nwG
 nwG
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -77141,31 +77068,26 @@ nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -77404,27 +77326,27 @@ nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -77662,27 +77584,27 @@ nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -77920,27 +77842,27 @@ nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -78178,26 +78100,26 @@ nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -78439,21 +78361,21 @@ nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -78697,21 +78619,21 @@ nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -78933,6 +78855,16 @@ nwG
 nwG
 nwG
 nwG
+hkY
+hkY
+hkY
+hkY
+nwG
+nwG
+nwG
+nwG
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -78945,31 +78877,21 @@ nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -79191,6 +79113,16 @@ nwG
 nwG
 nwG
 nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -79203,31 +79135,21 @@ nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -79449,6 +79371,16 @@ nwG
 nwG
 nwG
 nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -79463,27 +79395,17 @@ nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -79707,19 +79629,19 @@ nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -79964,20 +79886,20 @@ nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -80223,19 +80145,19 @@ nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -80481,16 +80403,16 @@ nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -80739,16 +80661,16 @@ nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG
@@ -80997,10 +80919,10 @@ nwG
 nwG
 nwG
 nwG
-nwG
-nwG
-nwG
-nwG
+hkY
+hkY
+hkY
+hkY
 nwG
 nwG
 nwG

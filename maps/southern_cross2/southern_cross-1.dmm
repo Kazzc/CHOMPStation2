@@ -280,7 +280,7 @@
 	name = "1N-lighting fixture"
 	},
 /obj/machinery/embedded_controller/radio/airlock/airlock_controller{
-	frequency = 1381;
+	frequency = 1380;
 	id_tag = "SC-docklane53";
 	pixel_y = 24
 	},
@@ -1031,8 +1031,8 @@
 "afw" = (
 /obj/machinery/embedded_controller/radio/airlock/docking_port_multi{
 	frequency = 1380;
-	id_tag = "escape_dock_north_airlock";
-	master_tag = "escape_dock";
+	id_tag = "arrivals_dock_north_airlock";
+	master_tag = "arrivals_dock";
 	pixel_y = 27;
 	req_one_access = list(13)
 	},
@@ -1165,9 +1165,10 @@
 	},
 /obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod{
 	frequency = 1380;
-	id_tag = "escape_pod_7";
-	pixel_y = -25;
-	tag_door = "escape_pod_7_hatch"
+	id_tag = "escape_pod_3";
+	pixel_y = -24;
+	tag_door = "escape_pod_3_hatch";
+	dir = 1
 	},
 /obj/structure/bed/chair/bay/shuttle{
 	dir = 8
@@ -1527,6 +1528,16 @@
 /obj/machinery/floodlight,
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Maints/Deck1_AftStar1_Corridor2)
+"aic" = (
+/obj/structure/shuttle/engine/propulsion/burst{
+	dir = 8
+	},
+/obj/structure/window/titanium,
+/obj/structure/window/titanium{
+	dir = 4
+	},
+/turf/simulated/floor/airless,
+/area/SouthernCrossV2/Evac/Pod07)
 "aif" = (
 /obj/machinery/light/small,
 /turf/simulated/floor/tiled,
@@ -1657,6 +1668,12 @@
 "aiD" = (
 /obj/structure/bed/chair/sofa/corner/teal{
 	dir = 4
+	},
+/obj/structure/sign/securearea{
+	icon_state = "radiation_small";
+	name = "\improper RAD SAFE";
+	desc = "A warning sign which reads 'RADIATION SHIELDING IN THIS AREA'.";
+	pixel_y = 32
 	},
 /turf/simulated/floor/carpet/blue,
 /area/SouthernCrossV2/Harbor/Port_Docking_Foyer)
@@ -2398,15 +2415,18 @@
 /obj/effect/floor_decal/industrial/arrows{
 	dir = 1
 	},
+/obj/machinery/atmospheric_field_generator/perma/underdoors{
+	color = "Yellow"
+	},
+/obj/machinery/atmospheric_field_generator/perma/underdoors{
+	color = "Yellow"
+	},
 /obj/machinery/door/airlock/angled_bay/standard/glass/atmos{
 	dir = 4;
-	name = "EscapePod"
-	},
-/obj/machinery/atmospheric_field_generator/perma/underdoors{
-	color = "Yellow"
-	},
-/obj/machinery/atmospheric_field_generator/perma/underdoors{
-	color = "Yellow"
+	name = "Escape Pod 5";
+	id_tag = "escape_pod_5_berth_hatch";
+	req_access = null;
+	frequency = 1380
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Harbor/Ship_Bay4)
@@ -2875,7 +2895,10 @@
 	},
 /obj/machinery/door/airlock/angled_bay/standard/glass/atmos{
 	dir = 4;
-	name = "EscapePod"
+	name = "Escape Pod 1";
+	id_tag = "escape_pod_1_berth_hatch";
+	req_access = null;
+	frequency = 1380
 	},
 /obj/machinery/atmospheric_field_generator/perma/underdoors{
 	color = "Yellow"
@@ -3648,6 +3671,24 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/SouthernCrossV2/Security/Quantum_Pad_Checkpoint)
+"avd" = (
+/obj/item/device/gps{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/device/gps,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/structure/closet/walllocker_double/kitchen/west{
+	name = "Ration Cabinet"
+	},
+/turf/simulated/shuttle/floor,
+/area/SouthernCrossV2/Evac/Cryogenic_Shuttle)
 "ave" = (
 /obj/machinery/alarm{
 	dir = 4;
@@ -3849,6 +3890,21 @@
 /turf/simulated/shuttle/plating,
 /area/SouthernCrossV2/Evac/Pod06)
 "awB" = (
+/obj/item/device/gps{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/device/gps,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/structure/closet/walllocker_double/kitchen/south{
+	name = "Ration Cabinet"
+	},
 /obj/item/device/radio/intercom{
 	dir = 1;
 	name = "Station Intercom (General)";
@@ -3857,7 +3913,6 @@
 /obj/structure/bed/chair/bay/shuttle{
 	dir = 8
 	},
-/obj/structure/closet/walllocker/emerglocker/south,
 /turf/simulated/shuttle/floor,
 /area/SouthernCrossV2/Evac/Pod04)
 "awI" = (
@@ -4137,8 +4192,12 @@
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Commons/Stairwell_For)
 "azv" = (
-/obj/structure/sign/warning/evac,
-/turf/simulated/wall/thull,
+/obj/structure/sign/nanotrasen,
+/turf/simulated/shuttle/wall/no_join{
+	base_state = "orange";
+	icon = 'icons/turf/shuttle_orange.dmi';
+	icon_state = "orange"
+	},
 /area/SouthernCrossV2/Evac/Port_Transport_Shuttle)
 "azD" = (
 /turf/simulated/floor/tiled,
@@ -4210,7 +4269,12 @@
 /turf/simulated/wall,
 /area/SouthernCrossV2/Cargo/Supply_Ship_Bay)
 "aAz" = (
-/turf/simulated/shuttle/wall,
+/obj/structure/sign/warning/evac,
+/turf/simulated/shuttle/wall/no_join{
+	base_state = "orange";
+	icon = 'icons/turf/shuttle_orange.dmi';
+	icon_state = "orange"
+	},
 /area/SouthernCrossV2/Evac/Pod08)
 "aAA" = (
 /obj/structure/table/rack/shelf/steel,
@@ -4653,7 +4717,7 @@
 	pixel_y = 1
 	},
 /obj/machinery/embedded_controller/radio/airlock/airlock_controller{
-	frequency = 1381;
+	frequency = 1380;
 	id_tag = "SC-docklane15";
 	pixel_y = 24
 	},
@@ -5236,11 +5300,7 @@
 	},
 /area/SouthernCrossV2/Engineering/Telecomms_Network)
 "aIA" = (
-/turf/simulated/shuttle/wall/no_join{
-	base_state = "orange";
-	icon = 'icons/turf/shuttle_orange.dmi';
-	icon_state = "orange"
-	},
+/turf/simulated/wall/rthull,
 /area/SouthernCrossV2/Evac/Pod01)
 "aIH" = (
 /turf/simulated/wall,
@@ -5351,14 +5411,28 @@
 /turf/simulated/floor/tiled/dark,
 /area/SouthernCrossV2/Science/Xenobiology_Lab)
 "aJy" = (
+/obj/item/device/gps{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/device/gps,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/structure/bed/chair/bay/shuttle{
+	dir = 4
+	},
+/obj/structure/closet/walllocker_double/kitchen/north{
+	name = "Ration Cabinet"
+	},
 /obj/item/device/radio/intercom{
 	name = "Station Intercom (General)";
 	pixel_y = -21
 	},
-/obj/structure/bed/chair/bay/shuttle{
-	dir = 4
-	},
-/obj/structure/closet/walllocker/emerglocker/north,
 /turf/simulated/shuttle/floor,
 /area/SouthernCrossV2/Evac/Pod05)
 "aJz" = (
@@ -6539,9 +6613,9 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/SouthernCrossV2/Harbor/Ship_Bay1)
 "aRj" = (
-/obj/machinery/computer/security/abductor,
+/obj/machinery/bluespace_beacon,
 /turf/simulated/floor/tiled/dark,
-/area/SouthernCrossV2/Security/Aft_Security_Post)
+/area/SouthernCrossV2/Commons/Aft_Transit_Lobby)
 "aRl" = (
 /turf/simulated/floor/plating,
 /area/space)
@@ -6743,9 +6817,8 @@
 	},
 /obj/machinery/power/terminal,
 /obj/structure/cable/blue{
-	d1 = 4;
 	d2 = 8;
-	icon_state = "4-8"
+	icon_state = "0-8"
 	},
 /turf/simulated/floor/tiled/red,
 /area/shuttle/needle)
@@ -6942,7 +7015,13 @@
 /obj/structure/shuttle/engine/propulsion/burst{
 	dir = 4
 	},
-/turf/simulated/shuttle/wall,
+/obj/structure/window/titanium{
+	dir = 8
+	},
+/obj/structure/window/titanium{
+	dir = 1
+	},
+/turf/simulated/floor/airless,
 /area/SouthernCrossV2/Evac/Pod04)
 "aTM" = (
 /obj/machinery/computer/general_air_control{
@@ -7553,6 +7632,10 @@
 /obj/effect/floor_decal/industrial/arrows/blue{
 	dir = 8
 	},
+/obj/machinery/atmospheric_field_generator/perma/underdoors{
+	color = "Yellow"
+	},
+/obj/effect/floor_decal/industrial/hatch,
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Commons/Cryostorage_Lounge)
 "aZU" = (
@@ -7649,7 +7732,13 @@
 /obj/structure/shuttle/engine/propulsion/burst{
 	dir = 8
 	},
-/turf/simulated/shuttle/wall,
+/obj/structure/window/titanium{
+	dir = 1
+	},
+/obj/structure/window/titanium{
+	dir = 4
+	},
+/turf/simulated/floor/airless,
 /area/SouthernCrossV2/Evac/Pod08)
 "bbm" = (
 /obj/structure/reagent_dispensers/fueltank,
@@ -8097,6 +8186,15 @@
 	},
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Engineering/Distro_Central)
+"blL" = (
+/obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod_berth{
+	frequency = 1380;
+	id_tag = "escape_pod_14_berth";
+	tag_door = "escape_pod_14_berth_hatch";
+	pixel_y = 24
+	},
+/turf/simulated/floor/tiled,
+/area/SouthernCrossV2/Security/Exploration_Ship_Bay)
 "blP" = (
 /obj/item/weapon/storage/box/flare{
 	pixel_y = 1;
@@ -8153,14 +8251,28 @@
 /turf/simulated/floor/tiled/dark,
 /area/SouthernCrossV2/Security/Aft_Security_Post)
 "bmt" = (
+/obj/item/device/gps{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/device/gps,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/structure/bed/chair/bay/shuttle{
+	dir = 4
+	},
+/obj/structure/closet/walllocker_double/kitchen/north{
+	name = "Ration Cabinet"
+	},
 /obj/item/device/radio/intercom{
 	name = "Station Intercom (General)";
 	pixel_y = -21
 	},
-/obj/structure/bed/chair/bay/shuttle{
-	dir = 4
-	},
-/obj/structure/closet/walllocker/emerglocker/north,
 /turf/simulated/shuttle/floor,
 /area/SouthernCrossV2/Evac/Pod06)
 "bmA" = (
@@ -8475,7 +8587,7 @@
 /turf/simulated/floor/carpet,
 /area/survivalpod/superpose/MechFabShip)
 "brQ" = (
-/turf/simulated/shuttle/wall,
+/turf/simulated/wall/rthull,
 /area/SouthernCrossV2/Evac/Pod14)
 "bsf" = (
 /obj/random/tank,
@@ -8749,7 +8861,14 @@
 /area/SouthernCrossV2/Harbor/Dock1)
 "bwJ" = (
 /obj/structure/shuttle/engine/propulsion/burst,
-/turf/simulated/shuttle/plating/airless/carry,
+/obj/structure/window/titanium{
+	dir = 4
+	},
+/obj/structure/window/titanium{
+	dir = 1;
+	layer = 3
+	},
+/turf/simulated/floor/airless,
 /area/SouthernCrossV2/Evac/Pod13)
 "bwK" = (
 /obj/machinery/door/firedoor/glass/hidden/steel{
@@ -8886,11 +9005,6 @@
 	inputting = 1
 	},
 /obj/structure/cable/green,
-/obj/structure/cable/blue{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /turf/simulated/floor/tiled/milspec,
 /area/shuttle/echidna)
 "bAG" = (
@@ -9015,7 +9129,7 @@
 	pixel_y = 1
 	},
 /obj/machinery/embedded_controller/radio/airlock/airlock_controller{
-	frequency = 1381;
+	frequency = 1380;
 	id_tag = "SC-docklane45";
 	pixel_y = 24
 	},
@@ -9471,9 +9585,9 @@
 	dir = 10
 	},
 /obj/structure/cable/blue{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled,
 /area/SouthernCrossV2/Cargo/Mining_Ship_Bay)
@@ -9490,8 +9604,13 @@
 /turf/simulated/floor/glass/reinforced,
 /area/SouthernCrossV2/Harbor/Dock5)
 "bLd" = (
-/turf/simulated/wall/thull,
-/area/space)
+/obj/structure/sign/warning/evac,
+/turf/simulated/shuttle/wall/no_join{
+	base_state = "orange";
+	icon = 'icons/turf/shuttle_orange.dmi';
+	icon_state = "orange"
+	},
+/area/SouthernCrossV2/Evac/Pod07)
 "bLt" = (
 /obj/machinery/door/firedoor/border_only,
 /obj/effect/floor_decal/industrial/arrows/yellow,
@@ -9669,6 +9788,14 @@
 /obj/random/soap,
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Maints/Deck1_AftStar1_Corridor3)
+"bNP" = (
+/obj/structure/sign/warning/evac,
+/turf/simulated/shuttle/wall/no_join{
+	base_state = "orange";
+	icon = 'icons/turf/shuttle_orange.dmi';
+	icon_state = "orange"
+	},
+/area/SouthernCrossV2/Evac/Pod14)
 "bNT" = (
 /turf/simulated/floor/tiled,
 /area/SouthernCrossV2/Commons/Stairwell_Port)
@@ -9998,6 +10125,10 @@
 	},
 /turf/simulated/floor/tiled/kafel_full,
 /area/SouthernCrossV2/Science/PA_Access)
+"bUT" = (
+/obj/structure/sign/warning/evac,
+/turf/simulated/wall/r_wall,
+/area/SouthernCrossV2/Security/Exploration_Ship_Bay)
 "bUY" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -10435,6 +10566,14 @@
 "cfa" = (
 /turf/simulated/floor/carpet/purcarpet/turfpack/station,
 /area/SouthernCrossV2/Commons/Cryostorage_Lounge)
+"cfj" = (
+/obj/structure/sign/nanotrasen,
+/turf/simulated/shuttle/wall/no_join{
+	base_state = "orange";
+	icon = 'icons/turf/shuttle_orange.dmi';
+	icon_state = "orange"
+	},
+/area/SouthernCrossV2/Evac/Pod05)
 "cfn" = (
 /obj/structure/bed/chair/bay/shuttle{
 	dir = 4
@@ -10804,11 +10943,7 @@
 /turf/simulated/floor/tiled,
 /area/SouthernCrossV2/Commons/Aft_1_Deck_Stairwell)
 "clV" = (
-/turf/simulated/shuttle/wall/no_join{
-	base_state = "orange";
-	icon = 'icons/turf/shuttle_orange.dmi';
-	icon_state = "orange"
-	},
+/turf/simulated/wall/rthull,
 /area/SouthernCrossV2/Evac/Pod03)
 "cmh" = (
 /obj/machinery/alarm{
@@ -11343,6 +11478,14 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Maints/Market_Stall_1)
+"cyo" = (
+/obj/structure/sign/warning/evac,
+/turf/simulated/shuttle/wall/no_join{
+	base_state = "orange";
+	icon = 'icons/turf/shuttle_orange.dmi';
+	icon_state = "orange"
+	},
+/area/SouthernCrossV2/Evac/Pod02)
 "cyp" = (
 /obj/structure/table,
 /turf/simulated/floor/plating,
@@ -11474,7 +11617,12 @@
 /turf/simulated/floor/wood/alt/panel,
 /area/SouthernCrossV2/Maints/ab_Kitchen)
 "cAK" = (
-/turf/simulated/shuttle/wall,
+/obj/structure/sign/nanotrasen,
+/turf/simulated/shuttle/wall/no_join{
+	base_state = "orange";
+	icon = 'icons/turf/shuttle_orange.dmi';
+	icon_state = "orange"
+	},
 /area/SouthernCrossV2/Evac/Pod01)
 "cAL" = (
 /obj/machinery/door/firedoor/border_only,
@@ -11853,7 +12001,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/wall,
+/turf/simulated/wall/r_wall,
 /area/SouthernCrossV2/Harbor/Fueling_Post)
 "cIR" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
@@ -12115,7 +12263,7 @@
 	name = "1N-lighting fixture"
 	},
 /obj/machinery/embedded_controller/radio/airlock/airlock_controller{
-	frequency = 1381;
+	frequency = 1380;
 	id_tag = "SC-docklane51";
 	pixel_y = 24
 	},
@@ -13070,10 +13218,6 @@
 /obj/effect/floor_decal/industrial/arrows{
 	dir = 1
 	},
-/obj/machinery/door/airlock/angled_bay/standard/glass/atmos{
-	dir = 1;
-	name = "EscapePod"
-	},
 /obj/machinery/atmospheric_field_generator/perma/underdoors{
 	color = "Yellow"
 	},
@@ -13088,6 +13232,13 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/machinery/door/airlock/angled_bay/standard/glass/atmos{
+	dir = 1;
+	name = "Escape Pod 13";
+	id_tag = "escape_pod_13_berth_hatch";
+	req_access = null;
+	frequency = 1380
+	},
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Security/Exploration_Ship_Bay)
 "dgg" = (
@@ -13206,7 +13357,7 @@
 /obj/effect/catwalk_plated/white,
 /obj/machinery/shield_diffuser,
 /turf/simulated/floor/plating/turfpack/airless,
-/area/SouthernCrossV2/Harbor/Dock4)
+/area/space)
 "dix" = (
 /obj/effect/overmap/visitable/sector/Southern_Cross,
 /turf/space,
@@ -13300,6 +13451,10 @@
 /obj/random/maintenance/clean,
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Maints/Deck1_Science_AftCorridor1)
+"djI" = (
+/obj/structure/closet/walllocker/medical/west,
+/turf/simulated/shuttle/floor,
+/area/SouthernCrossV2/Evac/Cryogenic_Shuttle)
 "djL" = (
 /obj/effect/floor_decal/borderfloorwhite{
 	dir = 9
@@ -13333,9 +13488,12 @@
 /obj/machinery/atmospheric_field_generator/perma/underdoors{
 	color = "Yellow"
 	},
+/obj/effect/map_helper/airlock/door/simple,
 /obj/machinery/door/airlock/angled_tgmc/pod{
 	dir = 8;
-	name = "EscapePod"
+	name = "Large Escape Pod 2";
+	frequency = 1380;
+	id_tag = "large_escape_pod_2_hatch"
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Evac/Star_Transport_Shuttle)
@@ -13446,7 +13604,7 @@
 	pixel_y = 1
 	},
 /obj/machinery/embedded_controller/radio/airlock/airlock_controller{
-	frequency = 1381;
+	frequency = 1380;
 	id_tag = "SC-docklane43";
 	pixel_y = 24
 	},
@@ -13602,7 +13760,7 @@
 /turf/simulated/shuttle/floor/white,
 /area/SouthernCrossV2/Evac/Port_Transport_Shuttle)
 "dpT" = (
-/turf/simulated/shuttle/wall,
+/turf/simulated/wall/rthull,
 /area/SouthernCrossV2/Evac/Pod13)
 "dpV" = (
 /obj/machinery/light{
@@ -13863,6 +14021,16 @@
 	},
 /turf/simulated/floor/tiled,
 /area/SouthernCrossV2/Harbor/Dock4)
+"dwk" = (
+/obj/structure/shuttle/engine/propulsion/burst{
+	dir = 8
+	},
+/obj/structure/window/titanium,
+/obj/structure/window/titanium{
+	dir = 4
+	},
+/turf/simulated/floor/airless,
+/area/SouthernCrossV2/Evac/Pod06)
 "dwn" = (
 /obj/structure/cable/white{
 	d1 = 4;
@@ -13960,11 +14128,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/yellow{
 	dir = 6
 	},
-/obj/structure/cable/blue{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /turf/simulated/wall/rshull,
 /area/shuttle/echidna)
 "dyQ" = (
@@ -14027,6 +14190,22 @@
 /obj/structure/girder/reinforced,
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Maints/Deck1_Security_PortCorridor1)
+"dAz" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod_berth{
+	frequency = 1380;
+	id_tag = "large_escape_pod_1_berth";
+	pixel_x = 24;
+	tag_door = "large_escape_pod_1_berth_hatch";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/SouthernCrossV2/Commons/Port_1Deck_Atrium)
 "dAE" = (
 /obj/machinery/light{
 	dir = 4;
@@ -14204,9 +14383,12 @@
 /obj/machinery/atmospheric_field_generator/perma/underdoors{
 	color = "Yellow"
 	},
+/obj/effect/map_helper/airlock/door/simple,
 /obj/machinery/door/airlock/angled_tgmc/pod{
 	dir = 1;
-	name = "EscapePod"
+	name = "Escape Pod 13";
+	frequency = 1380;
+	id_tag = "escape_pod_13_hatch"
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Evac/Pod13)
@@ -14869,6 +15051,7 @@
 /obj/random/maintenance/misc,
 /obj/random/maintenance/research,
 /obj/structure/curtain/black,
+/obj/item/stolenpackage,
 /turf/simulated/floor/bmarble,
 /area/SouthernCrossV2/Maints/ab_GeneralStore)
 "dRW" = (
@@ -15109,11 +15292,7 @@
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Maints/Deck1_ForStar_Corridor3)
 "dVs" = (
-/turf/simulated/shuttle/wall/no_join{
-	base_state = "orange";
-	icon = 'icons/turf/shuttle_orange.dmi';
-	icon_state = "orange"
-	},
+/turf/simulated/wall/rthull,
 /area/SouthernCrossV2/Evac/Pod08)
 "dVC" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
@@ -15280,7 +15459,7 @@
 	pixel_y = 1
 	},
 /obj/machinery/embedded_controller/radio/airlock/airlock_controller{
-	frequency = 1381;
+	frequency = 1380;
 	id_tag = "SC-docklane13";
 	pixel_y = 24
 	},
@@ -15302,8 +15481,11 @@
 	},
 /obj/machinery/door/airlock/angled_tgmc/pod{
 	dir = 8;
-	name = "EscapePod"
+	name = "Escape Pod 5";
+	frequency = 1380;
+	id_tag = "escape_pod_5_hatch"
 	},
+/obj/effect/map_helper/airlock/door/simple,
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Evac/Pod08)
 "dWj" = (
@@ -15654,7 +15836,11 @@
 /area/SouthernCrossV2/Engineering/Telecomms_Substation)
 "dXm" = (
 /obj/structure/sign/warning/evac,
-/turf/simulated/wall/thull,
+/turf/simulated/shuttle/wall/no_join{
+	base_state = "orange";
+	icon = 'icons/turf/shuttle_orange.dmi';
+	icon_state = "orange"
+	},
 /area/SouthernCrossV2/Evac/Star_Transport_Shuttle)
 "dXn" = (
 /obj/structure/table/reinforced,
@@ -16330,6 +16516,15 @@
 /area/SouthernCrossV2/Science/Research_Ship_Bay)
 "dZy" = (
 /obj/machinery/vending/nifsoft_shop,
+/obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod_berth{
+	frequency = 1380;
+	id_tag = "cryostorage_shuttle_berth";
+	name = "cryostorage shuttle berth controller";
+	pixel_x = 24;
+	req_access = list(19);
+	tag_door = "cryostorage_shuttle_berth_hatch";
+	dir = 8
+	},
 /turf/simulated/floor/wood/alt/parquet/turfpack/station,
 /area/SouthernCrossV2/Commons/Cryostorage_Lounge)
 "dZF" = (
@@ -16591,22 +16786,20 @@
 /turf/simulated/floor/wood/sif,
 /area/survivalpod/superpose/MechFabShip)
 "eaz" = (
-/obj/effect/catwalk_plated/techmaint,
-/obj/machinery/porta_turret/crescent{
-	check_records = 0;
-	check_down = 0;
-	check_access = 0;
-	faction = "neutral"
-	},
 /obj/machinery/camera/network/security{
 	dir = 8;
 	c_tag = "D1-Com-Transit Lobby2";
 	network = list("Commons")
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled,
 /area/SouthernCrossV2/Commons/Aft_Transit_Lobby)
 "eaB" = (
-/turf/simulated/shuttle/wall,
+/obj/structure/sign/nanotrasen,
+/turf/simulated/shuttle/wall/no_join{
+	base_state = "orange";
+	icon = 'icons/turf/shuttle_orange.dmi';
+	icon_state = "orange"
+	},
 /area/SouthernCrossV2/Evac/Pod03)
 "eaE" = (
 /turf/simulated/wall,
@@ -17147,6 +17340,11 @@
 /obj/machinery/atmospherics/pipe/manifold/visible{
 	dir = 8
 	},
+/obj/structure/cable/blue{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
 	},
@@ -17381,7 +17579,7 @@
 	pixel_y = 1
 	},
 /obj/machinery/embedded_controller/radio/airlock/airlock_controller{
-	frequency = 1381;
+	frequency = 1380;
 	id_tag = "SC-docklane17";
 	pixel_y = 24
 	},
@@ -17427,7 +17625,12 @@
 /turf/simulated/floor/wood/alt/tile/broken,
 /area/SouthernCrossV2/Maints/Deck1_ForPort_Chamber1)
 "eqf" = (
-/turf/simulated/shuttle/wall,
+/obj/structure/sign/warning/evac,
+/turf/simulated/shuttle/wall/no_join{
+	base_state = "orange";
+	icon = 'icons/turf/shuttle_orange.dmi';
+	icon_state = "orange"
+	},
 /area/SouthernCrossV2/Evac/Pod04)
 "eqg" = (
 /obj/machinery/door/firedoor/border_only,
@@ -17486,8 +17689,23 @@
 	},
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Maints/Deck1_ForPort_Chamber1)
+"erI" = (
+/obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod_berth{
+	frequency = 1380;
+	id_tag = "escape_pod_13_berth";
+	tag_door = "escape_pod_13_berth_hatch";
+	pixel_y = 24
+	},
+/turf/simulated/floor/tiled,
+/area/SouthernCrossV2/Security/Exploration_Ship_Bay)
 "erV" = (
 /obj/structure/bed/chair/sofa/corner/teal,
+/obj/structure/sign/securearea{
+	icon_state = "radiation_small";
+	name = "\improper RAD SAFE";
+	desc = "A warning sign which reads 'RADIATION SHIELDING IN THIS AREA'.";
+	pixel_y = 32
+	},
 /turf/simulated/floor/carpet/purcarpet,
 /area/SouthernCrossV2/Harbor/Star_Docking_Foyer)
 "erX" = (
@@ -17608,6 +17826,18 @@
 	},
 /turf/simulated/floor/tiled/milspec,
 /area/shuttle/spacebus)
+"evv" = (
+/obj/item/weapon/reagent_containers/blood/prelabeled/OMinus{
+	pixel_y = 6;
+	pixel_x = 8
+	},
+/obj/machinery/iv_drip,
+/obj/machinery/status_display{
+	layer = 4;
+	pixel_y = 32
+	},
+/turf/simulated/shuttle/floor/white,
+/area/SouthernCrossV2/Evac/Port_Transport_Shuttle)
 "ewm" = (
 /obj/structure/bed/pillowpile/teal,
 /obj/item/weapon/storage/vore_egg/yellow{
@@ -17617,6 +17847,25 @@
 /obj/item/weapon/storage/vore_egg/rock,
 /turf/simulated/floor/wood/alt/tile/broken,
 /area/SouthernCrossV2/Maints/Deck1_ForPort_Chamber1)
+"ewn" = (
+/obj/item/device/gps{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/device/gps,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/structure/closet/walllocker_double/kitchen/north{
+	name = "Ration Cabinet"
+	},
+/obj/structure/bed/chair/bay/shuttle,
+/turf/simulated/shuttle/floor/white,
+/area/SouthernCrossV2/Evac/Port_Transport_Shuttle)
 "exf" = (
 /obj/structure/cable/yellow{
 	d1 = 1;
@@ -17687,6 +17936,7 @@
 	dir = 4
 	},
 /obj/structure/table/reinforced,
+/obj/item/weapon/reagent_containers/syringe/ld50_syringe/choral,
 /turf/simulated/floor/tiled/white,
 /area/SouthernCrossV2/Maints/ab_Medical)
 "exU" = (
@@ -17754,7 +18004,7 @@
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Maints/Deck1_AftPort_Corridor2)
 "eyD" = (
-/turf/simulated/shuttle/wall,
+/turf/simulated/wall/rthull,
 /area/SouthernCrossV2/Evac/Pod02)
 "eyJ" = (
 /obj/machinery/smartfridge/drying_rack,
@@ -18419,7 +18669,7 @@
 	},
 /obj/effect/catwalk_plated/white,
 /turf/simulated/floor/plating/turfpack/airless,
-/area/SouthernCrossV2/Security/Exploration_Ship_Bay)
+/area/space)
 "eLq" = (
 /obj/machinery/vending/snack,
 /obj/machinery/ai_status_display{
@@ -18718,6 +18968,11 @@
 /area/SouthernCrossV2/Maints/ab_GeneralStore)
 "eTc" = (
 /obj/machinery/atmospherics/binary/pump,
+/obj/structure/cable/blue{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
 /turf/simulated/floor/tiled/milspec,
 /area/shuttle/echidna)
 "eTo" = (
@@ -18892,6 +19147,7 @@
 	dir = 4
 	},
 /obj/structure/closet/walllocker/medical/north,
+/obj/structure/closet/walllocker/emerglocker/south,
 /turf/simulated/shuttle/floor,
 /area/SouthernCrossV2/Evac/Pod07)
 "eUX" = (
@@ -19866,7 +20122,7 @@
 "fqr" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden,
 /obj/machinery/embedded_controller/radio/airlock/airlock_controller{
-	frequency = 1381;
+	frequency = 1380;
 	id_tag = "SC-docklane44";
 	pixel_y = -24;
 	dir = 1
@@ -19927,9 +20183,12 @@
 /obj/machinery/atmospheric_field_generator/perma/underdoors{
 	color = "Yellow"
 	},
+/obj/effect/map_helper/airlock/door/simple,
 /obj/machinery/door/airlock/angled_tgmc/pod{
 	dir = 8;
-	name = "EscapePod"
+	name = "Large Escape Pod 1";
+	frequency = 1380;
+	id_tag = "large_escape_pod_1_hatch"
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Evac/Port_Transport_Shuttle)
@@ -20882,6 +21141,10 @@
 	pixel_x = 8
 	},
 /obj/machinery/iv_drip,
+/obj/machinery/ai_status_display{
+	name = "1S-AI display";
+	pixel_y = -32
+	},
 /turf/simulated/shuttle/floor/white,
 /area/SouthernCrossV2/Evac/Port_Transport_Shuttle)
 "fQn" = (
@@ -20987,6 +21250,18 @@
 /obj/random/trash,
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Maints/Deck1_Cargo_Corridor1)
+"fRD" = (
+/obj/structure/shuttle/engine/propulsion/burst{
+	dir = 8
+	},
+/obj/structure/window/titanium{
+	dir = 1
+	},
+/obj/structure/window/titanium{
+	dir = 4
+	},
+/turf/simulated/floor/airless,
+/area/SouthernCrossV2/Evac/Pod05)
 "fRL" = (
 /obj/machinery/light{
 	dir = 8;
@@ -21129,9 +21404,10 @@
 	},
 /obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod{
 	frequency = 1380;
-	id_tag = "escape_pod_7";
-	pixel_y = -25;
-	tag_door = "escape_pod_7_hatch"
+	id_tag = "escape_pod_4";
+	pixel_y = -24;
+	tag_door = "escape_pod_4_hatch";
+	dir = 1
 	},
 /obj/structure/bed/chair/bay/shuttle{
 	dir = 8
@@ -21349,6 +21625,12 @@
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Maints/Deck1_AftStar1_Corridor1)
 "fXn" = (
+/obj/machinery/hologram/holopad,
+/obj/effect/floor_decal/shuttle/blue{
+	pixel_x = -1;
+	pixel_y = 1
+	},
+/obj/machinery/bluespace_beacon,
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
@@ -21411,6 +21693,12 @@
 	icon_state = "0-4"
 	},
 /obj/structure/cable/white,
+/obj/machinery/light_switch{
+	dir = 1;
+	name = "S-light switch";
+	pixel_x = 11;
+	pixel_y = -27
+	},
 /turf/simulated/floor/tiled,
 /area/SouthernCrossV2/Security/Exploration_Ship_Bay)
 "fXY" = (
@@ -22443,7 +22731,7 @@
 	dir = 8
 	},
 /obj/machinery/embedded_controller/radio/airlock/airlock_controller{
-	frequency = 1381;
+	frequency = 1380;
 	id_tag = "SC-docklane48";
 	dir = 4;
 	pixel_x = -24
@@ -22715,6 +23003,27 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/survivalpod/superpose/MechFabShip)
+"gxg" = (
+/obj/machinery/door/firedoor/border_only,
+/obj/effect/floor_decal/industrial/arrows,
+/obj/effect/floor_decal/industrial/arrows{
+	dir = 1
+	},
+/obj/machinery/atmospheric_field_generator/perma/underdoors{
+	color = "Yellow"
+	},
+/obj/machinery/atmospheric_field_generator/perma/underdoors{
+	color = "Yellow"
+	},
+/obj/machinery/door/airlock/angled_bay/standard/glass/atmos{
+	dir = 4;
+	name = "Escape Pod 7";
+	id_tag = "escape_pod_7_berth_hatch";
+	req_access = null;
+	frequency = 1380
+	},
+/turf/simulated/floor/tiled/techmaint,
+/area/SouthernCrossV2/Harbor/Ship_Bay4)
 "gxr" = (
 /obj/structure/loot_pile/maint/trash,
 /obj/random/junk,
@@ -23017,18 +23326,6 @@
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/survivalpod/superpose/ScienceShip)
-"gDR" = (
-/obj/machinery/pointdefense{
-	id_tag = "PD Primary"
-	},
-/obj/structure/cable/white{
-	d2 = 4;
-	icon_state = "0-4"
-	},
-/obj/machinery/shield_diffuser,
-/obj/effect/catwalk_plated/white,
-/turf/simulated/floor/plating/turfpack/airless,
-/area/SouthernCrossV2/Harbor/Dock1)
 "gEd" = (
 /obj/machinery/power/apc{
 	name = "south bump";
@@ -23339,11 +23636,6 @@
 /obj/structure/cable/blue{
 	d2 = 8;
 	icon_state = "0-8"
-	},
-/obj/structure/cable/blue{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/milspec,
 /area/shuttle/echidna)
@@ -23702,11 +23994,6 @@
 /area/SouthernCrossV2/Maints/Deck1_Cargo_Corridor1)
 "gUu" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/yellow,
-/obj/structure/cable/blue{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /turf/simulated/wall/rthull,
 /area/shuttle/spacebus)
 "gUz" = (
@@ -24126,6 +24413,14 @@
 /obj/structure/closet/crate/mimic/airlock/cointoss,
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Maints/Deck1_AftPort_Chamber3)
+"hdP" = (
+/obj/structure/sign/warning/evac,
+/turf/simulated/shuttle/wall/no_join{
+	base_state = "orange";
+	icon = 'icons/turf/shuttle_orange.dmi';
+	icon_state = "orange"
+	},
+/area/SouthernCrossV2/Evac/Port_Transport_Shuttle)
 "hdQ" = (
 /obj/effect/floor_decal/borderfloorblack/corner{
 	dir = 4
@@ -24380,6 +24675,7 @@
 	dir = 8
 	},
 /obj/structure/closet/walllocker/medical/south,
+/obj/structure/closet/walllocker/emerglocker/north,
 /turf/simulated/shuttle/floor,
 /area/SouthernCrossV2/Evac/Pod04)
 "hkp" = (
@@ -26176,6 +26472,18 @@
 "hZj" = (
 /turf/simulated/floor/tiled/dark,
 /area/SouthernCrossV2/Domicile/Public_Gateway)
+"hZk" = (
+/obj/effect/floor_decal/borderfloorblack{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/danger{
+	dir = 1
+	},
+/obj/machinery/light/floortube{
+	pixel_y = -3
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/SouthernCrossV2/Science/Research_Ship_Bay)
 "hZH" = (
 /obj/structure/window/titanium{
 	dir = 4
@@ -26279,7 +26587,11 @@
 /obj/structure/shuttle/engine/propulsion/burst{
 	dir = 8
 	},
-/turf/simulated/shuttle/wall,
+/obj/structure/window/titanium,
+/obj/structure/window/titanium{
+	dir = 4
+	},
+/turf/simulated/floor/airless,
 /area/SouthernCrossV2/Evac/Pod05)
 "icV" = (
 /obj/machinery/hologram/holopad,
@@ -26854,6 +27166,11 @@
 	d2 = 2;
 	icon_state = "0-2"
 	},
+/obj/machinery/light_switch{
+	pixel_x = 12;
+	pixel_y = 27;
+	name = "N-light switch"
+	},
 /turf/simulated/floor/tiled,
 /area/SouthernCrossV2/Cargo/Deck1_Stairwell)
 "imA" = (
@@ -26869,11 +27186,7 @@
 /turf/space,
 /area/space)
 "imJ" = (
-/turf/simulated/shuttle/wall/no_join{
-	base_state = "orange";
-	icon = 'icons/turf/shuttle_orange.dmi';
-	icon_state = "orange"
-	},
+/turf/simulated/wall/rthull,
 /area/SouthernCrossV2/Evac/Pod07)
 "imO" = (
 /obj/machinery/alarm{
@@ -27497,6 +27810,17 @@
 	},
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Maints/Deck1_Security_PortChamber1)
+"izC" = (
+/obj/effect/catwalk_plated/white,
+/obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod_berth{
+	frequency = 1380;
+	id_tag = "escape_pod_6_berth";
+	pixel_x = 24;
+	tag_door = "escape_pod_6_berth_hatch";
+	dir = 8
+	},
+/turf/simulated/floor/plating,
+/area/SouthernCrossV2/Harbor/Ship_Bay4)
 "izV" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/tiled/white,
@@ -27508,12 +27832,11 @@
 /turf/simulated/floor/wood/sif,
 /area/survivalpod/superpose/MechFabShip)
 "iAp" = (
-/obj/structure/closet/walllocker/emerglocker{
-	pixel_x = -28
-	},
 /obj/structure/bed/chair/bay/shuttle{
 	dir = 1
 	},
+/obj/structure/closet/walllocker/medical/west,
+/obj/structure/closet/walllocker/emerglocker/east,
 /turf/simulated/shuttle/floor,
 /area/SouthernCrossV2/Evac/Pod13)
 "iAD" = (
@@ -27848,6 +28171,21 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Commons/For_Locker_Room)
 "iJO" = (
+/obj/item/device/gps{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/device/gps,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/structure/closet/walllocker_double/kitchen/south{
+	name = "Ration Cabinet"
+	},
 /obj/item/device/radio/intercom{
 	dir = 1;
 	name = "Station Intercom (General)";
@@ -27856,7 +28194,6 @@
 /obj/structure/bed/chair/bay/shuttle{
 	dir = 8
 	},
-/obj/structure/closet/walllocker/emerglocker/south,
 /turf/simulated/shuttle/floor,
 /area/SouthernCrossV2/Evac/Pod02)
 "iJW" = (
@@ -28101,6 +28438,14 @@
 	},
 /turf/simulated/floor/tiled,
 /area/SouthernCrossV2/Maints/Market_Stall_1)
+"iQw" = (
+/obj/structure/sign/warning/evac,
+/turf/simulated/shuttle/wall/no_join{
+	base_state = "orange";
+	icon = 'icons/turf/shuttle_orange.dmi';
+	icon_state = "orange"
+	},
+/area/SouthernCrossV2/Evac/Pod06)
 "iQH" = (
 /obj/structure/ladder/up,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -28656,6 +29001,35 @@
 "jfT" = (
 /turf/simulated/floor/tiled/techfloor,
 /area/SouthernCrossV2/Commons/For_Transit_Foyer)
+"jge" = (
+/obj/machinery/door/firedoor/border_only,
+/obj/effect/floor_decal/industrial/arrows,
+/obj/effect/floor_decal/industrial/arrows{
+	dir = 1
+	},
+/obj/machinery/atmospheric_field_generator/perma/underdoors{
+	color = "Yellow"
+	},
+/obj/machinery/atmospheric_field_generator/perma/underdoors{
+	color = "Yellow"
+	},
+/obj/machinery/door/blast/regular/open{
+	layer = 3.5;
+	id = "For Lockdown";
+	name = "Lockdown Gate";
+	desc = "A heavily reinforced gate, sector lockdown!";
+	dir = 4
+	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/machinery/door/airlock/angled_bay/standard/glass/atmos{
+	dir = 1;
+	name = "Escape Pod 14";
+	id_tag = "escape_pod_14_berth_hatch";
+	req_access = null;
+	frequency = 1380
+	},
+/turf/simulated/floor/tiled/techmaint,
+/area/SouthernCrossV2/Security/Exploration_Ship_Bay)
 "jgi" = (
 /obj/machinery/power/apc{
 	dir = 8;
@@ -29057,6 +29431,10 @@
 	pixel_x = 8
 	},
 /obj/machinery/iv_drip,
+/obj/machinery/ai_status_display{
+	name = "1N-AI display";
+	pixel_y = 32
+	},
 /turf/simulated/shuttle/floor/white,
 /area/SouthernCrossV2/Evac/Star_Transport_Shuttle)
 "jqe" = (
@@ -29238,14 +29616,13 @@
 /turf/simulated/floor/tiled/dark,
 /area/SouthernCrossV2/Science/PA_Chamber)
 "juP" = (
-/obj/structure/sign/mining,
-/obj/structure/cable/blue{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
+/obj/structure/sign/nanotrasen,
+/turf/simulated/shuttle/wall/no_join{
+	base_state = "orange";
+	icon = 'icons/turf/shuttle_orange.dmi';
+	icon_state = "orange"
 	},
-/turf/simulated/wall/rshull,
-/area/shuttle/echidna)
+/area/SouthernCrossV2/Evac/Pod04)
 "juW" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -29899,6 +30276,18 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/SouthernCrossV2/Science/Xenobiology_Lab)
+"jGA" = (
+/obj/item/weapon/reagent_containers/blood/prelabeled/OMinus{
+	pixel_y = 6;
+	pixel_x = 8
+	},
+/obj/machinery/iv_drip,
+/obj/machinery/status_display{
+	layer = 4;
+	pixel_y = -32
+	},
+/turf/simulated/shuttle/floor/white,
+/area/SouthernCrossV2/Evac/Star_Transport_Shuttle)
 "jGJ" = (
 /obj/structure/table/standard,
 /obj/random/flashlight,
@@ -30361,6 +30750,7 @@
 	dir = 8
 	},
 /obj/structure/closet/walllocker/medical/south,
+/obj/structure/closet/walllocker/emerglocker/north,
 /turf/simulated/shuttle/floor,
 /area/SouthernCrossV2/Evac/Pod03)
 "jTw" = (
@@ -30522,8 +30912,11 @@
 	},
 /obj/machinery/door/airlock/angled_tgmc/pod{
 	dir = 8;
-	name = "EscapePod"
+	name = "Escape Pod 8";
+	frequency = 1380;
+	id_tag = "escape_pod_8_hatch"
 	},
+/obj/effect/map_helper/airlock/door/simple,
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Evac/Pod05)
 "jWs" = (
@@ -30905,6 +31298,14 @@
 /obj/structure/table/glass,
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Commons/Star_1Deck_Central_Corridor_1)
+"keq" = (
+/obj/structure/sign/warning/evac,
+/turf/simulated/shuttle/wall/no_join{
+	base_state = "orange";
+	icon = 'icons/turf/shuttle_orange.dmi';
+	icon_state = "orange"
+	},
+/area/SouthernCrossV2/Evac/Pod01)
 "ker" = (
 /turf/simulated/floor/tiled/white,
 /area/SouthernCrossV2/Domicile/Custodial_Office)
@@ -31326,12 +31727,26 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Maints/Deck1_AftPort_Chamber1)
 "kpe" = (
-/turf/simulated/shuttle/wall/no_join{
-	base_state = "orange";
-	icon = 'icons/turf/shuttle_orange.dmi';
-	icon_state = "orange"
+/obj/machinery/door/firedoor/border_only,
+/obj/effect/floor_decal/industrial/arrows,
+/obj/effect/floor_decal/industrial/arrows{
+	dir = 1
 	},
-/area/SouthernCrossV2/Evac/Pod05)
+/obj/machinery/atmospheric_field_generator/perma/underdoors{
+	color = "Yellow"
+	},
+/obj/machinery/atmospheric_field_generator/perma/underdoors{
+	color = "Yellow"
+	},
+/obj/machinery/door/airlock/angled_bay/standard/glass/atmos{
+	dir = 4;
+	name = "Escape Pod 3";
+	id_tag = "escape_pod_3_berth_hatch";
+	req_access = null;
+	frequency = 1380
+	},
+/turf/simulated/floor/tiled/techmaint,
+/area/SouthernCrossV2/Harbor/Ship_Bay3)
 "kpf" = (
 /obj/random/trash,
 /turf/simulated/floor/plating,
@@ -31481,8 +31896,8 @@
 /obj/machinery/embedded_controller/radio/airlock/docking_port_multi{
 	dir = 1;
 	frequency = 1380;
-	id_tag = "escape_dock_south_airlock";
-	master_tag = "escape_dock";
+	id_tag = "arrivals_dock_south_airlock";
+	master_tag = "arrivals_dock";
 	pixel_y = -27;
 	req_one_access = list(13)
 	},
@@ -31541,6 +31956,7 @@
 	dir = 4
 	},
 /obj/structure/closet/walllocker/medical/north,
+/obj/structure/closet/walllocker/emerglocker/south,
 /turf/simulated/shuttle/floor,
 /area/SouthernCrossV2/Evac/Pod05)
 "kuG" = (
@@ -31909,12 +32325,13 @@
 /turf/simulated/floor/grass,
 /area/SouthernCrossV2/Commons/Port_1Deck_Atrium)
 "kDj" = (
-/turf/simulated/shuttle/wall/no_join{
-	base_state = "orange";
-	icon = 'icons/turf/shuttle_orange.dmi';
-	icon_state = "orange"
+/obj/structure/cable/blue{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
 	},
-/area/SouthernCrossV2/Evac/Pod14)
+/turf/simulated/floor/tiled,
+/area/SouthernCrossV2/Cargo/Mining_Ship_Bay)
 "kDE" = (
 /obj/machinery/door/firedoor/glass/hidden/steel,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -32015,7 +32432,7 @@
 /obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod{
 	frequency = 1380;
 	id_tag = "escape_pod_8";
-	pixel_y = 25;
+	pixel_y = 24;
 	tag_door = "escape_pod_8_hatch"
 	},
 /obj/structure/bed/chair/bay/shuttle{
@@ -32946,7 +33363,12 @@
 /turf/simulated/wall/skipjack,
 /area/survivalpod/superpose/MechFabShip)
 "lbI" = (
-/turf/simulated/shuttle/wall,
+/obj/structure/sign/nanotrasen,
+/turf/simulated/shuttle/wall/no_join{
+	base_state = "orange";
+	icon = 'icons/turf/shuttle_orange.dmi';
+	icon_state = "orange"
+	},
 /area/SouthernCrossV2/Evac/Pod07)
 "lbL" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
@@ -33283,6 +33705,21 @@
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Maints/Deck1_Security_PortCorridor1)
 "ljv" = (
+/obj/item/device/gps{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/device/gps,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/structure/closet/walllocker_double/kitchen/south{
+	name = "Ration Cabinet"
+	},
 /obj/item/device/radio/intercom{
 	dir = 1;
 	name = "Station Intercom (General)";
@@ -33291,7 +33728,6 @@
 /obj/structure/bed/chair/bay/shuttle{
 	dir = 8
 	},
-/obj/structure/closet/walllocker/emerglocker/south,
 /turf/simulated/shuttle/floor,
 /area/SouthernCrossV2/Evac/Pod03)
 "ljF" = (
@@ -33455,6 +33891,19 @@
 /obj/effect/decal/cleanable/filth,
 /turf/simulated/floor/tiled/kafel_full,
 /area/SouthernCrossV2/Maints/ab_Kitchen)
+"lmf" = (
+/obj/structure/bed/chair/bay/shuttle{
+	dir = 4
+	},
+/obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod{
+	frequency = 1380;
+	id_tag = "large_escape_pod_1";
+	pixel_y = -24;
+	tag_door = "large_escape_pod_1_hatch";
+	dir = 1
+	},
+/turf/simulated/shuttle/floor/white,
+/area/SouthernCrossV2/Evac/Port_Transport_Shuttle)
 "lmi" = (
 /obj/structure/bed/chair/wheelchair/motor,
 /obj/effect/floor_decal/industrial/hatch/blue,
@@ -34633,9 +35082,12 @@
 /obj/machinery/atmospheric_field_generator/perma/underdoors{
 	color = "Yellow"
 	},
+/obj/effect/map_helper/airlock/door/simple,
 /obj/machinery/door/airlock/angled_tgmc/pod{
 	dir = 1;
-	name = "EscapePod"
+	name = "Escape Pod 14";
+	frequency = 1380;
+	id_tag = "escape_pod_14_hatch"
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Evac/Pod14)
@@ -35228,6 +35680,12 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
 	},
+/obj/machinery/light_switch{
+	dir = 4;
+	name = "W-light switch";
+	pixel_x = -27;
+	pixel_y = 12
+	},
 /turf/simulated/floor/tiled,
 /area/SouthernCrossV2/Commons/Deck1_Corridor)
 "lTD" = (
@@ -35738,9 +36196,9 @@
 	},
 /obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod{
 	frequency = 1380;
-	id_tag = "escape_pod_8";
-	pixel_y = 25;
-	tag_door = "escape_pod_8_hatch"
+	id_tag = "escape_pod_7";
+	pixel_y = 24;
+	tag_door = "escape_pod_7_hatch"
 	},
 /obj/structure/bed/chair/bay/shuttle{
 	dir = 4
@@ -35785,8 +36243,11 @@
 	},
 /obj/machinery/door/airlock/angled_tgmc/pod{
 	dir = 8;
-	name = "EscapePod"
+	name = "Escape Pod 7";
+	frequency = 1380;
+	id_tag = "escape_pod_7_hatch"
 	},
+/obj/effect/map_helper/airlock/door/simple,
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Evac/Pod06)
 "mef" = (
@@ -36835,6 +37296,27 @@
 /obj/random/maintenance/clean,
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Maints/Deck1_AftPort_Corridor3)
+"mzf" = (
+/obj/item/device/gps{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/device/gps,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/structure/closet/walllocker_double/kitchen/south{
+	name = "Ration Cabinet"
+	},
+/obj/structure/bed/chair/bay/shuttle{
+	dir = 1
+	},
+/turf/simulated/shuttle/floor/white,
+/area/SouthernCrossV2/Evac/Star_Transport_Shuttle)
 "mzA" = (
 /obj/machinery/atmospherics/valve,
 /obj/structure/cable/green{
@@ -37256,8 +37738,23 @@
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Engineering/Distro_Central)
 "mHK" = (
-/turf/simulated/shuttle/wall,
+/obj/structure/sign/nanotrasen,
+/turf/simulated/shuttle/wall/no_join{
+	base_state = "orange";
+	icon = 'icons/turf/shuttle_orange.dmi';
+	icon_state = "orange"
+	},
 /area/SouthernCrossV2/Evac/Pod06)
+"mIi" = (
+/obj/structure/shuttle/engine/propulsion/burst{
+	dir = 4
+	},
+/obj/structure/window/titanium{
+	dir = 8
+	},
+/obj/structure/window/titanium,
+/turf/simulated/floor/airless,
+/area/SouthernCrossV2/Evac/Pod04)
 "mIl" = (
 /obj/machinery/firealarm{
 	dir = 4;
@@ -37339,8 +37836,26 @@
 /turf/simulated/floor/tiled/dark,
 /area/SouthernCrossV2/Harbor/Fueling_Post)
 "mKZ" = (
-/turf/simulated/wall,
-/area/SouthernCrossV2/Harbor/Fueling_Post)
+/obj/machinery/door/firedoor/border_only,
+/obj/effect/floor_decal/industrial/arrows,
+/obj/effect/floor_decal/industrial/arrows{
+	dir = 1
+	},
+/obj/machinery/atmospheric_field_generator/perma/underdoors{
+	color = "Yellow"
+	},
+/obj/machinery/atmospheric_field_generator/perma/underdoors{
+	color = "Yellow"
+	},
+/obj/machinery/door/airlock/angled_bay/standard/glass/atmos{
+	dir = 4;
+	name = "Escape Pod 4";
+	id_tag = "escape_pod_4_berth_hatch";
+	req_access = null;
+	frequency = 1380
+	},
+/turf/simulated/floor/tiled/techmaint,
+/area/SouthernCrossV2/Harbor/Ship_Bay3)
 "mLa" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 4
@@ -37510,19 +38025,12 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Engineering/Telecomms_Foyer)
 "mNy" = (
-/obj/effect/catwalk_plated/techmaint,
-/obj/machinery/porta_turret/crescent{
-	check_records = 0;
-	check_down = 0;
-	check_access = 0;
-	faction = "neutral"
-	},
 /obj/machinery/camera/network/security{
 	dir = 5;
 	c_tag = "D1-Com-Transit Lobby1";
 	network = list("Commons")
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled,
 /area/SouthernCrossV2/Commons/Aft_Transit_Lobby)
 "mNF" = (
 /obj/structure/cable/green{
@@ -37783,7 +38291,11 @@
 /obj/structure/shuttle/engine/propulsion/burst{
 	dir = 4
 	},
-/turf/simulated/shuttle/wall,
+/obj/structure/window/titanium{
+	dir = 8
+	},
+/obj/structure/window/titanium,
+/turf/simulated/floor/airless,
 /area/SouthernCrossV2/Evac/Pod02)
 "mRn" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -37806,6 +38318,12 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/disposalpipe/segment,
+/obj/machinery/light_switch{
+	dir = 4;
+	name = "W-light switch";
+	pixel_x = -27;
+	pixel_y = 12
+	},
 /turf/simulated/floor/tiled,
 /area/SouthernCrossV2/Commons/Deck1_Transit_Hall)
 "mRt" = (
@@ -38999,6 +39517,7 @@
 	dir = 4
 	},
 /obj/structure/closet/walllocker/medical/north,
+/obj/structure/closet/walllocker/emerglocker/south,
 /turf/simulated/shuttle/floor,
 /area/SouthernCrossV2/Evac/Pod08)
 "nvj" = (
@@ -39326,11 +39845,6 @@
 "nCl" = (
 /obj/machinery/power/smes/buildable/point_of_interest,
 /obj/structure/cable/green,
-/obj/structure/cable/blue{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /turf/simulated/floor/tiled/yellow,
 /area/shuttle/spacebus)
 "nCB" = (
@@ -39402,6 +39916,18 @@
 /obj/machinery/portable_atmospherics/powered/pump/filled,
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Maints/Deck1_AftPort_Corridor1)
+"nEb" = (
+/obj/structure/shuttle/engine/propulsion/burst{
+	dir = 4
+	},
+/obj/structure/window/titanium{
+	dir = 8
+	},
+/obj/structure/window/titanium{
+	dir = 1
+	},
+/turf/simulated/floor/airless,
+/area/SouthernCrossV2/Evac/Pod01)
 "nEc" = (
 /obj/structure/railing{
 	dir = 8
@@ -39672,6 +40198,14 @@
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/dark,
 /area/SouthernCrossV2/Science/Research_Ship_Bay)
+"nJN" = (
+/obj/structure/sign/warning/evac,
+/turf/simulated/shuttle/wall/no_join{
+	base_state = "orange";
+	icon = 'icons/turf/shuttle_orange.dmi';
+	icon_state = "orange"
+	},
+/area/SouthernCrossV2/Evac/Pod05)
 "nJW" = (
 /obj/structure/bed/chair/bay/shuttle,
 /turf/simulated/floor/tiled/milspec,
@@ -39865,17 +40399,31 @@
 	dir = 8
 	},
 /obj/structure/closet/walllocker/medical/south,
+/obj/structure/closet/walllocker/emerglocker/north,
 /turf/simulated/shuttle/floor,
 /area/SouthernCrossV2/Evac/Pod01)
 "nMF" = (
-/obj/structure/table/rack,
-/obj/random/maintenance/security,
-/obj/random/soap,
-/turf/simulated/floor/plating,
-/area/SouthernCrossV2/Maints/Deck1_Security_StarCorridor2)
+/obj/item/device/gps{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/device/gps,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/structure/closet/walllocker_double/kitchen/north{
+	name = "Ration Cabinet"
+	},
+/obj/structure/bed/chair/bay/shuttle,
+/turf/simulated/shuttle/floor/white,
+/area/SouthernCrossV2/Evac/Star_Transport_Shuttle)
 "nMG" = (
 /obj/machinery/embedded_controller/radio/airlock/airlock_controller{
-	frequency = 1381;
+	frequency = 1380;
 	id_tag = "SC-docklane42";
 	pixel_y = 24
 	},
@@ -40061,8 +40609,11 @@
 	},
 /obj/machinery/door/airlock/angled_tgmc/pod{
 	dir = 8;
-	name = "EscapePod"
+	name = "Escape Pod 3";
+	frequency = 1380;
+	id_tag = "escape_pod_3_hatch"
 	},
+/obj/effect/map_helper/airlock/door/simple,
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Evac/Pod02)
 "nRC" = (
@@ -40096,7 +40647,7 @@
 	dir = 1
 	},
 /obj/machinery/embedded_controller/radio/airlock/airlock_controller{
-	frequency = 1381;
+	frequency = 1380;
 	id_tag = "SC-docklane46";
 	pixel_y = 24
 	},
@@ -40240,9 +40791,9 @@
 	dir = 9
 	},
 /obj/structure/cable/blue{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
 	},
 /turf/simulated/floor/tiled/milspec,
 /area/shuttle/echidna)
@@ -40339,6 +40890,17 @@
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /turf/simulated/floor/tiled/dark,
 /area/SouthernCrossV2/Science/PA_Chamber)
+"nWF" = (
+/obj/effect/catwalk_plated/white,
+/obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod_berth{
+	frequency = 1380;
+	id_tag = "escape_pod_4_berth";
+	pixel_x = -24;
+	tag_door = "escape_pod_4_berth_hatch";
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/SouthernCrossV2/Harbor/Ship_Bay3)
 "nWG" = (
 /obj/machinery/status_display{
 	layer = 4;
@@ -40946,7 +41508,7 @@
 	frequency = 1380;
 	id_tag = "cryostorage_shuttle";
 	name = "cryostorage controller";
-	pixel_y = -27;
+	pixel_y = -24;
 	req_access = list(19);
 	tag_door = "cryostorage_shuttle_hatch"
 	},
@@ -41060,6 +41622,17 @@
 /obj/effect/floor_decal/industrial/warning/corner,
 /turf/simulated/floor/reinforced,
 /area/SouthernCrossV2/Science/Xenobiology_Lab)
+"omT" = (
+/obj/effect/catwalk_plated/white,
+/obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod_berth{
+	frequency = 1380;
+	id_tag = "escape_pod_3_berth";
+	pixel_x = -24;
+	tag_door = "escape_pod_3_berth_hatch";
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/SouthernCrossV2/Harbor/Ship_Bay3)
 "onH" = (
 /obj/structure/particle_accelerator/particle_emitter/left{
 	anchored = 1;
@@ -41134,7 +41707,7 @@
 	pixel_y = 1
 	},
 /obj/machinery/embedded_controller/radio/airlock/airlock_controller{
-	frequency = 1381;
+	frequency = 1380;
 	id_tag = "SC-docklane47";
 	pixel_y = 24
 	},
@@ -41188,12 +41761,11 @@
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Maints/Deck1_AftStar1_Corridor3)
 "oqt" = (
-/obj/structure/closet/walllocker/emerglocker{
-	pixel_x = -28
-	},
 /obj/structure/bed/chair/bay/shuttle{
 	dir = 1
 	},
+/obj/structure/closet/walllocker/medical/west,
+/obj/structure/closet/walllocker/emerglocker/east,
 /turf/simulated/shuttle/floor,
 /area/SouthernCrossV2/Evac/Pod14)
 "orS" = (
@@ -41376,7 +41948,7 @@
 /area/SouthernCrossV2/Commons/Port_1Deck_Atrium)
 "ouG" = (
 /obj/structure/sign/warning/nosmoking_2,
-/turf/simulated/wall,
+/turf/simulated/wall/r_wall,
 /area/SouthernCrossV2/Harbor/Fueling_Storage)
 "ouR" = (
 /obj/structure/table/rack/shelf,
@@ -42056,10 +42628,12 @@
 /turf/simulated/floor/tiled/white,
 /area/SouthernCrossV2/Maints/ab_Medical)
 "oIG" = (
-/obj/structure/grille,
-/obj/structure/shuttle/window,
-/turf/simulated/shuttle/plating,
-/area/space)
+/turf/simulated/shuttle/wall/no_join{
+	base_state = "orange";
+	icon = 'icons/turf/shuttle_orange.dmi';
+	icon_state = "orange"
+	},
+/area/SouthernCrossV2/Evac/Star_Transport_Shuttle)
 "oII" = (
 /turf/simulated/wall,
 /area/SouthernCrossV2/Maints/Deck1_ForStar_Chamber3)
@@ -42417,12 +42991,15 @@
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Maints/Deck1_ForStar_Corridor3)
 "oOo" = (
-/turf/simulated/shuttle/wall/no_join{
-	base_state = "orange";
-	icon = 'icons/turf/shuttle_orange.dmi';
-	icon_state = "orange"
+/obj/structure/shuttle/engine/propulsion/burst{
+	dir = 8
 	},
-/area/SouthernCrossV2/Evac/Pod02)
+/obj/structure/window/titanium,
+/obj/structure/window/titanium{
+	dir = 4
+	},
+/turf/simulated/floor/airless,
+/area/SouthernCrossV2/Evac/Pod08)
 "oOM" = (
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 1
@@ -42759,6 +43336,13 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod_berth{
+	frequency = 1380;
+	id_tag = "large_escape_pod_2_berth";
+	pixel_x = -24;
+	tag_door = "large_escape_pod_2_berth_hatch";
+	dir = 4
+	},
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Commons/Star_1Deck_Atrium)
 "oXt" = (
@@ -43108,7 +43692,13 @@
 /obj/structure/shuttle/engine/propulsion/burst{
 	dir = 4
 	},
-/turf/simulated/shuttle/wall,
+/obj/structure/window/titanium{
+	dir = 8
+	},
+/obj/structure/window/titanium{
+	dir = 1
+	},
+/turf/simulated/floor/airless,
 /area/SouthernCrossV2/Evac/Pod03)
 "peq" = (
 /obj/machinery/camera/network/security{
@@ -43352,7 +43942,8 @@
 "pid" = (
 /obj/structure/table/standard,
 /obj/item/device/flashlight/lamp{
-	pixel_y = 5
+	pixel_y = 5;
+	on = 0
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/black{
 	dir = 5
@@ -43380,8 +43971,16 @@
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Maints/Deck1_AftStar1_Corridor1)
 "pil" = (
-/turf/simulated/wall,
-/area/SouthernCrossV2/Harbor/Fueling_Storage)
+/obj/effect/catwalk_plated/white,
+/obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod_berth{
+	frequency = 1380;
+	id_tag = "escape_pod_5_berth";
+	pixel_x = 24;
+	tag_door = "escape_pod_5_berth_hatch";
+	dir = 8
+	},
+/turf/simulated/floor/plating,
+/area/SouthernCrossV2/Harbor/Ship_Bay4)
 "pir" = (
 /obj/structure/table/rack/shelf,
 /obj/item/clothing/head/fishing,
@@ -43517,6 +44116,27 @@
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Maints/Deck1_AftPort_Chamber1)
+"pkx" = (
+/obj/machinery/door/firedoor/border_only,
+/obj/effect/floor_decal/industrial/arrows,
+/obj/effect/floor_decal/industrial/arrows{
+	dir = 1
+	},
+/obj/machinery/atmospheric_field_generator/perma/underdoors{
+	color = "Yellow"
+	},
+/obj/machinery/atmospheric_field_generator/perma/underdoors{
+	color = "Yellow"
+	},
+/obj/machinery/door/airlock/angled_bay/standard/glass/atmos{
+	dir = 4;
+	name = "Escape Pod 2";
+	id_tag = "escape_pod_2_berth_hatch";
+	req_access = null;
+	frequency = 1380
+	},
+/turf/simulated/floor/tiled/techmaint,
+/area/SouthernCrossV2/Harbor/Ship_Bay3)
 "pkG" = (
 /obj/structure/shuttle/engine/heater,
 /obj/machinery/atmospherics/pipe/simple/hidden/yellow{
@@ -43524,6 +44144,14 @@
 	},
 /turf/simulated/wall/rpshull,
 /area/shuttle/baby_mammoth)
+"pkU" = (
+/obj/structure/sign/warning/evac,
+/turf/simulated/shuttle/wall/no_join{
+	base_state = "orange";
+	icon = 'icons/turf/shuttle_orange.dmi';
+	icon_state = "orange"
+	},
+/area/SouthernCrossV2/Evac/Pod03)
 "pkW" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
@@ -43586,15 +44214,18 @@
 /obj/effect/floor_decal/industrial/arrows{
 	dir = 1
 	},
+/obj/machinery/atmospheric_field_generator/perma/underdoors{
+	color = "Yellow"
+	},
+/obj/machinery/atmospheric_field_generator/perma/underdoors{
+	color = "Yellow"
+	},
 /obj/machinery/door/airlock/angled_bay/standard/glass/atmos{
 	dir = 4;
-	name = "EscapePod"
-	},
-/obj/machinery/atmospheric_field_generator/perma/underdoors{
-	color = "Yellow"
-	},
-/obj/machinery/atmospheric_field_generator/perma/underdoors{
-	color = "Yellow"
+	name = "Large Escape Pod 2";
+	id_tag = "large_escape_pod_2_berth_hatch";
+	req_access = null;
+	frequency = 1380
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Commons/Star_1Deck_Atrium)
@@ -45276,6 +45907,10 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/SouthernCrossV2/Domicile/Public_EVA)
+"pPl" = (
+/obj/structure/sign/level/one/large,
+/turf/simulated/wall/r_wall,
+/area/SouthernCrossV2/Cargo/Deck1_Stairwell)
 "pPs" = (
 /obj/structure/disposalpipe/segment{
 	dir = 8;
@@ -45452,7 +46087,7 @@
 /area/space)
 "pSs" = (
 /obj/machinery/embedded_controller/radio/airlock/airlock_controller{
-	frequency = 1381;
+	frequency = 1380;
 	id_tag = "SC-docklane12";
 	pixel_y = 24
 	},
@@ -45934,6 +46569,12 @@
 /turf/simulated/floor,
 /area/shuttle/ursula)
 "pZW" = (
+/obj/machinery/hologram/holopad,
+/obj/effect/floor_decal/shuttle/blue{
+	pixel_x = -1;
+	pixel_y = 1
+	},
+/obj/machinery/bluespace_beacon,
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
@@ -46080,7 +46721,8 @@
 "qev" = (
 /obj/structure/table/sifwoodentable,
 /obj/item/device/flashlight/lamp/green{
-	pixel_y = 3
+	pixel_y = 3;
+	on = 0
 	},
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Maints/ab_Kitchen)
@@ -46193,15 +46835,18 @@
 /obj/effect/floor_decal/industrial/arrows{
 	dir = 1
 	},
+/obj/machinery/atmospheric_field_generator/perma/underdoors{
+	color = "Yellow"
+	},
+/obj/machinery/atmospheric_field_generator/perma/underdoors{
+	color = "Yellow"
+	},
 /obj/machinery/door/airlock/angled_bay/standard/glass/atmos{
 	dir = 4;
-	name = "EscapePod"
-	},
-/obj/machinery/atmospheric_field_generator/perma/underdoors{
-	color = "Yellow"
-	},
-/obj/machinery/atmospheric_field_generator/perma/underdoors{
-	color = "Yellow"
+	name = "Large Escape Pod 1";
+	id_tag = "large_escape_pod_1_berth_hatch";
+	req_access = null;
+	frequency = 1380
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Commons/Port_1Deck_Atrium)
@@ -46512,7 +47157,7 @@
 /area/SouthernCrossV2/Harbor/Ship_Bay2)
 "qoB" = (
 /obj/machinery/status_display,
-/turf/simulated/wall/thull,
+/turf/simulated/wall/rthull,
 /area/SouthernCrossV2/Evac/Cryogenic_Shuttle)
 "qoK" = (
 /obj/effect/floor_decal/shuttles/right{
@@ -48780,6 +49425,21 @@
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Maints/Deck1_AftPort_Chamber1)
 "rfH" = (
+/obj/item/device/gps{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/device/gps,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/structure/closet/walllocker_double/kitchen/south{
+	name = "Ration Cabinet"
+	},
 /obj/item/device/radio/intercom{
 	dir = 1;
 	name = "Station Intercom (General)";
@@ -48788,7 +49448,6 @@
 /obj/structure/bed/chair/bay/shuttle{
 	dir = 8
 	},
-/obj/structure/closet/walllocker/emerglocker/south,
 /turf/simulated/shuttle/floor,
 /area/SouthernCrossV2/Evac/Pod01)
 "rfR" = (
@@ -48920,6 +49579,27 @@
 	},
 /turf/simulated/floor/tiled/milspec,
 /area/shuttle/baby_mammoth)
+"rjg" = (
+/obj/machinery/door/firedoor/border_only,
+/obj/effect/floor_decal/industrial/arrows,
+/obj/effect/floor_decal/industrial/arrows{
+	dir = 1
+	},
+/obj/machinery/atmospheric_field_generator/perma/underdoors{
+	color = "Yellow"
+	},
+/obj/machinery/atmospheric_field_generator/perma/underdoors{
+	color = "Yellow"
+	},
+/obj/machinery/door/airlock/angled_bay/standard/glass/atmos{
+	dir = 4;
+	name = "Escape Pod 6";
+	id_tag = "escape_pod_6_berth_hatch";
+	req_access = null;
+	frequency = 1380
+	},
+/turf/simulated/floor/tiled/techmaint,
+/area/SouthernCrossV2/Harbor/Ship_Bay4)
 "rjy" = (
 /obj/effect/catwalk_plated/techmaint,
 /obj/structure/cable/green{
@@ -49485,6 +50165,16 @@
 "ruo" = (
 /turf/simulated/wall,
 /area/SouthernCrossV2/Engineering/Distro_Central)
+"ruD" = (
+/obj/structure/sign/nanotrasen{
+	icon_rotation = 90
+	},
+/turf/simulated/shuttle/wall/no_join{
+	base_state = "orange";
+	icon = 'icons/turf/shuttle_orange.dmi';
+	icon_state = "orange"
+	},
+/area/SouthernCrossV2/Evac/Pod14)
 "ruP" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/tiled,
@@ -49844,9 +50534,10 @@
 	},
 /obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod{
 	frequency = 1380;
-	id_tag = "escape_pod_7";
-	pixel_y = -25;
-	tag_door = "escape_pod_7_hatch"
+	id_tag = "escape_pod_1";
+	pixel_y = -24;
+	tag_door = "escape_pod_1_hatch";
+	dir = 1
 	},
 /obj/structure/bed/chair/bay/shuttle{
 	dir = 8
@@ -49854,11 +50545,7 @@
 /turf/simulated/shuttle/floor,
 /area/SouthernCrossV2/Evac/Pod04)
 "rCn" = (
-/turf/simulated/shuttle/wall/no_join{
-	base_state = "orange";
-	icon = 'icons/turf/shuttle_orange.dmi';
-	icon_state = "orange"
-	},
+/turf/simulated/wall/rthull,
 /area/SouthernCrossV2/Evac/Pod06)
 "rCF" = (
 /obj/effect/catwalk_plated/white,
@@ -49952,11 +50639,6 @@
 	pixel_x = -25;
 	pixel_y = -1
 	},
-/obj/structure/cable/blue{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /turf/simulated/floor,
 /area/shuttle/echidna)
 "rFk" = (
@@ -49988,9 +50670,9 @@
 	},
 /obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod{
 	frequency = 1380;
-	id_tag = "escape_pod_8";
-	pixel_y = 25;
-	tag_door = "escape_pod_8_hatch"
+	id_tag = "escape_pod_6";
+	pixel_y = 24;
+	tag_door = "escape_pod_6_hatch"
 	},
 /obj/structure/bed/chair/bay/shuttle{
 	dir = 4
@@ -50476,6 +51158,16 @@
 /obj/random/junk,
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Maints/Deck1_Cargo_Corridor3)
+"rRz" = (
+/obj/item/weapon/reagent_containers/syringe/steroid,
+/obj/item/weapon/material/shard{
+	icon_state = "medium"
+	},
+/obj/item/weapon/material/shard{
+	pixel_x = 7
+	},
+/turf/simulated/floor/plating/turfpack/station,
+/area/SouthernCrossV2/Maints/ab_Medical)
 "rRT" = (
 /obj/machinery/door/firedoor/glass/hidden/steel{
 	dir = 2
@@ -50706,7 +51398,13 @@
 /area/SouthernCrossV2/Commons/Central_1_Deck_Hall)
 "rXw" = (
 /obj/structure/shuttle/engine/propulsion/burst,
-/turf/simulated/shuttle/plating/airless/carry,
+/obj/structure/window/titanium{
+	dir = 8
+	},
+/obj/structure/window/titanium{
+	dir = 1
+	},
+/turf/simulated/floor/airless,
 /area/SouthernCrossV2/Evac/Pod14)
 "rXy" = (
 /turf/simulated/floor/plating/turfpack/airless,
@@ -51033,6 +51731,17 @@
 /obj/random/maintenance/morestuff,
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Maints/Deck1_ForStar_Corridor2)
+"scR" = (
+/obj/effect/catwalk_plated/white,
+/obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod_berth{
+	frequency = 1380;
+	id_tag = "escape_pod_2_berth";
+	pixel_x = -24;
+	tag_door = "escape_pod_2_berth_hatch";
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/SouthernCrossV2/Harbor/Ship_Bay3)
 "scX" = (
 /obj/machinery/door/firedoor/border_only,
 /obj/effect/floor_decal/industrial/arrows/yellow,
@@ -51162,9 +51871,10 @@
 	},
 /obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod{
 	frequency = 1380;
-	id_tag = "escape_pod_2";
-	pixel_x = -25;
-	tag_door = "escape_pod_2_hatch"
+	id_tag = "escape_pod_13";
+	pixel_x = -24;
+	tag_door = "escape_pod_13_hatch";
+	dir = 4
 	},
 /obj/machinery/light{
 	dir = 1
@@ -51438,6 +52148,17 @@
 	temperature = 80
 	},
 /area/SouthernCrossV2/Engineering/Telecomms_Network)
+"slb" = (
+/obj/effect/catwalk_plated/white,
+/obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod_berth{
+	frequency = 1380;
+	id_tag = "escape_pod_8_berth";
+	pixel_x = 24;
+	tag_door = "escape_pod_8_berth_hatch";
+	dir = 8
+	},
+/turf/simulated/floor/plating,
+/area/SouthernCrossV2/Harbor/Ship_Bay4)
 "slm" = (
 /obj/machinery/mineral/equipment_vendor/survey,
 /obj/effect/floor_decal/milspec/color/purple,
@@ -51840,6 +52561,16 @@
 	},
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Harbor/Ship_Bay3)
+"sxY" = (
+/obj/structure/shuttle/engine/propulsion/burst,
+/obj/structure/window/titanium{
+	dir = 8
+	},
+/obj/structure/window/titanium{
+	dir = 1
+	},
+/turf/simulated/floor/airless,
+/area/SouthernCrossV2/Evac/Pod13)
 "syg" = (
 /obj/machinery/floodlight,
 /turf/simulated/floor/plating,
@@ -52287,7 +53018,7 @@
 /turf/simulated/floor/carpet/sblucarpet/turfpack/station,
 /area/SouthernCrossV2/Commons/Cryostorage_Lounge)
 "sFQ" = (
-/turf/simulated/wall/thull,
+/turf/simulated/wall/rthull,
 /area/SouthernCrossV2/Evac/Port_Transport_Shuttle)
 "sFU" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -52915,7 +53646,7 @@
 /area/SouthernCrossV2/Harbor/Ship_Bay3)
 "sRF" = (
 /obj/machinery/embedded_controller/radio/airlock/airlock_controller{
-	frequency = 1381;
+	frequency = 1380;
 	id_tag = "SC-docklane52";
 	dir = 8;
 	pixel_x = 24
@@ -53018,11 +53749,7 @@
 /turf/simulated/floor/tiled,
 /area/SouthernCrossV2/Commons/Port_1Deck_Atrium)
 "sTR" = (
-/turf/simulated/shuttle/wall/no_join{
-	base_state = "orange";
-	icon = 'icons/turf/shuttle_orange.dmi';
-	icon_state = "orange"
-	},
+/turf/simulated/wall/rthull,
 /area/SouthernCrossV2/Evac/Pod04)
 "sTV" = (
 /obj/machinery/computer/security/abductor{
@@ -53181,11 +53908,6 @@
 	frequency = 1380;
 	id_tag = "echidna_pump"
 	},
-/obj/structure/cable/blue{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /turf/simulated/floor,
 /area/shuttle/echidna)
 "sYD" = (
@@ -53225,6 +53947,30 @@
 	},
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Harbor/Ship_Bay3)
+"sZu" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/effect/catwalk_plated/techmaint,
+/obj/machinery/porta_turret/crescent{
+	check_records = 0;
+	check_down = 0;
+	check_access = 0;
+	faction = "neutral"
+	},
+/turf/simulated/floor/plating,
+/area/SouthernCrossV2/Security/Aft_Security_Post)
 "sZx" = (
 /obj/machinery/alarm{
 	name = "N-alarm";
@@ -53568,11 +54314,6 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/obj/structure/cable/blue{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /turf/simulated/floor/tiled/yellow,
 /area/shuttle/spacebus)
 "thU" = (
@@ -53616,6 +54357,11 @@
 "tim" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 9
+	},
+/obj/structure/cable/blue{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /obj/machinery/door/airlock/voidcraft/vertical{
 	frequency = 1380;
@@ -54100,6 +54846,11 @@
 /turf/simulated/floor/tiled/steel_ridged,
 /area/SouthernCrossV2/Harbor/Dock3)
 "tsx" = (
+/obj/structure/cable/blue{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /obj/machinery/atmospherics/pipe/simple/hidden/yellow,
 /obj/machinery/door/airlock/voidcraft/vertical{
 	frequency = 1380;
@@ -54188,8 +54939,11 @@
 	},
 /obj/machinery/door/airlock/angled_tgmc/pod{
 	dir = 8;
-	name = "EscapePod"
+	name = "Escape Pod 6";
+	frequency = 1380;
+	id_tag = "escape_pod_6_hatch"
 	},
+/obj/effect/map_helper/airlock/door/simple,
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Evac/Pod07)
 "tvo" = (
@@ -54221,8 +54975,13 @@
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Maints/ab_StripBar)
 "tvZ" = (
-/turf/simulated/wall/r_wall,
-/area/space)
+/obj/machinery/alarm{
+	name = "E-alarm";
+	dir = 8;
+	pixel_x = 25
+	},
+/turf/simulated/floor/bmarble,
+/area/SouthernCrossV2/Maints/ab_GeneralStore)
 "twg" = (
 /obj/machinery/power/terminal{
 	dir = 1
@@ -54261,7 +55020,7 @@
 /area/SouthernCrossV2/Maints/Deck1_AftPort_Chamber2)
 "twF" = (
 /obj/machinery/embedded_controller/radio/airlock/airlock_controller{
-	frequency = 1381;
+	frequency = 1380;
 	id_tag = "SC-docklane11";
 	dir = 4;
 	pixel_x = -24
@@ -54433,7 +55192,8 @@
 "tzN" = (
 /obj/structure/table/sifwoodentable,
 /obj/item/device/flashlight/lamp/green{
-	pixel_y = 3
+	pixel_y = 3;
+	on = 0
 	},
 /turf/simulated/floor/wood/alt/panel,
 /area/SouthernCrossV2/Maints/ab_Kitchen)
@@ -54590,9 +55350,10 @@
 	},
 /obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod{
 	frequency = 1380;
-	id_tag = "escape_pod_7";
-	pixel_y = -25;
-	tag_door = "escape_pod_7_hatch"
+	id_tag = "escape_pod_2";
+	pixel_y = -24;
+	tag_door = "escape_pod_2_hatch";
+	dir = 1
 	},
 /obj/structure/bed/chair/bay/shuttle{
 	dir = 8
@@ -54638,6 +55399,12 @@
 	d2 = 8;
 	icon_state = "0-8"
 	},
+/obj/machinery/light_switch{
+	pixel_x = 27;
+	pixel_y = -12;
+	name = "E-light switch";
+	dir = 8
+	},
 /turf/simulated/floor/tiled,
 /area/SouthernCrossV2/Science/PA_Access)
 "tDt" = (
@@ -54676,8 +55443,11 @@
 	color = "Yellow"
 	},
 /obj/machinery/door/airlock/angled_tgmc/wide/medical{
-	name = "Cryostorage EscapePod"
+	name = "Cryostorage EscapePod";
+	id_tag = "cryostorage_shuttle_hatch";
+	frequency = 1380
 	},
+/obj/effect/map_helper/airlock/door/simple,
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Evac/Cryogenic_Shuttle)
 "tEv" = (
@@ -55092,10 +55862,6 @@
 "tNk" = (
 /obj/structure/table/standard,
 /obj/random/soap,
-/obj/random/soap{
-	pixel_y = 3;
-	pixel_x = 1
-	},
 /obj/item/weapon/haircomb{
 	pixel_y = 7;
 	pixel_x = -3
@@ -55279,11 +56045,11 @@
 /turf/simulated/floor/tiled,
 /area/SouthernCrossV2/Commons/Central_1_Deck_Hall)
 "tSk" = (
-/turf/simulated/shuttle/wall,
+/turf/simulated/wall/rthull,
 /area/SouthernCrossV2/Evac/Pod05)
 "tSm" = (
 /obj/structure/sign/warning/nosmoking_2,
-/turf/simulated/wall,
+/turf/simulated/wall/r_wall,
 /area/SouthernCrossV2/Harbor/Fueling_Post)
 "tSt" = (
 /obj/structure/cable{
@@ -55315,9 +56081,9 @@
 	},
 /obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod{
 	frequency = 1380;
-	id_tag = "escape_pod_8";
-	pixel_y = 25;
-	tag_door = "escape_pod_8_hatch"
+	id_tag = "escape_pod_5";
+	pixel_y = 24;
+	tag_door = "escape_pod_5_hatch"
 	},
 /obj/structure/bed/chair/bay/shuttle{
 	dir = 4
@@ -55617,10 +56383,41 @@
 /obj/effect/catwalk_plated,
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Engineering/Telecomms_Foyer)
+"uag" = (
+/obj/machinery/door/firedoor/border_only,
+/obj/effect/floor_decal/industrial/arrows,
+/obj/effect/floor_decal/industrial/arrows{
+	dir = 1
+	},
+/obj/machinery/atmospheric_field_generator/perma/underdoors{
+	color = "Yellow"
+	},
+/obj/machinery/atmospheric_field_generator/perma/underdoors{
+	color = "Yellow"
+	},
+/obj/machinery/door/airlock/angled_bay/standard/glass/atmos{
+	dir = 4;
+	name = "Escape Pod 8";
+	id_tag = "escape_pod_8_berth_hatch";
+	req_access = null;
+	frequency = 1380
+	},
+/turf/simulated/floor/tiled/techmaint,
+/area/SouthernCrossV2/Harbor/Ship_Bay4)
 "uah" = (
 /obj/effect/catwalk_plated/techmaint,
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Maints/Deck1_ForStar_Corridor2)
+"uai" = (
+/obj/structure/sign/nanotrasen{
+	icon_rotation = 90
+	},
+/turf/simulated/shuttle/wall/no_join{
+	base_state = "orange";
+	icon = 'icons/turf/shuttle_orange.dmi';
+	icon_state = "orange"
+	},
+/area/SouthernCrossV2/Evac/Pod13)
 "uat" = (
 /turf/simulated/wall/r_wall,
 /area/SouthernCrossV2/Maints/Deck1_Security_PortChamber2)
@@ -55709,7 +56506,8 @@
 /obj/structure/table/bench/marble,
 /obj/item/device/flashlight/lamp/clown{
 	pixel_y = 6;
-	pixel_x = -1
+	pixel_x = -1;
+	on = 0
 	},
 /obj/item/weapon/storage/backpack{
 	pixel_y = 7;
@@ -55763,6 +56561,18 @@
 	},
 /turf/simulated/shuttle/floor,
 /area/SouthernCrossV2/Evac/Cryogenic_Shuttle)
+"ucN" = (
+/obj/structure/shuttle/engine/propulsion/burst{
+	dir = 4
+	},
+/obj/structure/window/titanium{
+	dir = 8
+	},
+/obj/structure/window/titanium{
+	dir = 1
+	},
+/turf/simulated/floor/airless,
+/area/SouthernCrossV2/Evac/Pod02)
 "ucO" = (
 /obj/effect/catwalk_plated/techmaint,
 /obj/structure/cable{
@@ -55910,6 +56720,20 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/SouthernCrossV2/Commons/Aft_Transit_Lobby)
+"ufP" = (
+/obj/effect/floor_decal/borderfloorblack{
+	dir = 4
+	},
+/obj/effect/floor_decal/industrial/danger{
+	dir = 4
+	},
+/obj/structure/cable/blue{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/SouthernCrossV2/Cargo/Mining_Ship_Bay)
 "ugg" = (
 /obj/machinery/camera/network/security{
 	dir = 10;
@@ -56289,6 +57113,14 @@
 	},
 /turf/simulated/shuttle/plating,
 /area/survivalpod/superpose/ScienceShip)
+"uoq" = (
+/obj/structure/sign/warning/evac,
+/turf/simulated/shuttle/wall/no_join{
+	base_state = "orange";
+	icon = 'icons/turf/shuttle_orange.dmi';
+	icon_state = "orange"
+	},
+/area/SouthernCrossV2/Evac/Pod13)
 "uoE" = (
 /obj/effect/catwalk_plated/techmaint,
 /obj/random/junk,
@@ -56732,6 +57564,14 @@
 "uyN" = (
 /turf/simulated/floor/plating,
 /area/SouthernCrossV2/Maints/ab_Kitchen)
+"uzg" = (
+/obj/structure/sign/nanotrasen,
+/turf/simulated/shuttle/wall/no_join{
+	base_state = "orange";
+	icon = 'icons/turf/shuttle_orange.dmi';
+	icon_state = "orange"
+	},
+/area/SouthernCrossV2/Evac/Pod02)
 "uzh" = (
 /turf/simulated/wall,
 /area/SouthernCrossV2/Maints/Deck1_Security_StarChamber2)
@@ -57765,7 +58605,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/SouthernCrossV2/Harbor/Fueling_Storage)
 "uUf" = (
-/turf/simulated/wall/thull,
+/turf/simulated/wall/rthull,
 /area/SouthernCrossV2/Evac/Cryogenic_Shuttle)
 "uUi" = (
 /obj/structure/cable/yellow{
@@ -58420,7 +59260,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/plating/turfpack/airless,
-/area/SouthernCrossV2/Harbor/Dock4)
+/area/space)
 "vhD" = (
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/plating,
@@ -58548,8 +59388,11 @@
 	},
 /obj/machinery/door/airlock/angled_tgmc/pod{
 	dir = 8;
-	name = "EscapePod"
+	name = "Escape Pod 1";
+	frequency = 1380;
+	id_tag = "escape_pod_1_hatch"
 	},
+/obj/effect/map_helper/airlock/door/simple,
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Evac/Pod04)
 "vjB" = (
@@ -58916,14 +59759,28 @@
 /turf/simulated/floor/tiled/steel_grid,
 /area/survivalpod/superpose/ScienceShip)
 "vqN" = (
+/obj/item/device/gps{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/device/gps,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/structure/bed/chair/bay/shuttle{
+	dir = 4
+	},
+/obj/structure/closet/walllocker_double/kitchen/north{
+	name = "Ration Cabinet"
+	},
 /obj/item/device/radio/intercom{
 	name = "Station Intercom (General)";
 	pixel_y = -21
 	},
-/obj/structure/bed/chair/bay/shuttle{
-	dir = 4
-	},
-/obj/structure/closet/walllocker/emerglocker/north,
 /turf/simulated/shuttle/floor,
 /area/SouthernCrossV2/Evac/Pod07)
 "vrb" = (
@@ -59152,6 +60009,11 @@
 /obj/effect/floor_decal/corner/paleblue/bordercorner{
 	dir = 1
 	},
+/obj/item/weapon/material/shard{
+	icon_state = "medium";
+	pixel_y = -7;
+	pixel_x = -3
+	},
 /turf/simulated/floor/tiled/white,
 /area/SouthernCrossV2/Maints/ab_Medical)
 "vvs" = (
@@ -59360,6 +60222,14 @@
 /obj/effect/floor_decal/rust,
 /turf/simulated/floor/plating/turfpack/station,
 /area/SouthernCrossV2/Maints/Deck1_Cargo_Chamber1)
+"vzy" = (
+/obj/structure/sign/nanotrasen,
+/turf/simulated/shuttle/wall/no_join{
+	base_state = "orange";
+	icon = 'icons/turf/shuttle_orange.dmi';
+	icon_state = "orange"
+	},
+/area/SouthernCrossV2/Evac/Pod08)
 "vzJ" = (
 /obj/structure/table/rack/shelf,
 /obj/random/maintenance/clean,
@@ -59952,6 +60822,11 @@
 	name = "interior access button";
 	pixel_y = 26
 	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /obj/structure/cable/blue{
 	d1 = 4;
 	d2 = 8;
@@ -60039,16 +60914,28 @@
 /turf/simulated/floor/wood/alt/tile,
 /area/SouthernCrossV2/Maints/Deck1_ForPort_Chamber1)
 "vNE" = (
-/obj/structure/closet/walllocker/medical{
-	pixel_x = -28
+/obj/item/device/gps{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/device/gps,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/structure/bed/chair/bay/shuttle{
+	dir = 1
 	},
 /obj/item/device/radio/intercom{
 	dir = 4;
 	name = "Station Intercom (General)";
 	pixel_x = 21
 	},
-/obj/structure/bed/chair/bay/shuttle{
-	dir = 1
+/obj/structure/closet/walllocker_double/kitchen/west{
+	name = "Ration Cabinet"
 	},
 /turf/simulated/shuttle/floor,
 /area/SouthernCrossV2/Evac/Pod13)
@@ -60357,6 +61244,11 @@
 "vUH" = (
 /obj/machinery/meter,
 /obj/machinery/atmospherics/pipe/manifold4w/visible,
+/obj/structure/cable/blue{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4
 	},
@@ -60389,6 +61281,16 @@
 	},
 /turf/simulated/floor/tiled,
 /area/SouthernCrossV2/Commons/Central_1_Deck_Hall)
+"vVv" = (
+/obj/structure/shuttle/engine/propulsion/burst{
+	dir = 4
+	},
+/obj/structure/window/titanium{
+	dir = 8
+	},
+/obj/structure/window/titanium,
+/turf/simulated/floor/airless,
+/area/SouthernCrossV2/Evac/Pod03)
 "vVE" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -60659,7 +61561,7 @@
 /turf/simulated/floor/tiled/milspec,
 /area/shuttle/baby_mammoth)
 "wal" = (
-/turf/simulated/wall/thull,
+/turf/simulated/wall/rthull,
 /area/SouthernCrossV2/Evac/Star_Transport_Shuttle)
 "wam" = (
 /obj/structure/cable/green{
@@ -60790,7 +61692,13 @@
 /obj/structure/shuttle/engine/propulsion/burst{
 	dir = 8
 	},
-/turf/simulated/shuttle/wall,
+/obj/structure/window/titanium{
+	dir = 1
+	},
+/obj/structure/window/titanium{
+	dir = 4
+	},
+/turf/simulated/floor/airless,
 /area/SouthernCrossV2/Evac/Pod07)
 "wdI" = (
 /obj/machinery/computer/area_atmos{
@@ -60818,7 +61726,7 @@
 /area/SouthernCrossV2/Harbor/Port_Docking_Foyer)
 "weW" = (
 /obj/machinery/ai_status_display,
-/turf/simulated/wall/thull,
+/turf/simulated/wall/rthull,
 /area/SouthernCrossV2/Evac/Cryogenic_Shuttle)
 "wfq" = (
 /obj/machinery/camera/network/security{
@@ -60960,6 +61868,7 @@
 	dir = 8
 	},
 /obj/structure/closet/walllocker/medical/south,
+/obj/structure/closet/walllocker/emerglocker/north,
 /turf/simulated/shuttle/floor,
 /area/SouthernCrossV2/Evac/Pod02)
 "wiP" = (
@@ -61022,14 +61931,9 @@
 	},
 /area/SouthernCrossV2/Commons/Star_1Deck_Atrium)
 "wkg" = (
-/obj/structure/cable/white{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/effect/catwalk_plated/white,
-/turf/simulated/floor/plating/turfpack/airless,
-/area/SouthernCrossV2/Harbor/Dock1)
+/obj/item/toy/baseball,
+/turf/simulated/floor/grass2/turfpack/station,
+/area/SouthernCrossV2/Maints/ab_SportsField)
 "wkU" = (
 /obj/machinery/door/firedoor/border_only,
 /obj/effect/floor_decal/industrial/arrows/yellow,
@@ -61210,8 +62114,14 @@
 	},
 /obj/machinery/door/airlock/angled_bay/double/glass/common{
 	dir = 8;
-	name = "Cryostorage EscapePod"
+	name = "Cryostorage EscapePod";
+	id_tag = "cryostorage_shuttle_berth";
+	frequency = 1380
 	},
+/obj/machinery/atmospheric_field_generator/perma/underdoors{
+	color = "Yellow"
+	},
+/obj/effect/floor_decal/industrial/hatch,
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Commons/Cryostorage_Lounge)
 "wpV" = (
@@ -61392,7 +62302,11 @@
 /obj/structure/shuttle/engine/propulsion/burst{
 	dir = 4
 	},
-/turf/simulated/shuttle/wall,
+/obj/structure/window/titanium{
+	dir = 8
+	},
+/obj/structure/window/titanium,
+/turf/simulated/floor/airless,
 /area/SouthernCrossV2/Evac/Pod01)
 "wtg" = (
 /obj/structure/table/reinforced,
@@ -61728,12 +62642,16 @@
 	},
 /area/SouthernCrossV2/Science/Observation_Hall)
 "wCI" = (
-/turf/simulated/shuttle/wall/no_join{
-	base_state = "orange";
-	icon = 'icons/turf/shuttle_orange.dmi';
-	icon_state = "orange"
+/obj/structure/shuttle/engine/propulsion/burst,
+/obj/structure/window/titanium{
+	dir = 4
 	},
-/area/SouthernCrossV2/Evac/Pod13)
+/obj/structure/window/titanium{
+	dir = 1;
+	layer = 3
+	},
+/turf/simulated/floor/airless,
+/area/SouthernCrossV2/Evac/Pod14)
 "wCP" = (
 /obj/machinery/atmospherics/portables_connector{
 	dir = 1
@@ -61868,8 +62786,11 @@
 	},
 /obj/machinery/door/airlock/angled_tgmc/pod{
 	dir = 8;
-	name = "EscapePod"
+	name = "Escape Pod 4";
+	frequency = 1380;
+	id_tag = "escape_pod_4_hatch"
 	},
+/obj/effect/map_helper/airlock/door/simple,
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Evac/Pod01)
 "wFw" = (
@@ -62202,6 +63123,18 @@
 	},
 /turf/simulated/floor/tiled,
 /area/SouthernCrossV2/Cargo/Mining_Ship_Bay)
+"wMJ" = (
+/obj/structure/bed/chair/bay/shuttle{
+	dir = 8
+	},
+/obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod{
+	frequency = 1380;
+	id_tag = "large_escape_pod_2";
+	pixel_y = 24;
+	tag_door = "large_escape_pod_2_hatch"
+	},
+/turf/simulated/shuttle/floor/white,
+/area/SouthernCrossV2/Evac/Star_Transport_Shuttle)
 "wMK" = (
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 4
@@ -63034,7 +63967,13 @@
 /obj/structure/shuttle/engine/propulsion/burst{
 	dir = 8
 	},
-/turf/simulated/shuttle/wall,
+/obj/structure/window/titanium{
+	dir = 1
+	},
+/obj/structure/window/titanium{
+	dir = 4
+	},
+/turf/simulated/floor/airless,
 /area/SouthernCrossV2/Evac/Pod06)
 "xbk" = (
 /obj/machinery/alarm{
@@ -63269,8 +64208,11 @@
 	},
 /obj/machinery/door/airlock/angled_tgmc/pod{
 	dir = 8;
-	name = "EscapePod"
+	name = "Escape Pod 2";
+	frequency = 1380;
+	id_tag = "escape_pod_2_hatch"
 	},
+/obj/effect/map_helper/airlock/door/simple,
 /turf/simulated/floor/tiled/techmaint,
 /area/SouthernCrossV2/Evac/Pod03)
 "xfb" = (
@@ -63784,6 +64726,17 @@
 	},
 /turf/simulated/shuttle/floor/white,
 /area/SouthernCrossV2/Evac/Star_Transport_Shuttle)
+"xqf" = (
+/obj/effect/catwalk_plated/white,
+/obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod_berth{
+	frequency = 1380;
+	id_tag = "escape_pod_7_berth";
+	pixel_x = 24;
+	tag_door = "escape_pod_7_berth_hatch";
+	dir = 8
+	},
+/turf/simulated/floor/plating,
+/area/SouthernCrossV2/Harbor/Ship_Bay4)
 "xqr" = (
 /obj/structure/table/steel,
 /obj/machinery/light{
@@ -63903,14 +64856,28 @@
 /turf/simulated/floor/tiled/dark,
 /area/SouthernCrossV2/Science/PA_Chamber)
 "xsL" = (
+/obj/item/device/gps{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/device/gps,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/structure/bed/chair/bay/shuttle{
+	dir = 4
+	},
+/obj/structure/closet/walllocker_double/kitchen/north{
+	name = "Ration Cabinet"
+	},
 /obj/item/device/radio/intercom{
 	name = "Station Intercom (General)";
 	pixel_y = -21
 	},
-/obj/structure/bed/chair/bay/shuttle{
-	dir = 4
-	},
-/obj/structure/closet/walllocker/emerglocker/north,
 /turf/simulated/shuttle/floor,
 /area/SouthernCrossV2/Evac/Pod08)
 "xsN" = (
@@ -63943,6 +64910,17 @@
 	},
 /turf/simulated/floor/tiled/hydro,
 /area/SouthernCrossV2/Science/Xenobotany_Lab)
+"xtP" = (
+/obj/effect/catwalk_plated/white,
+/obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod_berth{
+	frequency = 1380;
+	id_tag = "escape_pod_1_berth";
+	pixel_x = -24;
+	tag_door = "escape_pod_1_berth_hatch";
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/SouthernCrossV2/Harbor/Ship_Bay3)
 "xuI" = (
 /obj/effect/catwalk_plated/techmaint,
 /obj/structure/cable{
@@ -64303,9 +65281,10 @@
 	},
 /obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod{
 	frequency = 1380;
-	id_tag = "escape_pod_2";
-	pixel_x = -25;
-	tag_door = "escape_pod_2_hatch"
+	id_tag = "escape_pod_14";
+	pixel_x = -24;
+	tag_door = "escape_pod_14_hatch";
+	dir = 4
 	},
 /obj/machinery/light{
 	dir = 1
@@ -64524,16 +65503,28 @@
 /turf/simulated/floor/tiled/white,
 /area/SouthernCrossV2/Maints/ab_Surgery)
 "xKr" = (
-/obj/structure/closet/walllocker/medical{
-	pixel_x = -28
+/obj/item/device/gps{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/device/gps,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/structure/bed/chair/bay/shuttle{
+	dir = 1
 	},
 /obj/item/device/radio/intercom{
 	dir = 4;
 	name = "Station Intercom (General)";
 	pixel_x = 21
 	},
-/obj/structure/bed/chair/bay/shuttle{
-	dir = 1
+/obj/structure/closet/walllocker_double/kitchen/west{
+	name = "Ration Cabinet"
 	},
 /turf/simulated/shuttle/floor,
 /area/SouthernCrossV2/Evac/Pod14)
@@ -65032,6 +66023,27 @@
 /obj/item/clothing/under/lawyer/bluesuit,
 /turf/simulated/floor/wood/alt/tile/broken,
 /area/SouthernCrossV2/Maints/Deck1_ForPort_Chamber1)
+"xXL" = (
+/obj/item/device/gps{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/device/gps,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
+/obj/structure/closet/walllocker_double/kitchen/south{
+	name = "Ration Cabinet"
+	},
+/obj/structure/bed/chair/bay/shuttle{
+	dir = 1
+	},
+/turf/simulated/shuttle/floor/white,
+/area/SouthernCrossV2/Evac/Port_Transport_Shuttle)
 "xXQ" = (
 /obj/structure/table/steel,
 /obj/random/maintenance/cargo,
@@ -65288,7 +66300,7 @@
 	dir = 4
 	},
 /obj/machinery/embedded_controller/radio/airlock/airlock_controller{
-	frequency = 1381;
+	frequency = 1380;
 	id_tag = "SC-docklane41";
 	dir = 8;
 	pixel_x = 24
@@ -65333,6 +66345,7 @@
 	dir = 4
 	},
 /obj/structure/closet/walllocker/medical/north,
+/obj/structure/closet/walllocker/emerglocker/south,
 /turf/simulated/shuttle/floor,
 /area/SouthernCrossV2/Evac/Pod06)
 "ybV" = (
@@ -65343,23 +66356,12 @@
 /turf/simulated/floor/tiled,
 /area/SouthernCrossV2/Harbor/Dock4)
 "ybW" = (
-/obj/effect/floor_decal/borderfloorblack{
-	dir = 4
+/turf/simulated/shuttle/wall/no_join{
+	base_state = "orange";
+	icon = 'icons/turf/shuttle_orange.dmi';
+	icon_state = "orange"
 	},
-/obj/effect/floor_decal/industrial/danger{
-	dir = 4
-	},
-/obj/machinery/light/floortube{
-	dir = 8;
-	pixel_x = -3
-	},
-/obj/structure/cable/blue{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/SouthernCrossV2/Cargo/Mining_Ship_Bay)
+/area/SouthernCrossV2/Evac/Port_Transport_Shuttle)
 "ycf" = (
 /obj/machinery/vending/cola,
 /turf/simulated/floor/plating,
@@ -65499,10 +66501,6 @@
 	},
 /obj/item/weapon/towel/random{
 	pixel_y = 14;
-	pixel_x = 6
-	},
-/obj/item/weapon/towel/random{
-	pixel_y = 18;
 	pixel_x = 6
 	},
 /obj/item/device/threadneedle{
@@ -65745,6 +66743,14 @@
 /obj/structure/bed/chair/oldsofa/left,
 /turf/simulated/floor/tiled/eris/steel/bar_dance,
 /area/SouthernCrossV2/Maints/ab_StripBar)
+"ylw" = (
+/obj/structure/sign/nanotrasen,
+/turf/simulated/shuttle/wall/no_join{
+	base_state = "orange";
+	icon = 'icons/turf/shuttle_orange.dmi';
+	icon_state = "orange"
+	},
+/area/SouthernCrossV2/Evac/Star_Transport_Shuttle)
 "ylD" = (
 /obj/machinery/vending/engivend{
 	emagged = 1;
@@ -76440,7 +77446,7 @@ aGh
 aGh
 aGh
 aGh
-aGh
+kDj
 bJW
 fAx
 cZL
@@ -76698,8 +77704,8 @@ alw
 alw
 alw
 alw
-alw
-ybW
+ufP
+akH
 alw
 alw
 alw
@@ -76957,7 +77963,7 @@ iGC
 cyL
 oxT
 tsx
-juP
+bhm
 cyL
 iGC
 iGC
@@ -78626,7 +79632,7 @@ aaa
 aaa
 aaa
 aaf
-gDR
+cmI
 aaf
 aaa
 aaa
@@ -78884,7 +79890,7 @@ aaa
 aaa
 aaa
 aaf
-wkg
+qIQ
 aaf
 aaa
 aaa
@@ -79142,7 +80148,7 @@ aaa
 aaa
 aaa
 aaa
-wkg
+qIQ
 mIU
 aaa
 aaa
@@ -79279,7 +80285,7 @@ cyL
 cyL
 cyL
 cyL
-juP
+bhm
 cyL
 cyL
 iGC
@@ -81639,7 +82645,7 @@ ake
 ket
 deb
 oxc
-aEy
+pPl
 dcA
 dcA
 dcA
@@ -85998,7 +87004,7 @@ nut
 xZB
 kwt
 xZB
-xZB
+dAz
 uQy
 gfJ
 dJi
@@ -86256,8 +87262,8 @@ aaM
 alh
 alh
 qgA
-gfV
 aaM
+gfV
 aaU
 kmf
 aTB
@@ -86489,7 +87495,7 @@ lRr
 hOd
 fWC
 aCk
-xhq
+rRz
 uuY
 hHF
 buw
@@ -87025,13 +88031,13 @@ cfo
 eew
 rrc
 gMA
-sFQ
-bek
+ybW
+ewn
 aTE
 uJo
 aTE
-giO
-sFQ
+xXL
+ybW
 aaX
 xAc
 xAc
@@ -87601,15 +88607,15 @@ ujy
 aaf
 aaf
 aaf
-tvZ
+aiz
 aaf
 aaf
 aaf
-tvZ
+aiz
 aaf
 aaf
 aaf
-tvZ
+aiz
 aaf
 aaf
 aaf
@@ -87856,21 +88862,21 @@ uTo
 soU
 wRQ
 ujy
-eqf
+sTR
 tbW
-eqf
-tvZ
-eaB
+sTR
+aiz
+clV
 hcA
-eaB
-tvZ
+clV
+aiz
 eyD
 qMs
 eyD
-tvZ
-cAK
+aiz
+aIA
 asw
-cAK
+aIA
 aDi
 gPG
 rRc
@@ -88114,21 +89120,21 @@ uTo
 uTo
 hTb
 ujy
-eqf
+sTR
 rBm
-eqf
-tvZ
-eaB
+sTR
+aiz
+clV
 tCB
-eaB
-tvZ
+clV
+aiz
 eyD
 agk
 eyD
-tvZ
-cAK
+aiz
+aIA
 fUB
-cAK
+aIA
 aDi
 ahF
 ahF
@@ -88315,7 +89321,7 @@ cfo
 eew
 pop
 gMA
-azv
+hdP
 vcs
 aTE
 ktD
@@ -88372,21 +89378,21 @@ uTo
 wxM
 pZZ
 ujy
-eqf
+juP
 aqL
 eqf
-tvZ
+aiz
 eaB
 afl
-eaB
-tvZ
-eyD
+pkU
+aiz
+uzg
 pVs
-eyD
-tvZ
+cyo
+aiz
 cAK
 sCx
-cAK
+keq
 aDi
 pco
 qOA
@@ -88574,7 +89580,7 @@ vAK
 dso
 gMA
 sFQ
-fPg
+evv
 aTE
 fIw
 aTE
@@ -88633,15 +89639,15 @@ ujy
 sTR
 awB
 sTR
-tvZ
+aiz
 clV
 ljv
 clV
-tvZ
-oOo
+aiz
+eyD
 iJO
-oOo
-tvZ
+eyD
+aiz
 aIA
 rfH
 aIA
@@ -88888,21 +89894,21 @@ soU
 uTo
 wzW
 ujy
-eqf
+sTR
 hjR
-eqf
-tvZ
-eaB
+sTR
+aiz
+clV
 jTj
-eaB
-tvZ
+clV
+aiz
 eyD
 wiM
 eyD
-tvZ
-cAK
+aiz
+aIA
 nMA
-cAK
+aIA
 aDi
 kZW
 kNm
@@ -89146,21 +90152,21 @@ uTo
 uTo
 hLo
 ujy
-aTL
+mIi
 vja
 aTL
-tvZ
-peo
+aiz
+vVv
 xeL
 peo
-tvZ
+aiz
 mRe
 nRx
-mRe
-tvZ
+ucN
+aiz
 wsI
 wFq
-wsI
+nEb
 aDi
 aiD
 ppW
@@ -89347,13 +90353,13 @@ cfo
 eew
 pop
 gMA
-sFQ
+ybW
 aes
 aTE
 aTE
 aTE
 aSf
-sFQ
+ybW
 aaX
 lun
 xAc
@@ -89409,15 +90415,15 @@ aqe
 aiz
 aOt
 aiz
-aqe
+pkx
 aiz
 aiz
 aiz
-aqe
+kpe
 aiz
 aOt
 aiz
-aqe
+mKZ
 aiz
 aDi
 aHh
@@ -89609,7 +90615,7 @@ sFQ
 sFQ
 aJY
 hBp
-aJY
+lmf
 sFQ
 sFQ
 aaX
@@ -89662,19 +90668,19 @@ uTo
 syg
 aiz
 fFD
+xtP
 fFD
 fFD
 fFD
-fFD
-fFD
+scR
 fFD
 fFD
 drX
+omT
 fFD
 fFD
 fFD
-fFD
-fFD
+nWF
 fFD
 fFD
 aDi
@@ -89830,7 +90836,7 @@ riu
 aQG
 hSv
 gHL
-eRm
+tvZ
 jqU
 dRS
 naw
@@ -92368,13 +93374,13 @@ aaa
 aaa
 aaa
 aaa
-tvZ
-tvZ
-tvZ
-tvZ
-tvZ
-tvZ
-tvZ
+ebf
+ebf
+ebf
+ebf
+ebf
+ebf
+ebf
 ebf
 dRz
 dRz
@@ -92629,11 +93635,11 @@ aaa
 aRl
 dpT
 dpT
+uoq
 dpT
-wCI
 dpT
 bwJ
-ebf
+bUT
 vHC
 vHC
 dRz
@@ -93145,12 +94151,12 @@ aaa
 aRl
 dpT
 dpT
+uai
 dpT
-wCI
 dpT
-bwJ
+sxY
 ebf
-vHC
+erI
 vHC
 dRz
 dRz
@@ -94079,7 +95085,7 @@ aKi
 wdj
 asG
 jWw
-pil
+aKi
 tHL
 tHL
 aja
@@ -94337,7 +95343,7 @@ ezj
 jnw
 oyt
 doR
-pil
+aKi
 tHL
 tHL
 anL
@@ -94345,7 +95351,7 @@ dBn
 agq
 rNI
 skc
-pil
+aKi
 ibt
 wgO
 rcs
@@ -94603,7 +95609,7 @@ rff
 fpW
 rff
 rff
-pil
+aKi
 aNG
 pdf
 pdf
@@ -94816,7 +95822,7 @@ hCf
 hCf
 qyi
 aLm
-aRj
+aRd
 aVg
 pID
 aGT
@@ -94861,7 +95867,7 @@ xrK
 clD
 uHY
 aAQ
-pil
+aKi
 rbp
 dvJ
 dvJ
@@ -95112,14 +96118,14 @@ rff
 kjz
 yae
 ouG
-pil
-pil
-pil
-pil
-pil
-pil
-pil
-pil
+aKi
+aKi
+aKi
+aKi
+aKi
+aKi
+aKi
+aKi
 dWX
 oGT
 oGT
@@ -95591,14 +96597,14 @@ uHz
 qyi
 dYv
 aTh
-aVg
+sZu
 frW
 xes
 rnA
 mXE
 jJo
 wNS
-gDz
+aRj
 niO
 jJo
 mXE
@@ -96144,14 +97150,14 @@ aal
 tzb
 czG
 tSm
-mKZ
+aVW
 nQw
-mKZ
-mKZ
-mKZ
-mKZ
-mKZ
-mKZ
+aVW
+aVW
+aVW
+aVW
+aVW
+aVW
 dWX
 sQR
 sQR
@@ -96409,7 +97415,7 @@ rny
 lWM
 kAl
 umk
-mKZ
+aVW
 lXH
 aBL
 aBL
@@ -96925,7 +97931,7 @@ aIW
 bRF
 daS
 dXH
-mKZ
+aVW
 eLq
 mQo
 cAM
@@ -97635,7 +98641,7 @@ prh
 epb
 uIi
 cyY
-cyY
+wkg
 cyY
 cyY
 lCo
@@ -97789,12 +98795,12 @@ aaa
 aRl
 brQ
 brQ
+bNP
 brQ
-kDj
 brQ
-rXw
+wCI
 ebf
-vHC
+blL
 vHC
 dRz
 dRz
@@ -98051,7 +99057,7 @@ ued
 xKr
 oqt
 lMQ
-dfZ
+jge
 vHC
 vHC
 dRz
@@ -98072,7 +99078,7 @@ aiL
 rjC
 tlt
 jQp
-nMF
+tZU
 ilU
 ilU
 ilU
@@ -98305,11 +99311,11 @@ aaa
 aRl
 brQ
 brQ
+ruD
 brQ
-kDj
 brQ
 rXw
-ebf
+bUT
 vHC
 vHC
 dRz
@@ -98560,13 +99566,13 @@ aaa
 aaa
 aaa
 aaa
-tvZ
-tvZ
-tvZ
-crG
-crG
-crG
-crG
+ebf
+ebf
+ebf
+ebf
+ebf
+ebf
+ebf
 ebf
 dRz
 dRz
@@ -100145,10 +101151,10 @@ pdh
 abo
 fHQ
 aRz
+djI
 uEH
 uEH
-uEH
-uEH
+avd
 aRz
 mFF
 abo
@@ -101475,7 +102481,7 @@ obh
 rtZ
 wal
 wal
-eau
+wMJ
 eav
 eau
 wal
@@ -101530,19 +102536,19 @@ qjR
 yja
 eAA
 xGs
+pil
 xGs
 xGs
 xGs
-xGs
-xGs
+izC
 xGs
 xGs
 dFr
+xqf
 xGs
 xGs
 xGs
-xGs
-xGs
+slb
 xGs
 xGs
 cof
@@ -101731,13 +102737,13 @@ tpf
 nQD
 fMV
 rtZ
-wal
+oIG
 qDn
 eaw
 eaw
 eaw
 dgH
-wal
+oIG
 aGk
 mOg
 adX
@@ -101793,15 +102799,15 @@ amZ
 eAA
 asK
 eAA
-amZ
+rjg
 eAA
 eAA
 eAA
-amZ
+gxg
 eAA
 asK
 eAA
-amZ
+uag
 eAA
 cof
 aJM
@@ -102046,21 +103052,21 @@ xaJ
 xaJ
 tMJ
 tMJ
-bbl
+oOo
 dWh
 bbl
-tvZ
-wdC
+eAA
+aic
 tvk
 wdC
-tvZ
-xbg
+eAA
+dwk
 mdw
 xbg
-tvZ
+eAA
 icJ
 jWg
-icJ
+fRD
 cof
 erV
 sqT
@@ -102304,18 +103310,18 @@ jTK
 gdM
 gdM
 tMJ
-aAz
+dVs
 nva
-aAz
-tvZ
-lbI
+dVs
+eAA
+imJ
 eUR
-lbI
-tvZ
-mHK
+imJ
+eAA
+rCn
 ybB
-mHK
-tvZ
+rCn
+eAA
 tSk
 kuE
 tSk
@@ -102464,7 +103470,7 @@ rse
 rse
 rse
 pdh
-bLd
+uUf
 uUf
 weW
 cvH
@@ -102473,7 +103479,7 @@ cvH
 cvH
 qoB
 uUf
-bLd
+uUf
 wOF
 wOF
 rHN
@@ -102510,7 +103516,7 @@ jpR
 eaw
 dXn
 eaw
-jpR
+jGA
 wal
 fjY
 adX
@@ -102565,18 +103571,18 @@ tMJ
 dVs
 xsL
 dVs
-tvZ
+eAA
 imJ
 vqN
 imJ
-tvZ
+eAA
 rCn
 bmt
 rCn
-tvZ
-kpe
+eAA
+tSk
 aJy
-kpe
+tSk
 cof
 dVf
 wXh
@@ -102723,14 +103729,14 @@ aJl
 sNB
 pdh
 aaf
-bLd
-bLd
-oIG
-oIG
-oIG
-oIG
-bLd
-bLd
+uUf
+uUf
+ang
+ang
+ang
+ang
+uUf
+uUf
 aaf
 wOF
 wOF
@@ -102763,7 +103769,7 @@ tpf
 tpf
 dVd
 rtZ
-dXm
+ylw
 xqb
 eaw
 mrp
@@ -102822,19 +103828,19 @@ oVU
 tMJ
 aAz
 lwp
-aAz
-tvZ
-lbI
+vzy
+eAA
+bLd
 bZv
 lbI
-tvZ
-mHK
+eAA
+iQw
 gMT
 mHK
-tvZ
-tSk
+eAA
+nJN
 cfn
-tSk
+cfj
 cof
 lwu
 aDj
@@ -103078,18 +104084,18 @@ rAB
 qNj
 oVU
 tMJ
-aAz
+dVs
 tSI
-aAz
-tvZ
-lbI
+dVs
+eAA
+imJ
 rFR
-lbI
-tvZ
-mHK
+imJ
+eAA
+rCn
 mdb
-mHK
-tvZ
+rCn
+eAA
 tSk
 kFq
 tSk
@@ -103336,18 +104342,18 @@ fqx
 imA
 bbQ
 tMJ
-aAz
+dVs
 rFl
-aAz
-tvZ
-lbI
+dVs
+eAA
+imJ
 fLW
-lbI
-tvZ
-mHK
+imJ
+eAA
+rCn
 awy
-mHK
-tvZ
+rCn
+eAA
 tSk
 gUX
 tSk
@@ -103597,15 +104603,15 @@ tMJ
 aaf
 aaf
 aaf
-tvZ
+eAA
 aaf
 aaf
 aaf
-tvZ
+eAA
 aaf
 aaf
 aaf
-tvZ
+eAA
 aaf
 aaf
 aaf
@@ -104053,13 +105059,13 @@ ifh
 gRM
 eIg
 rtZ
-wal
-dYt
+oIG
+nMF
 eaw
 eCS
 eaw
-dZK
-wal
+mzf
+oIG
 aGk
 adX
 adX
@@ -104832,8 +105838,8 @@ qFn
 wVF
 wVF
 plz
-iiJ
 qFn
+iiJ
 qFn
 qOB
 uIb
@@ -109511,7 +110517,7 @@ dWL
 oPN
 aAK
 bra
-vhf
+hZk
 qTV
 aKa
 aaa
