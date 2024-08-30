@@ -24676,6 +24676,7 @@
 	},
 /obj/structure/closet/walllocker/medical/south,
 /obj/structure/closet/walllocker/emerglocker/north,
+/obj/effect/shuttle_landmark/southern_cross/escape_pod1/station,
 /turf/simulated/shuttle/floor,
 /area/SouthernCrossV2/Evac/Pod04)
 "hkp" = (
@@ -31668,6 +31669,10 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/SouthernCrossV2/Science/PA_Chamber)
+"knr" = (
+/obj/effect/shuttle_landmark/southern_cross/escape_pod2/offsite,
+/turf/simulated/floor/plating,
+/area/SouthernCrossV2/Maints/Deck1_AftPort_Corridor3)
 "knK" = (
 /obj/machinery/disposal,
 /obj/structure/disposalpipe/trunk{
@@ -89116,7 +89121,7 @@ dhy
 oWD
 lvn
 iHR
-uTo
+knr
 uTo
 hTb
 ujy
