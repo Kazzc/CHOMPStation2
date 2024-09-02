@@ -2722,6 +2722,7 @@ End Chompstation Edit*/
 /area/SouthernCrossV2/Security/Restroom
     name = "\improper Restroom"
     icon_state = "security"
+    lightswitch = 1
 
 /area/SouthernCrossV2/Security/Lobby
     name = "\improper Lobby"
@@ -2926,6 +2927,7 @@ End Chompstation Edit*/
 /area/SouthernCrossV2/Medical/Restrooms
     name = "\improper Restrooms"
     icon_state = "medbay"
+    lightswitch = 1
 
 //SCIENCE AREAS
 
@@ -3091,10 +3093,12 @@ End Chompstation Edit*/
     name = "\improper Engineering Substation"
     icon_state = "engineering"
     ambience = AMBIENCE_SUBSTATION
+    lightswitch = 1
 
 /area/SouthernCrossV2/Engineering/Central_Engineering_Post
     name = "\improper Central Engineering Post"
     icon_state = "engineering"
+    lightswitch = 1
 
 /area/SouthernCrossV2/Engineering/GravGen_Room
     name = "\improper GravGen Room"
@@ -3114,6 +3118,7 @@ End Chompstation Edit*/
     name = "\improper Telecomms Network"
     icon_state = "engineering"
     ambience = AMBIENCE_AI
+    lightswitch = 1
 
 /area/SouthernCrossV2/Engineering/Reception
     name = "\improper Reception"
@@ -3440,26 +3445,31 @@ End Chompstation Edit*/
     name = "\improper Central Restroom"
     icon_state = "gaming"
     flags = RAD_SHIELDED
+    lightswitch = 1
 
 /area/SouthernCrossV2/Domicile/For_Restroom
     name = "\improper For Restroom"
     icon_state = "gaming"
     flags = RAD_SHIELDED
+    lightswitch = 1
 
 /area/SouthernCrossV2/Domicile/Star_Restroom
     name = "\improper Star Restroom"
     icon_state = "gaming"
     flags = RAD_SHIELDED
+    lightswitch = 1
 
 /area/SouthernCrossV2/Domicile/Aft_Restroom
     name = "\improper Aft Restroom"
     icon_state = "gaming"
     flags = RAD_SHIELDED
+    lightswitch = 1
 
 /area/SouthernCrossV2/Domicile/Port_Restroom
     name = "\improper Port Restroom"
     icon_state = "gaming"
     flags = RAD_SHIELDED
+    lightswitch = 1
 
 /area/SouthernCrossV2/Domicile/Library
     name = "\improper Library"
