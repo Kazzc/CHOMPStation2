@@ -7,7 +7,6 @@
 #define LOC_HANGAR1 6
 #define LOC_HANGAR2 7
 #define LOC_HANGAR3 8
-#define LOC_FIELD 9 // CHOMPEdit - More mutant places! This one might allow them to grow
 
 
 #define VERM_RATS 0
@@ -22,42 +21,39 @@
 	var/vermstring
 
 /datum/event/mutants/start()
-
-	location = rand(0,9) // CHOMPEdit - Bumping up to 9
+// CHOMPEdit - SC2
+	location = rand(0,8)
 	var/list/turf/simulated/floor/turfs = list()
 	var/spawn_area_type
 	switch(location)
 		if(LOC_KITCHEN)
-			spawn_area_type = /area/crew_quarters/kitchen
+			spawn_area_type = /area/SouthernCrossV2/Domicile/Chomp_Kitchen
 			locstring = "the kitchen"
 		if(LOC_ATMOS)
-			spawn_area_type = /area/engineering/atmos
+			spawn_area_type = /area/SouthernCrossV2/Engineering/Atmospherics_Chamber
 			locstring = "atmospherics"
 		if(LOC_CHAPEL)
-			spawn_area_type = /area/chapel/main
+			spawn_area_type = /area/SouthernCrossV2/Domicile/Chapel_Lobby
 			locstring = "the chapel"
 		if(LOC_LIBRARY)
-			spawn_area_type = /area/library
+			spawn_area_type = /area/SouthernCrossV2/Domicile/Library
 			locstring = "the library"
 		if(LOC_HYDRO)
-			spawn_area_type = /area/hydroponics
+			spawn_area_type = /area/SouthernCrossV2/Domicile/Chomp_Hydroponics
 			locstring = "hydroponics"
 		if(LOC_TECH)
-			spawn_area_type = /area/storage/tech
+			spawn_area_type = /area/SouthernCrossV2/Engineering/Technical_Storage
 			locstring = "technical storage"
 		if(LOC_HANGAR1)
-			spawn_area_type = /area/hangar/one
+			spawn_area_type = /area/SouthernCrossV2/Harbor/Dock1
 			locstring = "the hangar deck"
 		if(LOC_HANGAR2)
-			spawn_area_type = /area/hangar/two
+			spawn_area_type =/area/SouthernCrossV2/Harbor/Dock2
 			locstring = "the hangar deck"
 		if(LOC_HANGAR3)
-			spawn_area_type = /area/hangar/three
+			spawn_area_type = /area/SouthernCrossV2/Harbor/Dock3
 			locstring = "the hangar deck"
-		if(LOC_FIELD) // CHOMPEdit - Another one for the list...
-			spawn_area_type = /area/maintenance/field
-			locstring = "the maintenance deck"
-
+// CHOMPEdit End
 	for(var/areapath in typesof(spawn_area_type))
 		var/area/A = locate(areapath)
 		for(var/turf/simulated/floor/F in A.contents)
